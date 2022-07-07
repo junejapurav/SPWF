@@ -1,0 +1,59 @@
+footer{
+    border-top: solid 1px #656565;
+    margin-top: 5rem;;
+    padding-left: 10%;
+    background-color: white;
+    color: #656565;
+   
+}
+h1,h2,h3{
+    color:black;
+}
+.upperFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7%;
+    align-items: stretch;
+
+}
+.about-footer{
+    max-width: 35%;
+}
+.contactinfo-footer {
+    display: flex;
+    flex-direction: column;
+
+    gap:1rem;
+}
+.social-media-footer{
+    display: flex;
+    flex-direction: column;
+    
+}
+.socialMedia-footer{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+}
+.tags-footer div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap:0.5rem;
+        
+}
+.tags-footer button{
+    width: 45%;
+    padding: 0.5rem;
+    border-radius: 25px;
+    border: solid 1px #656565;
+    transition: 0.3s;
+   
+    
+}
+.tags-footer button:hover{
+    color:white;
+    border: solid 1px #ffa026;
+    background-color: #ffa026;
+}
