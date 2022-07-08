@@ -5,6 +5,7 @@ import { Fragment } from 'react';
 import GetInvolved from './components/getInvolved';
 import Footer from './components/footer';
 import Counter from './components/counter';
+import Fundraising from './components/fundraising';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <br/>
       <br/>
       <Counter/>
+      <Fundraising/>
       <Footer/>
     </Fragment>
   );
