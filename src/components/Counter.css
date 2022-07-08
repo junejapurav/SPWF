@@ -5,8 +5,28 @@
     margin-bottom: 70px;
 }
 .bannerLeft{
+    display: flex;
+    flex-direction: column;
     width: 45%;
     align-items: center;
+}
+.counter{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    background-color: #ffa026;
+    color: white;
+    width: 80%;
+    justify-content: space-evenly;
+}
+.countercolomn{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.countercolomn h1{
+    margin: 10% 0 0 0;
+    color: white;
 }
 .bannerLeft img{
     width: 85%;
