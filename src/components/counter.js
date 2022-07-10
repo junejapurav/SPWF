@@ -1,11 +1,27 @@
 import counterPhoto from '../img/Picture2.jpg';
 import './Counter.css';
 const Counter= ()=>{
+  // const counters = document.querySelectorAll('.countercolomn h1');
+  // const values = [101,10,90,5];
+  // counters[1].addEventListener('seeked',hell);
+  // function hell(){
+  //   for(let i=0;i<4;i++){
+  //     for(let b = 1;b<values[i];b++){
+  //       counters[i].innerHTML = b;
+  //     }
+  //   }
+  // }
 
     return (
         <div className="counterBanner">
     <div className="bannerLeft">
       <img src={counterPhoto} alt=""/>
+      <div className='counter'>
+        <div className='countercolomn'><h1>0</h1><p>People Fed</p></div>
+        <div className='countercolomn'><h1>0</h1><p>students</p></div>
+        <div className='countercolomn'><h1>0</h1><p>doners</p></div>
+        <div className='countercolomn'><h1>0</h1><p>sponsers</p></div>
+      </div>
     </div>
     <div className="bannerRight">
       <h5>About Us</h5>

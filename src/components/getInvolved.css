@@ -45,16 +45,18 @@ box-shadow: -1px 1px 11px -2px rgba(0,0,0,0.75)
 .involved i{
     margin-top: 1rem;
     color: #ffa026;
+    font-size: 200%;
 
 }
 .involved h3{
     color: black;
+    font-size: 200%;
 }
 .involved div p{
     text-align: center;
     color: #383838;
     font-family: 'Poppins', sans-serif;
-    font-size: 0.85rem;
+    font-size: 100%;
     font-weight: bold;
     padding: 0 0.7rem;
     margin-bottom: 2rem;
@@ -67,4 +69,5 @@ box-shadow: -1px 1px 11px -2px rgba(0,0,0,0.75)
     border: solid 1px #f9aa44;
     padding: 0.5rem 0.5rem;
     margin-bottom: 1rem;
+    font-size: 130%;
 }

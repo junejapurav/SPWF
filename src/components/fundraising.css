@@ -1,0 +1,55 @@
+.fundRaising{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/Picture6.jpg');
+
+    /* background-image: url("../images/Picture6.jpg"); */
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+}
+.fundLeft{
+    margin: 5% 8%;
+    color: white;
+}
+.fundRight{
+    margin: 8%;
+    padding: 2%;
+    border-radius: 20px;
+    color: white;
+    background-color: #FFA026;
+    opacity: .4;
+}
+.fundLeft h5{
+    font-size: 150%;
+    color: #ffa026;
+}
+.fundLeft h1{
+    font-family: none;
+    font-size: 300%;
+    color: white;
+}
+.playButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+ }
+.playButton i{
+    font-size: 300%;
+    background-color: #FFA026;
+    border-radius: 100px;
+    padding: 1px 0 0 0;
+    border: solid 1px #FFA026;
+    transition: 0.3s;
+
+}
+.playButton i:hover{
+    color: #FFA026;
+    background-color: aliceblue;
+    border: solid 1px #FFA026;
+
+}
