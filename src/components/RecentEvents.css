@@ -1,0 +1,83 @@
+
+.RecentEvents{
+    justify-content: space-around;
+   text-align: center;
+}
+
+.RecentEvents h3{
+    color: #ffa026;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+}
+    /* flex-basis:content; */
+.RecentEventsHeading{
+
+    
+}
+.RecentEvents button{
+    border-radius: 20px;
+    height: 120%;
+    background-color: #ffa026;
+    color: white;
+    border: solid 1px #f9aa44;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    
+}
+.RecentEvent{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    justify-content:center;
+    /* gap: 2%; */
+    margin-bottom: 3%;;
+}
+.RecentEvent img{
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 5%;
+}
+.RecentEvent div{
+    width: 35%;
+    height: 20rem;
+    border-radius: 20px;
+    position: relative;
+  text-align: center;
+  color: white;
+    
+}
+.recentEventContent {
+    position: absolute;
+    bottom: 40%;
+    left: 20%;
+    padding:0;
+    border:0;
+    margin:0;
+  }
+.RecentEvent div h3{
+
+    color:white;
+    margin:0;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.RecentEvent p{
+    color:white;
+    text-align: center;
+
+}
+.RecentEvent div button{
+    height: 10%;
+    width:160%;
+    background-color: transparent;
+    border:solid 3px #ffa026;
+    margin-left: 5%;
+}
+.RecentEvent div button:hover{
+    background-color:#ffa026;
+    transition: 0.5s;
+}

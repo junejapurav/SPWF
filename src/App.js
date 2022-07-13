@@ -5,12 +5,18 @@ import { Fragment } from 'react';
 import GetInvolved from './components/getInvolved';
 import Footer from './components/footer';
 import Counter from './components/counter';
+<<<<<<< HEADc
+import RecentEvents from './components/RecentEvents'
+=======
 import Fundraising from './components/fundraising';
+>>>>>>> 0c93b5cc41b4db86ff38d7f56cfef31f5513e3da
+
 
 function App() {
   return (
     <Fragment>
       <Header/>
+      
       <GetInvolved/>
       <br/>
       <br/>
