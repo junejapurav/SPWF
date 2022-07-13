@@ -81,3 +81,9 @@
     background-color:#ffa026;
     transition: 0.5s;
 }
+@media screen and (max-width: 766px){
+    .RecentEvent{
+        display: flex;
+        flex-direction: column;
+    }
+}

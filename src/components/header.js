@@ -18,7 +18,8 @@ const Header = ()=>{
         <i className="fa-brands fa-google"></i>
         </div>
         <div className="topmenu">
-            
+        <i class="fa-solid fa-bars"></i>
+        <h2>Top Menu</h2>
         </div>
     </header>
     <nav>
@@ -32,6 +33,10 @@ const Header = ()=>{
         <a>events</a>
         <a>Contact Us</a>
         <button>Donate Now</button>
+        </div>
+        <div className="mainmenu">
+        <i class="fa-solid fa-bars"></i>
+        <h2>Menu</h2>
         </div>
     </nav>
         </Fragment>
