@@ -11,7 +11,7 @@ const Footer  = () =>{
                     </p>
                 </div>
                 <div className="contactinfo-footer">
-                    <h3>Contact Us</h3>
+                    <h2>Contact Us</h2>
                     <div id="headerPhone"><i className="fa-solid fa-phone-flip"></i> +23456789345</div>
                     <div id="headerMail"><i className="fa-solid fa-envelope"></i> erghjlkjghjkn</div>
                     <div id="headerLoc"><i className="fa-solid fa-location-dot"></i> Uttam Nagar,New delhi</div>
@@ -19,7 +19,7 @@ const Footer  = () =>{
                 </div>
                
                 <div className="social-media-footer">
-                    <h3>Social Media</h3>
+                    <h2>Social Media</h2>
                     <div className="socialMedia-footer">
                         <i className="fa-brands fa-instagram"></i>
                         <i className="fa-brands fa-facebook"></i>

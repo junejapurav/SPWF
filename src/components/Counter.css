@@ -101,3 +101,26 @@ ul li:before {
     background-color: #e18c1c;
     border: solid 2px #e18c1c;
 }
+
+@media screen and (max-width: 766px) {
+    .counterBanner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bannerLeft{
+        width: 80%;
+    }
+    .bannerLeft img{
+        width: 100%;
+    }
+    .counter{
+        width: 90%;
+    }
+    .bannerRight{
+        max-width: 75%;
+    }
+
+
+}

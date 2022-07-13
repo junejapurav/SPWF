@@ -17,7 +17,7 @@ const Counter= ()=>{
     <div className="bannerLeft">
       <img src={counterPhoto} alt=""/>
       <div className='counter'>
-        <div className='countercolomn'><h1>0</h1><p>People Fed</p></div>
+        <div className='countercolomn'><h1>13k+</h1><p>People Fed</p></div>
         <div className='countercolomn'><h1>0</h1><p>students</p></div>
         <div className='countercolomn'><h1>0</h1><p>doners</p></div>
         <div className='countercolomn'><h1>0</h1><p>sponsers</p></div>
@@ -36,7 +36,7 @@ const Counter= ()=>{
         </ul>
         <div className='yearExperience'><h2>4.5</h2>Years Of Experience</div>
       </div>
-      <button>Learn More</button>
+      <button>Read More</button>
     </div>
   </div>
     )

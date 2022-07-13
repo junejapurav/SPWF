@@ -71,3 +71,22 @@ box-shadow: -1px 1px 11px -2px rgba(0,0,0,0.75)
     margin-bottom: 1rem;
     font-size: 130%;
 }
+@media screen and (max-width: 766px) {
+    .involved{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .involved div{
+        max-width: 60%;
+    }
+    .involved h3{
+        color: black;
+        font-size: 150%;
+    }
+    .getInvolved h1{
+        font-size: 150%;
+    }
+}

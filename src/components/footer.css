@@ -57,3 +57,13 @@ h1,h2,h3{
     border: solid 1px #ffa026;
     background-color: #ffa026;
 }
+
+@media screen and (max-width: 766px){
+    .upperFooter{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-footer{
+        max-width: 90%;
+    }
+}

@@ -53,3 +53,11 @@
     border: solid 1px #FFA026;
 
 }
+@media screen and (max-width: 766px){
+    .fundRaising{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
