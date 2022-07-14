@@ -1,9 +1,12 @@
+import { Fragment } from 'react';
 import  './header.css';
 import logo from '../img/spwflogo2.png';
+import ImageSlider from './ImageSlider';
+import { Fragment } from 'react';
 
 const Header = ()=>{
     return (
-        <div className="wholehead">
+        <Fragment>
             <header>
         <div className="headerLeft">
         <div id="headerPhone"><i className="fa-solid fa-phone-flip"></i> <a href="tel:885-175-5256">123-456-7890</a></div>
@@ -20,8 +23,8 @@ const Header = ()=>{
         <i class="fa-solid fa-bars"></i>
         <h2>TOP MENU</h2>
         </div>
-    </header>
-    <nav>
+            </header>
+            <nav>
         <div className="navLeft">
            <img src={logo} className="navbarLogo" alt="no img"/>
            </div>
@@ -37,9 +40,8 @@ const Header = ()=>{
         <i class="fa-solid fa-bars"></i>
         <h2>MENU</h2>
         </div>
-    </nav>
-    </div>
-
+            </nav>
+        </Fragment>
     );
 }
 export default Header;

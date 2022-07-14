@@ -1,26 +1,65 @@
+import { useEffect, useState,useRef } from 'react';
 import counterPhoto from '../img/Picture2.jpg';
 import './Counter.css';
 const Counter= ()=>{
-  // const counters = document.querySelectorAll('.countercolomn h1');
-  // const values = [101,10,90,5];
-  // counters[1].addEventListener('focus',hell);
-  // function hell(){
-  //   for(let i=0;i<4;i++){
-  //     for(let b = 1;b<values[i];b++){
-  //       counters[i].innerHTML = b;
-  //     }
-  //   }
-  // }
+
+  let [peopleDisplayed, peopleDisplayedChanger] = useState(0);
+  let [students, studentsChanger] =useState(0);
+  let [sponsors,sponsorChanger] =useState(0);
+  let [donors,donorChanger] =useState(0);
+
+
+  const values = [13,80,10,5];
+  const min =Math.min.apply(null, values);
+
+ const newArr =  values.map((a)=> (a/min));
+
+  const [didMount,didMountSet] =  useState(false);
+  
+ 
+  useEffect(()=>{
+    if (didMount=== true) {
+      setTimeout(()=>{
+        counterUpdater();
+      },50);
+
+    } else {
+      didMountSet(true);
+    }
+    
+    
+
+  },[peopleDisplayed,students,donors,sponsors])
+
+
+  const counterUpdater = () =>{
+        if(peopleDisplayed === values[0] && students=== values[1] && donors===values[2] && sponsors===values[3]){
+          return;
+        }
+        if(students!==values[1])
+          studentsChanger(students+newArr[1]);
+
+         if(donors!==values[2]) 
+          donorChanger(donors+newArr[2]);
+
+        if(sponsors!==values[3])
+          sponsorChanger(sponsors+newArr[3]);
+
+         if(peopleDisplayed!== values[0]) 
+          peopleDisplayedChanger(peopleDisplayed+newArr[0]);
+       
+     
+  }
 
     return (
         <div className="counterBanner">
     <div className="bannerLeft">
       <img src={counterPhoto} alt=""/>
-      <div className='counter'>
-        <div className='countercolomn'><h1>13k+</h1><p>People Fed</p></div>
-        <div className='countercolomn'><h1>0</h1><p>students</p></div>
-        <div className='countercolomn'><h1>0</h1><p>doners</p></div>
-        <div className='countercolomn'><h1>0</h1><p>sponsers</p></div>
+      <div className='counter' onClick={counterUpdater}>
+        <div className='countercolomn'><h1>{parseInt(peopleDisplayed)}k+</h1><p>People Fed</p></div>
+        <div className='countercolomn'><h1>{parseInt(students)}</h1><p>students</p></div>
+        <div className='countercolomn'><h1>{parseInt(donors)}</h1><p>donors</p></div>
+        <div className='countercolomn'><h1>{parseInt(sponsors)}</h1><p>sponsors</p></div>
       </div>
     </div>
     <div className="bannerRight">
