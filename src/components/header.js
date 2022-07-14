@@ -7,8 +7,8 @@ const Header = ()=>{
         <Fragment>
             <header>
         <div className="headerLeft">
-        <div id="headerPhone"><i className="fa-solid fa-phone-flip"></i> +23456789345</div>
-        <div id="headerMail"><i className="fa-solid fa-envelope"></i> erghjlkjghjkn</div>
+        <div id="headerPhone"><i className="fa-solid fa-phone-flip"></i> <a href="tel:885-175-5256">123-456-7890</a></div>
+        <div id="headerMail"><i className="fa-solid fa-envelope"></i> <a href="mailto:spwf.ngo@gmail.com">spwf.ngo@gmail.com</a></div>
         <div id="headerLoc"><i className="fa-solid fa-location-dot"></i> Uttam Nagar,New delhi</div>
         </div>
         <div className="headerRight">
@@ -19,7 +19,7 @@ const Header = ()=>{
         </div>
         <div className="topmenu">
         <i class="fa-solid fa-bars"></i>
-        <h2>Top Menu</h2>
+        <h2>TOP MENU</h2>
         </div>
     </header>
     <nav>
@@ -36,7 +36,7 @@ const Header = ()=>{
         </div>
         <div className="mainmenu">
         <i class="fa-solid fa-bars"></i>
-        <h2>Menu</h2>
+        <h2>MENU</h2>
         </div>
     </nav>
         </Fragment>

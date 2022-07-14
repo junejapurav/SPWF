@@ -1,6 +1,7 @@
 import './getInvolved.css';
 
 const GetInvolved = () =>{
+    
     return(
         <div className="getInvolved">
     <h3>Get Involved</h3>

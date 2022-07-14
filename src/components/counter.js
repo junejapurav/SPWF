@@ -3,7 +3,7 @@ import './Counter.css';
 const Counter= ()=>{
   // const counters = document.querySelectorAll('.countercolomn h1');
   // const values = [101,10,90,5];
-  // counters[1].addEventListener('seeked',hell);
+  // counters[1].addEventListener('focus',hell);
   // function hell(){
   //   for(let i=0;i<4;i++){
   //     for(let b = 1;b<values[i];b++){

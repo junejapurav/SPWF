@@ -1,4 +1,3 @@
-
 import './RecentEvents.css';
 import img from '../img/event.jpeg'
 import img2 from '../img/Picture1.png'
@@ -22,7 +21,7 @@ function RecentEvents(){
         console.log(each.event_name);
     })  
     return(
-        <div className='Recent-events'>
+        
 
         
         <div className='RecentEvents'>
@@ -30,10 +29,7 @@ function RecentEvents(){
                 <div>
                     <h3>PROGRAMMES</h3>
                     <h1>Donate To Charity Campaign Around The World!</h1>
-                </div>
-
-                
-                
+                    </div>
             </div>
             <div className='RecentEvent'>
                 { DUMMY.map((each)=> <EventShower event={each}/>)}
@@ -43,7 +39,7 @@ function RecentEvents(){
             
 
         </div>
-        </div>
+       
     )
 }
 export default RecentEvents;

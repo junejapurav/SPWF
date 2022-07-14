@@ -10,6 +10,17 @@ root.render(
     <App />
   </React.StrictMode>
 );
+const counters = document.querySelectorAll('.countercolomn h1');
+console.log(counters)
+  const values = [101,10,90,5];
+  counters[1].addEventListener('fullscreenchange',hell);
+  function hell(){
+    for(let i=0;i<4;i++){
+      for(let b = 1;b<values[i];b++){
+        counters[i].innerHTML = b.toLocaleString();
+      }
+    }
+  }
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
