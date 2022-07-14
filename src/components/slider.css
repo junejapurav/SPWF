@@ -1,0 +1,17 @@
+.mypics{
+    height: 600px;
+    z-index: -999;
+    object-fit: cover;
+    color: white;
+}
+.let{
+    font-size: 300%;
+    color: black;
+    font-family: 'Times New Roman', serif;
+}
+@media screen and (max-width: 800px){
+    .mypics{
+        height: 400px;
+        object-fit: cover;
+    }
+}

@@ -1,10 +1,9 @@
-import { Fragment } from "react";
 import  './header.css';
 import logo from '../img/spwflogo2.png';
 
 const Header = ()=>{
     return (
-        <Fragment>
+        <div className="wholehead">
             <header>
         <div className="headerLeft">
         <div id="headerPhone"><i className="fa-solid fa-phone-flip"></i> <a href="tel:885-175-5256">123-456-7890</a></div>
@@ -39,7 +38,7 @@ const Header = ()=>{
         <h2>MENU</h2>
         </div>
     </nav>
-        </Fragment>
+    </div>
 
     );
 }
