@@ -1,7 +1,7 @@
 footer{
     border-top: solid 1px #656565;
     margin-top: 5rem;;
-    padding-left: 10%;
+    padding: 0 5%;
     background-color: white;
     color: #656565;
    
@@ -57,13 +57,26 @@ h1,h2,h3{
     border: solid 1px #ffa026;
     background-color: #ffa026;
 }
+@media screen and (max-width: 890px){
+    .tags-footer div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .tags-footer div button{
+        width: 100%;
+    }
+}
 
-@media screen and (max-width: 766px){
+@media screen and (max-width: 800px){
     .upperFooter{
         display: flex;
         flex-direction: column;
     }
     .about-footer{
         max-width: 90%;
+    }
+    .tags-footer div button{
+        width: 30%;
     }
 }

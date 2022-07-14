@@ -73,3 +73,42 @@
     flex-direction: column;
     justify-content: flex-end;
 }
+#viewAllProg{
+    background-color: #ffa026;
+    border-radius: 25px;
+    font-size: 1rem;
+    margin: 0.5rem 0 0.5rem;
+    color: white;
+    border: #ffa026;
+    padding: 0.7rem 1rem;
+    font-weight: bold;
+}
+@media screen and (max-width: 800px){
+    .RecentEvent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        gap: 30px;
+    }
+    .RecentEvent div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: 80%;
+        gap: 10px;
+    }
+    .RecentEvent div button{
+        width: 40%;
+        margin: 0 0 10px 0;
+    }
+    .RecentEvent div h3{
+        margin: 0;
+    }
+    #viewAllProg{
+        margin-top:  20px;
+    }
+}

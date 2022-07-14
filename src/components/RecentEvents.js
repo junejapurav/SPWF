@@ -35,7 +35,7 @@ function RecentEvents(){
                 { DUMMY.map((each)=> <EventShower event={each}/>)}
                 
             </div>
-            <button>View All Programmes</button>
+            <button id='viewAllProg'>View All Programmes</button>
             
 
         </div>
