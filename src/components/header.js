@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import  './header.css';
 import logo from '../img/spwflogo2.png';
+import ImageSlider from './ImageSlider';
 
 const Header = ()=>{
     return (
@@ -21,25 +22,25 @@ const Header = ()=>{
         <i class="fa-solid fa-bars"></i>
         <h2>TOP MENU</h2>
         </div>
-    </header>
-    <nav>
-        <div className="navLeft">
-           <img src={logo} className="navbarLogo" alt="no img"/>
-           </div>
-        <div className="navRight">
-        <a>Home</a>
-        <a>About us</a>
-        <a>What We Do</a>
-        <a>events</a>
-        <a>Contact Us</a>
-        <button>Donate Now</button>
-        </div>
-        <div className="mainmenu">
-        <i class="fa-solid fa-bars"></i>
-        <h2>MENU</h2>
-        </div>
-    </nav>
-        </Fragment>
+            </header>
+            <nav>
+                <div className="navLeft">
+                <img src={logo} className="navbarLogo" alt="no img"/>
+                </div>
+                <div className="navRight">
+                <a>Home</a>
+                <a>About us</a>
+                <a>What We Do</a>
+                <a>events</a>
+                <a>Contact Us</a>
+                <button>Donate Now</button>
+                </div>
+                <div className="mainmenu">
+                <i class="fa-solid fa-bars"></i>
+                <h2>MENU</h2>
+                </div>
+            </nav>
+                </Fragment>
 
     );
 }
