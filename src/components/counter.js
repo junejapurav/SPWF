@@ -55,7 +55,7 @@ const Counter= ()=>{
         <div className="counterBanner">
     <div className="bannerLeft">
       <img src={counterPhoto} alt=""/>
-      <div className='counter' onClick={counterUpdater}>
+      <div className='counter' on={counterUpdater}>
         <div className='countercolomn'><h1>{parseInt(peopleDisplayed)}k+</h1><p>People Fed</p></div>
         <div className='countercolomn'><h1>{parseInt(students)}</h1><p>students</p></div>
         <div className='countercolomn'><h1>{parseInt(donors)}</h1><p>donors</p></div>

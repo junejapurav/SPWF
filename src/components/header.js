@@ -1,7 +1,5 @@
-import { Fragment } from 'react';
 import  './header.css';
 import logo from '../img/spwflogo2.png';
-import ImageSlider from './ImageSlider';
 import { Fragment } from 'react';
 
 const Header = ()=>{

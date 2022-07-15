@@ -90,7 +90,7 @@ nav{
 }
 .navRight a:hover{
     color: #ffa026;
-    cursor: grab;
+    cursor :pointer;
 }
 .navRight button{
     background-color: #ffa026;

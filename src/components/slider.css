@@ -1,8 +1,9 @@
 .mypics{
     height: 600px;
     z-index: -999;
-    object-fit: cover;
+    object-fit:fill ;
     color: white;
+    background-color: #0000006E;
 }
 .let{
     font-size: 300%;

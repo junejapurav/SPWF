@@ -1,8 +1,8 @@
 import Carousel from 'react-bootstrap/Carousel';
 import './slider.css';
 import pic1 from '../images/Picture1.png';
-import pic2 from '../images/Picture2.jpg';
-import pic3 from '../images/Picture3.png';
+import pic3 from '../images/Picture2.jpg';
+import pic2 from '../img/pic1.jpg';
 import pic4 from '../images/Picture4.png';
 
 function Slider() {
@@ -33,7 +33,7 @@ function Slider() {
       <Carousel.Item>
         <img
           className="d-block w-100 mypics"
-          src={pic3}
+          src={pic4}
           alt="Third slide"
         />
         <Carousel.Caption>
