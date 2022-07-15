@@ -1,9 +1,11 @@
 import { Fragment } from "react";
 import  './header.css';
 import logo from '../img/spwflogo2.png';
-import ImageSlider from './ImageSlider';
+
 
 const Header = ()=>{
+
+
     return (
         <Fragment>
             <header>
