@@ -1,0 +1,24 @@
+.AboutUsGetInvolved{
+    height:400px;
+    /* filter: brightness(50%); */
+    text-align: center;
+
+}
+.AboutUsGetInvolvedTitle{
+    color:#ffa026;
+    padding-top: 50px;
+}
+.AboutUsGetInvolvedFact h1{
+    color:white; 
+}
+
+.AboutUsGetInvolved button{
+    background-color: #ffa026;
+    color: white;
+    border: solid 2px #ffa026;
+    border-radius: 25px;
+    /* width: 35%; */
+    margin-top: 3%;
+    padding: 0.6rem 0.5;
+    transition: 0.3s;
+}

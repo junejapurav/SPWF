@@ -3,11 +3,12 @@
     z-index: -999;
     object-fit:fill ;
     color: white;
-    background-color: #0000006E;
 }
 .let{
     font-size: 300%;
-    color: black;
+    color: white;
+    background-color: rgba(255, 167, 3, 0.449);
+    border-radius: 10px;
     font-family: 'Times New Roman', serif;
 }
 @media screen and (max-width: 800px){

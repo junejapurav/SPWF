@@ -1,6 +1,7 @@
 import { useEffect, useState,useRef } from 'react';
 import counterPhoto from '../img/Picture2.jpg';
 import './Counter.css';
+import { Waypoint } from 'react-waypoint';
 const Counter= ()=>{
 
   let [peopleDisplayed, peopleDisplayedChanger] = useState(0);
@@ -21,7 +22,7 @@ const Counter= ()=>{
     if (didMount=== true) {
       setTimeout(()=>{
         counterUpdater();
-      },50);
+      },100);
 
     } else {
       didMountSet(true);
@@ -33,6 +34,7 @@ const Counter= ()=>{
 
 
   const counterUpdater = () =>{
+    
         if(peopleDisplayed === values[0] && students=== values[1] && donors===values[2] && sponsors===values[3]){
           return;
         }
@@ -52,15 +54,18 @@ const Counter= ()=>{
   }
 
     return (
+      
         <div className="counterBanner">
-    <div className="bannerLeft">
-      <img src={counterPhoto} alt=""/>
-      <div className='counter' on={counterUpdater}>
+        <div className="bannerLeft">
+        <img src={counterPhoto} alt=""/>
+        <Waypoint onEnter={counterUpdater}  bottomOffset={'25%'}>
+      <div className='counter' onClick={counterUpdater}>
         <div className='countercolomn'><h1>{parseInt(peopleDisplayed)}k+</h1><p>People Fed</p></div>
         <div className='countercolomn'><h1>{parseInt(students)}</h1><p>students</p></div>
         <div className='countercolomn'><h1>{parseInt(donors)}</h1><p>donors</p></div>
         <div className='countercolomn'><h1>{parseInt(sponsors)}</h1><p>sponsors</p></div>
       </div>
+      </Waypoint>
     </div>
     <div className="bannerRight">
       <h5>About Us</h5>
@@ -78,6 +83,7 @@ const Counter= ()=>{
       <button>Read More</button>
     </div>
   </div>
+  
     )
 }
 export default Counter;

@@ -1,4 +1,5 @@
 import { Fragment } from "react"
+import { Link } from "react-router-dom"
 import './footer.css'
 const Footer  = () =>{
     return (
@@ -31,11 +32,13 @@ const Footer  = () =>{
                 <div className="tags-footer">
                     <h2>Useful Links</h2>
                     <div>
-                    <button>About Us</button>
-                    <button>Contact Us</button>
-                    <button>Events</button>
-                    <button>Volunteer</button>
-                    <button>Donation</button>
+
+                    {/* <Link to={'/aboutUs'}></Link> */}
+                    <Link to={'/aboutUs'}><button className="footerButtons">About Us</button></Link>
+                    <Link to={'/ContactUs'}><button className="footerButtons">Contact Us</button></Link>
+                    <Link to={'/events'}><button className="footerButtons">Events</button></Link>
+                    <Link to={'/volunteer'}><button className="footerButtons">Volunteer</button></Link>
+                    <Link to={'/donation'}><button className="footerButtons">Donation</button></Link>
                     </div>
                     
                 </div>

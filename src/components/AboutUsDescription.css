@@ -1,0 +1,18 @@
+.AboutUsDescription{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* text-align: center; */
+    gap:3%;
+
+}
+
+.AboutUsDescription p{
+    max-width: 45%;
+
+}
+.AboutUsDescription h1{
+    max-width: 30%;
+    font-family: 'Times New Roman', serif;
+    font-weight: 900;
+}

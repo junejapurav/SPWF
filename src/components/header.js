@@ -1,6 +1,7 @@
 import  './header.css';
 import logo from '../img/spwflogo2.png';
 import { Fragment } from 'react';
+import {Link} from 'react-router-dom'
 
 const Header = ()=>{
 
@@ -29,11 +30,11 @@ const Header = ()=>{
            <img src={logo} className="navbarLogo" alt="no img"/>
            </div>
         <div className="navRight">
-        <a>Home</a>
-        <a>About us</a>
-        <a>What We Do</a>
-        <a>events</a>
-        <a>Contact Us</a>
+        <Link to={'/'}><a  style={{color: 'black'}}>Home</a></Link>
+        <Link to={'/aboutUs'}><a style={{color: 'black'}}>About us</a></Link>
+        <a style={{color: 'black'}}>What We Do</a>
+        <a style={{color: 'black'}}>events</a>
+        <a style={{color: 'black'}}>Contact Us</a>
         <button>Donate Now</button>
         </div>
         <div className="mainmenu">
