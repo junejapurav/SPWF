@@ -43,8 +43,8 @@ h1,h2,h3{
     gap:0.5rem;
         
 }
-.footerButtons{
-    width: 45%;
+.tags-footer div a button{
+    
     padding: 0.5rem;
     border-radius: 25px;
     border: solid 1px #656565;
@@ -52,7 +52,7 @@ h1,h2,h3{
    
     
 }
-.footerButtons:hover{
+.tags-footer div a button:hover{
     color:white;
     border: solid 1px #ffa026;
     background-color: #ffa026;

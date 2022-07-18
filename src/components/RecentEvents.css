@@ -39,12 +39,14 @@
     border-radius: 5%;
 }
 .RecentEvent div{
-    width: 35%;
+    width: 30%;
    
     border-radius: 20px;
+    
     text-align: center;
     color: white;
     height:250px;
+    
 }
 
 .RecentEvent div h3{
@@ -65,7 +67,7 @@
     background-color: transparent;
     border:solid 3px #ffa026;
     margin-left: 20%;
-    width:70%;
+    width:90%;
 }
 .RecentEvent div button:hover{
     background-color:#ffa026;

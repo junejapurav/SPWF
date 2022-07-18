@@ -15,6 +15,7 @@ import RecentEvents from './components/RecentEvents';
 import Fundraising from './components/fundraising';
 import HomePage from "./MainComponents/HomePage";
 import AboutUsPage from './MainComponents/AboutUsPage'
+import ContactUsPage from './MainComponents/ContactUsPage'
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Footer/>
       </Route> */}
       <Route path='/aboutUs' element={<AboutUsPage/>} ></Route>
+      <Route path='/contactUs' element={<ContactUsPage/>} ></Route>
     </Routes>
     </main>
     </div>

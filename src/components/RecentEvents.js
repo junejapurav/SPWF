@@ -1,6 +1,7 @@
 import './RecentEvents.css';
 import img from '../img/event.jpeg'
 import img2 from '../img/Picture1.png'
+import img3 from '../img/shiksharth.jpg'
 import EventShower from './EventShower.js';
 
 const DUMMY = [
@@ -13,7 +14,13 @@ const DUMMY = [
         image:img2,
         event_name:"Chikitsa",
         eventDetail:"The programme aimed at providing maximum health and medical benefits to those residing in the slums. "
+    },
+    {
+        image:img3,
+        event_name:"Shiksharth",
+        eventDetail:"The programme aimed at providing maximum  benefits to those residing in the slums. "
     }
+
 ];
 
 function RecentEvents(){
