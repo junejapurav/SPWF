@@ -14,7 +14,7 @@ header{
     font-size: 90%;
     padding: 0 1rem;
     justify-content: space-around;
-    background-color: #d8d6d6 /* rgba(244, 182, 66, 0.841)*/;
+    background-color: #d8d6d6 /*rgba(244, 182, 66, 0.841);*/;
     color: black;  /* tobechanged */
     border-bottom: solid 1px white;
     font-family: 'Poppins', sans-serif;
@@ -82,7 +82,7 @@ nav{
 {
     text-decoration: none;
     padding: 0.8rem 0.5rem;
-    font-weight: 600;
+    font-weight: 800;
     transition: 0.3s;
 
 }
@@ -93,7 +93,7 @@ nav{
     width: 120%;
 }
 .navRight a:hover{
-    color: #ffa026;
+    color: blue;
     cursor :pointer;
 }
 .navRight button{

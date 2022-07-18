@@ -13,7 +13,7 @@ function AboutUsGetInvolved(){
             <div className='AboutUsGetInvolvedFact'>
                 <h1>We Fed more than 13000+ People during Covid-19 Pandemic</h1>
             </div>
-            <button >Get Involved Today</button >
+            <button >Get Involved Today</button>
 
         </div>
     )
