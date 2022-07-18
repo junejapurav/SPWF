@@ -81,12 +81,14 @@ nav{
 .navRight a
 {
     text-decoration: none;
+    color:black;
     padding: 0.8rem 0.5rem;
     font-weight: 600;
-    transition: 0.3s;
+    transition: 0.2s;
 
 }
 .navLeft img{
+
     z-index: 2;
     float: left;
     height: 125%;
