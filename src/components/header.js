@@ -30,11 +30,11 @@ const Header = ()=>{
            <img src={logo} className="navbarLogo" alt="no img"/>
            </div>
         <div className="navRight">
-        <Link to={'/'}><a  style={{color: 'black'}}>Home</a></Link>
-        <Link to={'/aboutUs'}><a style={{color: 'black'}}>About us</a></Link>
-        <a style={{color: 'black'}}>What We Do</a>
-        <a style={{color: 'black'}}>events</a>
-        <a style={{color: 'black'}}>Contact Us</a>
+        <Link to={'/'}><a>Home</a></Link>
+        <Link to={'/aboutUs'}><a>About us</a></Link>
+        <Link to={'/aboutUs'}><a>What We Do</a></Link>
+        <Link to={'/aboutUs'}><a>events</a></Link>
+        <Link to={'/aboutUs'}><a>Contact Us</a></Link>
         <button>Donate Now</button>
         </div>
         <div className="mainmenu">

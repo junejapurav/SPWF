@@ -5,11 +5,13 @@ import AboutUsGetInvloved from '../components/AboutUsGetInvolved'
 import AboutUsImage from '../components/AboutUsImage'
 import Aimbox from "../components/Aimbox";
 import Goalbox from "../components/Goalbox";
+
+
 function AboutUsPage(){
     return(
         <div>
             <Header/>
-            <AboutUsImage />
+            <AboutUsImage heading="ABOUT US"/>
             <br/>
             <br/>
             <br/>
