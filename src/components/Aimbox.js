@@ -20,7 +20,7 @@ function Aimbox(){
             <h3>Good Health</h3>
             </div>
             <div>
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-salad"></i>
             <h3>Nutrition</h3>
             </div>
         </div>

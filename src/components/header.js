@@ -34,7 +34,7 @@ const Header = ()=>{
         <Link to={'/aboutUs'}><a>About us</a></Link>
         <Link to={'/aboutUs'}><a>What We Do</a></Link>
         <Link to={'/aboutUs'}><a>events</a></Link>
-        <Link to={'/aboutUs'}><a>Contact Us</a></Link>
+        <Link to={'/contactUs'}><a>Contact Us</a></Link>
         <button>Donate Now</button>
         </div>
         <div className="mainmenu">
