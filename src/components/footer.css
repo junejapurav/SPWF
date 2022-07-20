@@ -41,15 +41,16 @@ h1,h2,h3{
     flex-direction: row;
     flex-wrap:wrap;
     gap:0.5rem;
-        
+    justify-content: center;
+    
 }
 .tags-footer div a button{
-    
     padding: 0.5rem;
     border-radius: 25px;
     border: solid 1px #656565;
     transition: 0.3s;
-   
+    background-color: white;
+    color: black;
     
 }
 .tags-footer div a button:hover{
@@ -76,7 +77,15 @@ h1,h2,h3{
     .about-footer{
         max-width: 90%;
     }
+    .contactinfo-footer{
+        margin-bottom: 10px;
+    }
+    .socialMedia-footer{
+        padding-bottom: 10px;
+    }
     .tags-footer div button{
-        width: 30%;
+        width: 40%;
+        align-self: center;
+        height: 50px;
     }
 }

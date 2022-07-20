@@ -20,7 +20,7 @@ const GetInvolved = () =>{
         <button>Donate Us</button>
       </div>
       <div className="involvedDonate">
-        <i className="fa-solid fa-user-group fa-2x"></i>
+        <i class="fa-solid fa-handshake-angle"></i>
         <h3>Become A Partner</h3>
         <p>Nothing greater than giving back to the society.Join our NGO to help us future-proof the next generation today! Join part-time virtual volunteering program to feel the joy of helping children in need. </p>
         <button>Learn More</button>
