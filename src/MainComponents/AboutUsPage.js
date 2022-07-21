@@ -5,7 +5,6 @@ import AboutUsGetInvloved from '../components/AboutUsGetInvolved'
 import AboutUsImage from '../components/AboutUsImage'
 import Aimbox from "../components/Aimbox";
 import Goalbox from "../components/Goalbox";
-import ContactUsRight from "../components/ContactUsRight";
 
 
 function AboutUsPage(){
@@ -28,7 +27,6 @@ function AboutUsPage(){
             <br/>
             <AboutUsGetInvloved />
             <Footer/>
-            <ContactUsRight/>
         </div>
     )
 }

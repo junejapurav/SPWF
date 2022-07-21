@@ -37,12 +37,16 @@ const ContactUsRight = ()=>{
     return(
         <form onSubmit={onContactUsSubmitHandler}>
             <div className={style.ContactUsForm}>
-            <input type="text" placeholder="Enter Name" onChange={nameHandler}/>
-            <input type="text" placeholder="Enter Email" onChange={emailHandler}/>
-            <input type="text" placeholder="Enter Phone" onChange={phoneHandler}/>
-            <input type="text" placeholder="Enter Subject" onChange={subjectHandler}/>
-            <textarea name="contactUsMessage" cols={40} rows={10} placeholder="Enter Message" onChange={messageHandler} />
-            <button type="submit" style={{borderRadius:"20px",width:"30%"}}>Submit</button>
+                <div className={style.row1}>
+                    <input type="text" placeholder="Enter Name" onChange={nameHandler}/>
+                    <input type="text" placeholder="Enter Email" onChange={emailHandler}/>
+                </div>
+                <div className={style.row2}>
+                    <input type="text" placeholder="Enter Phone" onChange={phoneHandler}/>
+                    <input type="text" placeholder="Enter Subject" onChange={subjectHandler}/>
+                </div>
+                <textarea name="contactUsMessage" cols={40} rows={10} placeholder="Enter Message" onChange={messageHandler} />
+                <button type="submit" style={{borderRadius:"20px",width:"30%",fontSize:"130%"}}>Submit</button>
             </div>
 
         </form> 
