@@ -13,16 +13,21 @@
     margin-bottom: 8%;
 }
 .fundLeft{
-    margin: 5% 8%;
+    margin: 5% 5% 3% 5%;
     color: white;
+    width: 50%;
 }
 .fundRight{
-    margin: 8%;
+    margin: 5% 8% 8% 5%; 
     padding: 2%;
     border-radius: 20px;
-    color: white;
-    background-color: #FFA026;
-    opacity: .4;
+    color: #FFA026;
+    background-color: white;
+    width: 25%;
+    text-align: center;
+}
+.fundRight img{
+    width: 100%;
 }
 .fundLeft h5{
     font-size: 150%;
@@ -60,5 +65,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .fundRight{
+        width: 60%;
+        margin: 2% 0;
+    }
+    .fundRight img{
+        width: 100%;
+    }
+    .fundLeft{
+        width: 80%;
     }
 }

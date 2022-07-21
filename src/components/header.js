@@ -35,7 +35,7 @@ const Header = ()=>{
         <Link to={'/aboutUs'}><a>What We Do</a></Link>
         <Link to={'/aboutUs'}><a>events</a></Link>
         <Link to={'/contactUs'}><a>Contact Us</a></Link>
-        <button>Donate Now</button>
+        <button><Link to={'/donation'}>Donate Now</Link></button>
         </div>
         <div className="mainmenu">
         <i class="fa-solid fa-bars"></i>

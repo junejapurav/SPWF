@@ -1,16 +1,14 @@
 import AboutUsImage from '../components/AboutUsImage'
-import ContactUsRight from '../components/ContactUsRight';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import ContactUsBox from '../components/contactUsBox';
 
 const ContactUsPage = ()=>{
     return(
         <div className="ContactUsPage">
             <Header />
             <AboutUsImage heading="Contact Us"/>
-
-            <ContactUsRight />
-
+            <ContactUsBox/>
             <Footer/>
         </div>
 

@@ -6,7 +6,10 @@ import './App.css';
 import HomePage from "./MainComponents/HomePage";
 import AboutUsPage from './MainComponents/AboutUsPage'
 import ContactUsPage from './MainComponents/ContactUsPage'
+
 import Admin from "./components/Admin/admin";
+
+import Donation from "./MainComponents/donation";
 
 function App() {
   
@@ -18,7 +21,11 @@ function App() {
           <Route path = '/' element={<HomePage/>}></Route>
           <Route path='/aboutUs' element={<AboutUsPage/>} ></Route>
           <Route path='/contactUs' element={<ContactUsPage/>} ></Route>
+
           <Route path='/admin' element={<Admin/>} ></Route>
+=======
+          <Route path='/donation' element={<Donation/>}></Route>
+
         </Routes>
         
       </main>
