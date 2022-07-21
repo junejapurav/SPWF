@@ -43,28 +43,32 @@ const ContactUsRight = ()=>{
         addContactUsData(obj);
     }
     async function addContactUsData(obj){
-        // const response= await fetch('https://console.firebase.google.com/project/spwf-8a8c4/firestore/data/~2Fcontactus~2Fq9NbrnmC9gs9x6MDGtvx/data.json',{
-        //     method: 'POST',
-        //     body:JSON.stringify(obj),
-        //     headers:{
-        //         'Content-Type': 'application/json'
-        //     }
-        // });
-        // const data= await response.json();
-        // console.log(data);
+        const response= await fetch('https://spwf-8a8c4-default-rtdb.firebaseio.com/contact.json',{
+            method: 'POST',
+            body:JSON.stringify(obj),
+            headers:{
+                'Content-Type': 'application/json'
+            }
+        });
+        const data= await response.json();
+        console.log(data);
     }
     return(
         <form onSubmit={onContactUsSubmitHandler}>
             <div className={style.ContactUsForm}>
-            <input type="text" placeholder="Enter Name" onChange={nameHandler}/>
-            <input type="text" placeholder="Enter Email" onChange={emailHandler}/>
-            <input type="text" placeholder="Enter Phone" onChange={phoneHandler}/>
-            <input type="text" placeholder="Enter Subject" onChange={subjectHandler}/>
-            <textarea name="contactUsMessage" cols={40} rows={10} placeholder="Enter Message" onChange={messageHandler} />
-            <button type="submit" style={{borderRadius:"20px",width:"30%"}}>Submit</button>
+                <div className={style.row1}>
+                    <input type="text" placeholder="Enter Name" onChange={nameHandler}/>
+                    <input type="text" placeholder="Enter Email" onChange={emailHandler}/>
+                </div>
+                <div className={style.row2}>
+                    <input type="text" placeholder="Enter Phone" onChange={phoneHandler}/>
+                    <input type="text" placeholder="Enter Subject" onChange={subjectHandler}/>
+                </div>
+                <textarea name="contactUsMessage" cols={40} rows={10} placeholder="Enter Message" onChange={messageHandler} />
+                <button type="submit" style={{borderRadius:"20px",width:"30%",fontSize:"130%"}}>Submit</button>
             </div>
 
-        </form> 
+        </form>  
     )
 }
 export default ContactUsRight;
