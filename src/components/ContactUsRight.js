@@ -7,12 +7,17 @@ const ContactUsRight = ()=>{
     const [contactUsPhone,phoneSetHandler]= useState('');
     const [contactUsSubject,subjectSetHandler]= useState('');
     const [contactUsMessage,messageSetHandler]= useState('');
+    const [emailIsValid,emailValidator] = useState(null);
 
     const nameHandler=(event)=>{
         nameSetHandler(event.target.value)
     }
     const emailHandler=(event)=>{
-        emailSetHandler(event.target.value)
+        if(event.target.value.includes('@')){
+            emailSetHandler(event.target.value);
+            
+        }
+        
     }
     const phoneHandler=(event)=>{
         phoneSetHandler(event.target.value)
@@ -24,7 +29,8 @@ const ContactUsRight = ()=>{
         messageSetHandler(event.target.value)
     }
 
-    function onContactUsSubmitHandler(){
+    function onContactUsSubmitHandler(event){
+        event.preventDefault();
         const obj={
             name:contactUsName,
             email:contactUsEmail,
@@ -32,7 +38,20 @@ const ContactUsRight = ()=>{
             subject:contactUsSubject,
             message:contactUsMessage
         }
-        console.log(obj);
+        // console.log(obj);
+
+        addContactUsData(obj);
+    }
+    async function addContactUsData(obj){
+        // const response= await fetch('https://console.firebase.google.com/project/spwf-8a8c4/firestore/data/~2Fcontactus~2Fq9NbrnmC9gs9x6MDGtvx/data.json',{
+        //     method: 'POST',
+        //     body:JSON.stringify(obj),
+        //     headers:{
+        //         'Content-Type': 'application/json'
+        //     }
+        // });
+        // const data= await response.json();
+        // console.log(data);
     }
     return(
         <form onSubmit={onContactUsSubmitHandler}>
