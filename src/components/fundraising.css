@@ -24,6 +24,7 @@
     color: #FFA026;
     background-color: white;
     width: 25%;
+    height: 25%;
     text-align: center;
 }
 .fundRight img{
@@ -75,5 +76,8 @@
     }
     .fundLeft{
         width: 80%;
+    }
+    .fundLeft h1{
+        font-size: 250%;
     }
 }
