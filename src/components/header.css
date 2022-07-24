@@ -14,7 +14,7 @@ header{
     font-size: 90%;
     padding: 0 1rem;
     justify-content: space-around;
-    background-color: #d8d6d6 /*rgba(244, 182, 66, 0.841);*/;
+    background-color: white /*#d8d6d6 rgba(244, 182, 66, 0.841);*/;
     color: black;  /* tobechanged */
     border-bottom: solid 1px white;
     font-family: 'Poppins', sans-serif;
@@ -65,7 +65,7 @@ nav{
     justify-content: space-around;
     height: 3.5rem;
     font-family: 'Poppins', sans-serif;
-    background-color: transparent;
+    background-color: black;
     border-bottom: solid 3px #e18c1c;
 }
 
@@ -73,7 +73,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content:center;
-    color: black;  /* tobechanged */
+    color: white;  /* tobechanged */
     transition: 0.3s;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -81,7 +81,7 @@ nav{
 .navRight a
 {
     text-decoration: none;
-    color:black;
+    color:white;
     padding: 0.8rem 0.5rem;
     font-weight: 800;
     transition: 0.1s;

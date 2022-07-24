@@ -5,7 +5,8 @@
     width: 100%;
     padding: 0 15%;
     gap: 10px;
-    margin-bottom: 7%;
+    max-width: 2500px;
+    margin: 7% auto 7% auto;
 }
 .changinggoals{
     display: flex;
@@ -42,6 +43,7 @@
     border-radius: 10px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position:60%;
     /* display: flex;
     flex-direction: column;
     justify-content: flex-end; */
@@ -75,4 +77,32 @@
     background-color: aliceblue;
     border: solid 1px #FFA026;
 
+}
+
+@media screen and (max-width: 850px){
+    .goalbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    .goalboxleft{
+        width: 80%;
+        left: 0;
+        top: 0;
+    }
+    .goalboxright{
+        height: 500px;
+        width: 100%;
+        background-size:initial;
+        background-position:60%;
+    }
+    .goalboxright i{
+        left: 45%;
+        top: 50%;
+    font-size: 600%;
+
+    }
 }

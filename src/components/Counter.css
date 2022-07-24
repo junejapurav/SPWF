@@ -53,9 +53,9 @@
     background-color: #ffa026;
     text-align: center;
     border-radius: 10px;
-    height: 65%;
+    height: 85%;
     color: white;
-    padding: 5% 0;
+    padding:0;
 }
 .counterExp h2{
     color:white;
@@ -125,6 +125,9 @@ ul li:before {
     }
     .bannerRight h5{
         margin-bottom: 10px;
+    }
+    .counterExp div{
+        padding: 3px;
     }
 
 }
