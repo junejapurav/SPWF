@@ -10,6 +10,10 @@ import ContactUsPage from './MainComponents/ContactUsPage'
 import Admin from "./components/Admin/admin";
 
 import Donation from "./MainComponents/donation";
+import AdminLogin from "./MainComponents/AdminLogin";
+import ShowContactUsDataMain from "./components/Admin/ShowContactUsDataMain";
+import ShowVolunteerDataMain from './components/Admin/ShowVolunteerDataMain'
+import VolunteerForm from "./components/VolunteerForm";
 
 function App() {
   
@@ -23,9 +27,13 @@ function App() {
           <Route path='/contactUs' element={<ContactUsPage/>} ></Route>
 
           <Route path='/admin' element={<Admin/>} ></Route>
-=======
-          <Route path='/donation' element={<Donation/>}></Route>
 
+          <Route path='/donation' element={<Donation/>}></Route>
+          <Route path='/login' element={<AdminLogin/>}></Route>
+          <Route path='/login/contact-us-data' element={<ShowContactUsDataMain />}></Route>
+          <Route path='/login/volunteer-data' element={<ShowVolunteerDataMain />}></Route>
+
+          <Route path='/volunteer' element={<VolunteerForm/>}></Route>
         </Routes>
         
       </main>

@@ -1,0 +1,7 @@
+form input{
+    border: 2px black;
+}
+.error{
+    border:solid 2px red;
+
+}

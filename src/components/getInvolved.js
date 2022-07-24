@@ -1,7 +1,16 @@
 import './getInvolved.css';
+import { useNavigate } from 'react-router-dom';
 
 const GetInvolved = () =>{
-    
+  let navigate = useNavigate(); 
+  const routeChange = (path) =>{
+    navigate(path);
+  }
+
+  const volunteerButtonSubmitHandler = ()=>{
+    routeChange('volunteer');
+  }
+
     return(
         <div className="getInvolved">
     <h3>Get Involved</h3>
@@ -11,7 +20,7 @@ const GetInvolved = () =>{
         <i className="fa-solid fa-user-group fa-2x"></i>
         <h3>Become A Volunteer</h3>
         <p>Nothing greater than giving back to the society.Join our NGO to help us future-proof the next generation today! Join part-time virtual volunteering program to feel the joy of helping children in need. </p>
-        <button>Join Us Now</button>
+        <button onClick={volunteerButtonSubmitHandler}>Join Us Now</button>
       </div>
       <div className="involvedDonate">
         <i className="fa-solid fa-indian-rupee-sign fa-2x"></i>

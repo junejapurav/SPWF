@@ -13,11 +13,14 @@ const ContactUsRight = ()=>{
         nameSetHandler(event.target.value)
     }
     const emailHandler=(event)=>{
+        
         if(event.target.value.includes('@')){
             emailSetHandler(event.target.value);
-            
+            emailValidator(true);
         }
-        
+        else{
+            emailValidator(false);
+        }
     }
     const phoneHandler=(event)=>{
         phoneSetHandler(event.target.value)
@@ -31,16 +34,20 @@ const ContactUsRight = ()=>{
 
     function onContactUsSubmitHandler(event){
         event.preventDefault();
-        const obj={
-            name:contactUsName,
-            email:contactUsEmail,
-            phone:contactUsPhone,
-            subject:contactUsSubject,
-            message:contactUsMessage
+        if(emailIsValid){
+            const obj={
+                name:contactUsName,
+                email:contactUsEmail,
+                phone:contactUsPhone,
+                subject:contactUsSubject,
+                message:contactUsMessage
+            }
+            // console.log(obj);
+    
+            addContactUsData(obj);
         }
-        // console.log(obj);
-
-        addContactUsData(obj);
+        
+        
     }
     async function addContactUsData(obj){
         const response= await fetch('https://spwf-8a8c4-default-rtdb.firebaseio.com/contact.json',{
@@ -57,8 +64,8 @@ const ContactUsRight = ()=>{
         <form onSubmit={onContactUsSubmitHandler}>
             <div className={style.ContactUsForm}>
                 <div className={style.row1}>
-                    <input type="text" placeholder="Enter Name" onChange={nameHandler}/>
-                    <input type="text" placeholder="Enter Email" onChange={emailHandler}/>
+                    <input type="text" placeholder="Enter Name" onChange={nameHandler}  />
+                    <input type="text" placeholder="Enter Email" onChange={emailHandler} />
                 </div>
                 <div className={style.row2}>
                     <input type="text" placeholder="Enter Phone" onChange={phoneHandler}/>

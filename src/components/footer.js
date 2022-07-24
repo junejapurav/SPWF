@@ -39,6 +39,8 @@ const Footer  = () =>{
                     <Link to={'/events'}><button className="footerButtons">Events</button></Link>
                     <Link to={'/volunteer'}><button className="footerButtons">Volunteer</button></Link>
                     <Link to={'/donation'}><button className="footerButtons">Donation</button></Link>
+                    <Link to={'/login'}><button className="footerButtons">Admin Login</button></Link>
+
                     </div>
                     
                 </div>
