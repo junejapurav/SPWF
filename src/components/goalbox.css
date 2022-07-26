@@ -89,15 +89,18 @@
     }
     
     .goalboxleft{
-        width: 80%;
+        width: 100%;
         left: 0;
         top: 0;
+    }
+    .innergoalboxleft{
+        min-height: 500px;
     }
     .goalboxright{
         height: 500px;
         width: 100%;
         background-size:initial;
-        background-position:60%;
+        background-position:75%;
     }
     .goalboxright i{
         left: 45%;
