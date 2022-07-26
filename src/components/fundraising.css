@@ -34,6 +34,9 @@
     font-size: 150%;
     color: #ffa026;
 }
+.fundLeft p{
+    font-size: 120%;
+}
 .fundLeft h1{
     font-family: none;
     font-size: 300%;

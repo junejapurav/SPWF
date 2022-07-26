@@ -10,7 +10,7 @@ const Counter= ()=>{
   let [donors,donorChanger] =useState(0);
 
 
-  const values = [13,80,10,5];
+  const values = [13,300,10,5];
   const min =Math.min.apply(null, values);
 
  const newArr =  values.map((a)=> (a/min));
@@ -22,7 +22,7 @@ const Counter= ()=>{
     if (didMount=== true) {
       setTimeout(()=>{
         counterUpdater();
-      },100);
+      },200);
 
     } else {
       didMountSet(true);
@@ -61,7 +61,7 @@ const Counter= ()=>{
         <Waypoint onEnter={counterUpdater}  bottomOffset={'25%'}>
       <div className='counter' onClick={counterUpdater}>
         <div className='countercolomn'><h1>{parseInt(peopleDisplayed)}k+</h1><p>People Fed</p></div>
-        <div className='countercolomn'><h1>{parseInt(students)}</h1><p>students</p></div>
+        <div className='countercolomn'><h1>{parseInt(students)}+</h1><p>students</p></div>
         <div className='countercolomn'><h1>{parseInt(donors)}</h1><p>donors</p></div>
         <div className='countercolomn'><h1>{parseInt(sponsors)}</h1><p>sponsors</p></div>
       </div>
