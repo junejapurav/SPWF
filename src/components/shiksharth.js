@@ -1,9 +1,14 @@
 import './shiksharth.css';
 import Pic1 from '../img/shiksharth.jpg';
+import Footer from './footer';
+import Header from './header';
 
 function Shiksharth(){
     return(
-        <div className="shiksharth">
+        <div>
+            <Header />
+            <div className="shiksharth">
+            
             <div className="shikleft">
                 <h1>Shiksharth</h1>
                 <img src={Pic1}></img>
@@ -22,7 +27,12 @@ function Shiksharth(){
                     </div>
                 </div>
             </div>
+            
         </div>
+        
+        <Footer/>
+        </div>
+
     )
 }
 

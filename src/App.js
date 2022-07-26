@@ -14,6 +14,7 @@ import AdminLogin from "./MainComponents/AdminLogin";
 import ShowContactUsDataMain from "./components/Admin/ShowContactUsDataMain";
 import ShowVolunteerDataMain from './components/Admin/ShowVolunteerDataMain'
 import VolunteerForm from "./components/VolunteerForm";
+import Shiksharth from "./components/shiksharth";
 
 function App() {
   
@@ -34,6 +35,7 @@ function App() {
           <Route path='/login/volunteer-data' element={<ShowVolunteerDataMain />}></Route>
 
           <Route path='/volunteer' element={<VolunteerForm/>}></Route>
+          <Route path='/Shiksharth' element={<Shiksharth/>}></Route>
         </Routes>
         
       </main>

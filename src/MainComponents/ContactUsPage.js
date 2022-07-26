@@ -10,7 +10,6 @@ const ContactUsPage = ()=>{
             <Header />
             <AboutUsImage heading="CONTACT US"/>
             <ContactUsBox/>
-            <Shiksharth/>
             <Footer/>
         </div>
 
