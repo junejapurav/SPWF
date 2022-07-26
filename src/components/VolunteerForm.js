@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from 'axios';
 
 const VolunteerForm = ()=>{
     const [Name,nameSetHandler]= useState('');
@@ -27,19 +28,12 @@ const VolunteerForm = ()=>{
             phone:Phone,
             Zip:ZipCode
         }
-        addContactUsData(obj);
+        addVolunteerData(obj);
 
     }
-    async function addContactUsData(obj){
-        const response= await fetch('https://spwf-8a8c4-default-rtdb.firebaseio.com/Volunteer.json',{
-            method: 'POST',
-            body:JSON.stringify(obj),
-            headers:{
-                'Content-Type': 'application/json'
-            }
-        });
-        const data= await response.json();
-        console.log(data);
+    function addVolunteerData(obj){
+        
+        axios.post("/createVolunteer",obj)
     }
 
     return(

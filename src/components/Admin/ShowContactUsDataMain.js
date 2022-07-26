@@ -8,15 +8,17 @@ function ShowContactUsDataMain(){
     const [error,setError] = useState(null);
 
     useEffect(()=>{
-        getData();
+       getData();
     },[])
 
    async function getData(){
     setIsLoading(true);
     setError(null);
-    try{
 
-        const response = await fetch('https://spwf-8a8c4-default-rtdb.firebaseio.com/contact.json');
+    
+    try{
+        const response =await fetch("/getContactUs")
+        // const response = await fetch('https://spwf-8a8c4-default-rtdb.firebaseio.com/contact.json');
         if(!response.ok){
             throw new Error('Something Went Wrong!')
         }
@@ -32,6 +34,7 @@ function ShowContactUsDataMain(){
                 subject:data[key].subject,
                 message:data[key].message
             })
+            LoadContactUs.reverse();
             setLoadedData(LoadContactUs);
             }
         console.log(loadedData)
@@ -40,7 +43,7 @@ function ShowContactUsDataMain(){
         setError(error.message);
     }
     setIsLoading(false);
-    }
+}
     return(
 
         <div className={style.main}>

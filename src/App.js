@@ -26,7 +26,7 @@ function App() {
           <Route path='/aboutUs' element={<AboutUsPage/>} ></Route>
           <Route path='/contactUs' element={<ContactUsPage/>} ></Route>
 
-          <Route path='/admin' element={<Admin/>} ></Route>
+          <Route path='/admin' element={<Admin isLo/>} ></Route>
 
           <Route path='/donation' element={<Donation/>}></Route>
           <Route path='/login' element={<AdminLogin/>}></Route>

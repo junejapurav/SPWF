@@ -5,9 +5,11 @@ import {useNavigate} from 'react-router-dom';
 
 import ShowContactUsDataMain from '../components/Admin/ShowContactUsDataMain'
 import LoadingSpinner from "../UI/Loading";
+import Header from "../components/header";
+import Footer from "../components/footer";
 
 function AdminLogin(){
-
+    const navigate = useNavigate();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [isLoggedIn, setLogin] = useState(false);
@@ -49,7 +51,8 @@ function AdminLogin(){
         // }
         // dummy(obj);
         try{
-            const response= await fetch('https://spwf-8a8c4-default-rtdb.firebaseio.com/login.json');
+            const response = await fetch("/getUser");
+            // const response= await fetch('https://spwf-8a8c4-default-rtdb.firebaseio.com/login.json');
             if(!response.ok){
                 throw new Error('Something Went Wrong!');
             }
@@ -81,10 +84,11 @@ function AdminLogin(){
         
         
     }
+    
      
     return(
-        <div>
-            
+        <div className={styles.main}>
+            <Header/>
             {!isLoggedIn && <form onSubmit={LoginSubmitHandler}>
                 <input type="text" placeholder="Username" onChange={usernameHandler} className={usernameCheck && styles.error} value={username}/>
                 <input type="text" placeholder="password" onChange={passwordHandler} className={passwordCheck && styles.error} value={password}/>
@@ -93,6 +97,7 @@ function AdminLogin(){
             {isLoading && <LoadingSpinner/>}
             {error && <p>Error</p>}
              {isLoggedIn && <Admin checkLogin={isLoggedIn}/>}
+             <Footer/>
         </div>
     )
 }
