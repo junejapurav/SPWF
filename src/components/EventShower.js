@@ -1,11 +1,11 @@
 import { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 const EventShower = (props)=>{
-   
+   const navigate= useNavigate()
     const [showData,showDataHandler] = useState(false);
 
     const showEventData = ()=>{
-            showDataHandler(true);
+        navigate(props.event.event_name)
     }
     return( 
             <div className="recentEventContent" style={{ 

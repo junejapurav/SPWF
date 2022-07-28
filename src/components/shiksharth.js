@@ -1,7 +1,6 @@
 import './shiksharth.css';
 import Pic1 from '../img/shiksharth.jpg';
 import Map from '../components/Map';
-
 const location = {
         address: 'shakuntala poddar welfare foundations',
         lat: 28.61479585076701,
@@ -10,7 +9,9 @@ const location = {
 
 function Shiksharth(){
     return(
-        <div className="shiksharth">
+        <div>
+            <div className="shiksharth">
+            
             <div className="shikleft">
                 <h1>Shiksharth</h1>
                 <img src={Pic1}></img>
@@ -30,7 +31,10 @@ function Shiksharth(){
                     </div>
                 </div>
             </div>
+            
+            </div>
         </div>
+
     )
 }
 

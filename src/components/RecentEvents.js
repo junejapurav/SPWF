@@ -1,10 +1,15 @@
 import './RecentEvents.css';
 import img from '../img/event.jpeg'
-import img2 from '../img/Picture1.png'
+import img2 from '../images/Picture5.jpg'
 import img3 from '../img/shiksharth.jpg'
 import EventShower from './EventShower.js';
 
 const DUMMY = [
+    {
+        image:img3,
+        event_name:"Shiksharth",
+        eventDetail:"The programme aimed at providing maximum  benefits to those residing in the slums. "
+    },
     {
         image: img,
         event_name: "Aahar",
@@ -12,14 +17,10 @@ const DUMMY = [
     },
     {
         image:img2,
-        event_name:"Chikitsa",
+        event_name:"KaushalUthan",
         eventDetail:"The programme aimed at providing maximum health and medical benefits to those residing in the slums. "
     },
-    {
-        image:img3,
-        event_name:"Shiksharth",
-        eventDetail:"The programme aimed at providing maximum  benefits to those residing in the slums. "
-    }
+    
 
 ];
 
