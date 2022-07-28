@@ -1,7 +1,11 @@
-import { Fragment } from "react"
+import { Fragment, useEffect } from "react"
 import { Link } from "react-router-dom"
+
+import axios from 'axios'
 import './footer.css'
 const Footer  = () =>{
+   
+
     return (
         <footer> 
             <div className="upperFooter">
@@ -44,10 +48,7 @@ const Footer  = () =>{
                     </div>
                     
                 </div>
-
-            </div>
-            <div className="lowerfooter">
-
+                
             </div>
         </footer>
     )
