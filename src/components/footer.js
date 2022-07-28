@@ -17,9 +17,9 @@ const Footer  = () =>{
                 </div>
                 <div className="contactinfo-footer">
                     <h2>Contact Us</h2>
-                    <div id="headerPhone"><i className="fa-solid fa-phone-flip"></i> +23456789345</div>
-                    <div id="headerMail"><i className="fa-solid fa-envelope"></i> erghjlkjghjkn</div>
-                    <div id="headerLoc"><i className="fa-solid fa-location-dot"></i> Uttam Nagar,New delhi</div>
+                    <div id="headerPhone hi"><i className="fa-solid fa-phone-flip"></i> +23456789345</div>
+                    <div id="headerMail hi"><i className="fa-solid fa-envelope"></i> erghjlkjghjkn</div>
+                    <div id="headerLoc hi"><i className="fa-solid fa-location-dot"></i> Uttam Nagar,New delhi</div>
                     
                 </div>
                
@@ -31,7 +31,6 @@ const Footer  = () =>{
                         <i className="fa-brands fa-twitter"></i>
                         <i className="fa-brands fa-google"></i>
                     </div>
-                    
                 </div>
                 <div className="tags-footer">
                     <h2>Useful Links</h2>

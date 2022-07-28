@@ -1,0 +1,44 @@
+.volunteerBox{
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    justify-content: center;
+    gap: 10%;
+}
+
+.volunteerBoxLeft{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.volunteerBoxLeft h4{
+    color: orange;
+}
+.volunteerBoxLeft h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+}
+.volunteerBoxRight{
+    display: flex;
+    width: 30%;
+    border-radius: 10px;
+    flex-direction: column;
+    border: solid 1px black;
+    padding: 1% 2%;
+    margin: 0%;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/Picture16.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.volunteerBoxRight input{
+    padding: 10px 5px;
+    width: 100%;
+}
+.volunteerBoxRight div{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+.volunteerBoxRight div input{
+    width: 45%;
+}
