@@ -97,7 +97,7 @@ function AdminLogin(){
             {isLoading && <LoadingSpinner/>}
             {error && <p>Error</p>}
              {isLoggedIn && <Admin checkLogin={isLoggedIn}/>}
-             <Footer/>
+             {/* <Footer/> */}
         </div>
     )
 }

@@ -1,5 +1,12 @@
 import './shiksharth.css';
 import Pic1 from '../img/shiksharth.jpg';
+import Map from '../components/Map';
+
+const location = {
+        address: 'shakuntala poddar welfare foundations',
+        lat: 28.61479585076701,
+        lng: 77.04177969736836,
+}
 
 function Shiksharth(){
     return(
@@ -13,6 +20,7 @@ function Shiksharth(){
             <div className="shikright">
                 <div className="eventDetails">
                     <h3>eventDetails</h3>
+                    <Map location={location} zoomLevel={18}/>
                     <div className='eventJoin'>
                         <h2>Join Together For Charity</h2>
                         <br/>

@@ -12,15 +12,15 @@ function Aimbox(){
             <h3>Education</h3>
             </div>
             <div>
-            <i class="fa-solid fa-glass-water"></i>
-            <h3>Clean Water</h3>
+            <i class="fa-solid fa-brain"></i>
+            <h3>Productive Skills</h3>
             </div>
             <div>
             <i class="fa-regular fa-heart"></i>
             <h3>Good Health</h3>
             </div>
             <div>
-            <i class="fa-solid fa-salad"></i>
+            <i class="fa-solid fa-apple-whole"></i>
             <h3>Nutrition</h3>
             </div>
         </div>

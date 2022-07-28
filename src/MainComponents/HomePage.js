@@ -7,6 +7,7 @@ import RecentEvents from "../components/RecentEvents";
 import Footer from "../components/footer";
 import { Waypoint } from "react-waypoint";
 import AboutUsGetInvolved from "../components/AboutUsGetInvolved";
+import Feedback from "../components/feedback";
 function HomePage (){
 
     return(
@@ -21,6 +22,7 @@ function HomePage (){
         <Fundraising/>
         <RecentEvents/>
         <AboutUsGetInvolved/>
+        <Feedback/>
         <Footer/> 
         </div>
     )
