@@ -5,7 +5,10 @@
     justify-content: center;
     gap: 10%;
 }
-
+.VolunteerType{
+  display: flex;
+    flex-direction: column;
+}
 .volunteerBoxLeft{
     display: flex;
     flex-direction: column;

@@ -76,8 +76,8 @@ const Header = ()=>{
         <i className="fa-brands fa-google"></i>
         </div>
         <div className="topmenu">
-        <i class="fa-solid fa-bars" onClick={sliderleft}></i>
-        <h2>TOP MENU</h2>
+        <div style={{display:"flex",flexDirection:'row',justifyContent: 'center',alignItems: 'center', gap: '10px'}} onClick={sliderleft}><i class="fa-solid fa-bars" ></i>
+        <h2>TOP MENU</h2></div>
         <div className='slidemenu2'>
             <i class="fa-solid fa-xmark" onClick={slideright}></i>
             <br/>
@@ -131,8 +131,9 @@ const Header = ()=>{
         <button><Link to={'/donation'}>Donate Now</Link></button>
         </div>
         <div className="mainmenu">
-        <i class="fa-solid fa-bars" onClick={slide}></i>
-        <h2>MENU</h2>
+
+        <div style={{display:"flex",flexDirection:'row',justifyContent: 'center',alignItems: 'center', gap: '10px'}} onClick={slide}><i class="fa-solid fa-bars" ></i>
+        <h2>MENU</h2></div>
         <div className='slidemenu'>
             <i class="fa-solid fa-xmark" onClick={slideup}></i>
             <div className='slidemenucontent'>

@@ -7,7 +7,7 @@ import ShowContactUsDataMain from '../components/Admin/ShowContactUsDataMain'
 import LoadingSpinner from "../UI/Loading";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import Context from "../store/context";
+
 
 function AdminLogin(){
     const navigate = useNavigate();

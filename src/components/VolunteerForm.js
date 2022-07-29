@@ -51,9 +51,18 @@ const VolunteerForm = ()=>{
                         <input type="text" placeholder="Enter Phone*" onChange={phoneHandler} value={Phone}/>
                         <input type="text" placeholder="Zip Code*" onChange={zipHandler} value={ZipCode}/>
                     </div>
-                    <textarea name='volunteerfield' cols="30">
-                        <input type="checkbox"> hello</input>
-                    </textarea>
+                    <div>
+                    <div className='VolunteerType'>
+                        <input type="radio" id="Teaching" name="volunteerType" value="Teaching" />
+                        <label for="Teaching">Teaching </label><br/>
+                        <input type="radio" id="WebDesigning" name="volunteerType" value="Web Designing" />
+                        <label for="WebDesigning">Web Designing</label><br/>
+                        <input type="radio" id="GraphicsDesigning" name="volunteerType" value="Graphics Designing" />
+                        <label for="GraphicsDesigning">Graphics Designing</label><br/>
+                        <input type="radio" id="ContentWriting" name="volunteerType" value="Content Writing" />
+                        <label for="ContentWriting">Content Writing</label><br/>
+                    </div>
+                    </div>
                     <button type="submit">Submit</button>
             </form>
         </div>
