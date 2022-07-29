@@ -1,4 +1,4 @@
-import { useState } from "react"
+import React, { useState } from "react"
 import styles from './login.module.css'
 import Admin from "../components/Admin/admin";
 import {useNavigate} from 'react-router-dom';
@@ -7,6 +7,7 @@ import ShowContactUsDataMain from '../components/Admin/ShowContactUsDataMain'
 import LoadingSpinner from "../UI/Loading";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import Context from "../store/context";
 
 function AdminLogin(){
     const navigate = useNavigate();
@@ -87,6 +88,7 @@ function AdminLogin(){
     
      
     return(
+
         <div className={styles.main}>
             <Header/>
             {!isLoggedIn && <form onSubmit={LoginSubmitHandler}>
@@ -97,8 +99,9 @@ function AdminLogin(){
             {isLoading && <LoadingSpinner/>}
             {error && <p>Error</p>}
              {isLoggedIn && <Admin checkLogin={isLoggedIn}/>}
-             {/* <Footer/> */}
+             
         </div>
+
     )
 }
 export default AdminLogin;
