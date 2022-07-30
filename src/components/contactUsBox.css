@@ -3,7 +3,9 @@
     flex-direction: row;
     width: 100%;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 100px;
+    max-width: 1500px;
+    margin: auto;
 }
 #orange{
     color: orange;
@@ -32,7 +34,7 @@
     margin-bottom: 10px;
 }
 .contactAdress i{
-    width: 13%;
+    width: 70px;
     font-size: 250%;
     padding: 2% 0;
     background-color: orange;
@@ -41,9 +43,42 @@
     text-align: center;
 }
 .desc{
+    width: 80%;
     padding: 1% 2%;
 }
 .desc h4{
     font-weight: 800;
 
+}
+
+@media screen and (max-width: 850px) {
+    .ContactUsBox{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .ContactUsBoxLeft{
+        width: 90%;
+    }
+    .ContactUsBoxLeft h1{
+        font-size: 200%;
+    }
+    .contactAdress{
+        gap: 5%;
+        max-width: 560px;
+        align-self: center;
+    }
+    .contactAdress i{
+        width: 70px;
+        font-size: 220%;
+    }
+    .desc{  
+        padding: 0%;
+    }
+    .ContactUsBoxRight{
+        width: 80%;
+    }
+    .ContactUsForm{
+        margin-top: 0px;
+    }
 }

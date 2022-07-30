@@ -4,11 +4,10 @@
     margin-top: auto;
     justify-content: center;
     gap: 10%;
+    max-width: 1500px;
+    margin: auto;
 }
-.VolunteerType{
-  display: flex;
-    flex-direction: column;
-}
+
 .volunteerBoxLeft{
     display: flex;
     flex-direction: column;
@@ -36,12 +35,55 @@
 .volunteerBoxRight input{
     padding: 10px 5px;
     width: 100%;
+    background-color: rgba(255, 255, 255, 0.786);
 }
-.volunteerBoxRight div{
+.volrow{
     display: flex;
     flex-direction: row;
     gap: 10%;
 }
-.volunteerBoxRight div input{
-    width: 45%;
+.VolunteerType{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.786);
+    border-radius: 10px;
+}
+.VolunteerType div input{
+    width: 20%;
+}
+
+.volunteerBoxRight button{
+    width: 80px;
+    padding: 5px 5px;
+    font-size: 120%;
+}
+.volunteerBoxRight button:hover{
+    background-color: #e18c1c;
+    border: 2px solid #e18c1c;
+}
+@media screen and (max-width: 1000px){
+    .volunteerBoxRight{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .volunteerBox{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .volunteerBoxLeft{
+        width: 80%;
+    }
+    .volunteerBoxRight{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .volunteerBoxRight{
+        width: 80%;
+    }
 }

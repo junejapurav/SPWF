@@ -47,20 +47,28 @@ const VolunteerForm = ()=>{
             <form className="volunteerBoxRight" onSubmit={volunteerFormSubmitHandler}>  
                     <input type="text" placeholder="Enter Name" onChange={nameHandler} value={Name} />
                     <input type="text" placeholder="Enter Email" onChange={emailHandler} value={Email}/>
-                    <div>
+                    <div className='volrow'>
                         <input type="text" placeholder="Enter Phone*" onChange={phoneHandler} value={Phone}/>
                         <input type="text" placeholder="Zip Code*" onChange={zipHandler} value={ZipCode}/>
                     </div>
                     <div>
                     <div className='VolunteerType'>
-                        <input type="radio" id="Teaching" name="volunteerType" value="Teaching" />
-                        <label for="Teaching">Teaching </label><br/>
-                        <input type="radio" id="WebDesigning" name="volunteerType" value="Web Designing" />
-                        <label for="WebDesigning">Web Designing</label><br/>
-                        <input type="radio" id="GraphicsDesigning" name="volunteerType" value="Graphics Designing" />
-                        <label for="GraphicsDesigning">Graphics Designing</label><br/>
-                        <input type="radio" id="ContentWriting" name="volunteerType" value="Content Writing" />
-                        <label for="ContentWriting">Content Writing</label><br/>
+                    <div>
+                        <input type="checkbox" id="Teaching" name="volunteerType" value="Teaching" />
+                        <label for="Teaching">Teaching </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="WebDesigning" name="volunteerType" value="Web Designing" />
+                        <label for="WebDesigning">Web Designing</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="GraphicsDesigning" name="volunteerType" value="Graphics Designing" />
+                        <label for="GraphicsDesigning">Graphics Designing</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="ContentWriting" name="volunteerType" value="Content Writing" />
+                        <label for="ContentWriting">Content Writing</label>
+                    </div>    
                     </div>
                     </div>
                     <button type="submit">Submit</button>

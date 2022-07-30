@@ -78,7 +78,14 @@
     border: solid 1px #FFA026;
 
 }
-
+@media screen and (max-width: 1050px){
+    .goalbox{
+        padding: 0 10%;
+    }
+    .goalboxleft{
+        width: 50%;
+    }
+}
 @media screen and (max-width: 850px){
     .goalbox{
         display: flex;
@@ -94,7 +101,12 @@
         top: 0;
     }
     .innergoalboxleft{
-        min-height: 500px;
+        max-height: 500px;
+        align-items: center;
+    }
+    .changinggoals{
+        justify-content: space-between;
+        width: 80%;
     }
     .goalboxright{
         height: 500px;
@@ -107,5 +119,16 @@
         top: 50%;
     font-size: 600%;
 
+    }
+}
+@media screen and (max-width: 450px){
+    .goalbox{
+        padding: 0;
+    }
+    .goalboxleft{
+        width: 90%;
+    }
+    .goalboxright{
+        width: 90%;
     }
 }
