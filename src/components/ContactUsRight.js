@@ -66,7 +66,7 @@ const ContactUsRight = ()=>{
 
     }
     return(
-        <form onSubmit={onContactUsSubmitHandler}>
+        <form onSubmit={onContactUsSubmitHandler} style={{marginLeft:"0px"}}>
             <div className={style.ContactUsForm}>
                 <div className={style.row1}>
                     <input type="text" placeholder="Enter Name" onChange={nameHandler} value={contactUsName} />
