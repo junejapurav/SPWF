@@ -15,6 +15,7 @@ import ShowContactUsDataMain from "./components/Admin/ShowContactUsDataMain";
 import ShowVolunteerDataMain from './components/Admin/ShowVolunteerDataMain'
 import VolunteerForm from "./components/VolunteerForm";
 import Shiksharth from "./components/shiksharth";
+import ShowDonationDataMain from './components/Admin/ShowDonationDataMain'
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path='/login' element={<AdminLogin/>}></Route>
           <Route path='/login/contact-us-data' element={<ShowContactUsDataMain />}></Route>
           <Route path='/login/volunteer-data' element={<ShowVolunteerDataMain />}></Route>
+          <Route path='/login/donation-data' element={<ShowDonationDataMain />}></Route>
 
           <Route path='/volunteer' element={<VolunteerForm/>}></Route>
           <Route path='/Shiksharth' element={<Shiksharth/>}></Route>
