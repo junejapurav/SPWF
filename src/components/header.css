@@ -40,6 +40,15 @@ header a{
     padding: 0.4rem 2rem;
     font-weight: 300;
 }
+.headerRight a{
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.headerRight a:hover{
+    color: #ffa026;
+}
+
 .headerLeft a{
     color: black;
     text-decoration: none;

@@ -22,7 +22,7 @@ const Counter= ()=>{
     if (didMount=== true) {
       setTimeout(()=>{
         counterUpdater();
-      },200);
+      },100);
 
     } else {
       didMountSet(true);

@@ -25,9 +25,7 @@ const DUMMY = [
 ];
 
 function RecentEvents(){
-    DUMMY.forEach((each)=>{
-        console.log(each.event_name);
-    })  
+   
     return(
         
 

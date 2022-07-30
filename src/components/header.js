@@ -70,10 +70,10 @@ const Header = ()=>{
         <div id="headerLoc"><i className="fa-solid fa-location-dot"></i> Uttam Nagar,New delhi</div>
         </div>
         <div className="headerRight">
-        <i className="fa-brands fa-instagram"></i>
-        <i className="fa-brands fa-facebook"></i>
-        <i className="fa-brands fa-twitter"></i>
-        <i className="fa-brands fa-google"></i>
+            <a href="https://www.instagram.com/shakuntalapoddar_ngo/"><i className="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/shakuntalapoddarngo"><i className="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/shakuntalango"> <i className="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/shakuntala-poddar-welfare-foundation/"><i className="fa-brands fa-linkedin"></i></a> 
         </div>
         <div className="topmenu">
         <div style={{display:"flex",flexDirection:'row',justifyContent: 'center',alignItems: 'center', gap: '10px'}} onClick={sliderleft}><i class="fa-solid fa-bars" ></i>
@@ -96,10 +96,10 @@ const Header = ()=>{
             <br/>
             <br/>
             <div className='topmenusocialicons'>
-                <i className="fa-brands fa-instagram"></i>
-                <i className="fa-brands fa-facebook"></i>
-                <i className="fa-brands fa-twitter"></i>
-                <i className="fa-brands fa-google"></i>
+                <a href="https://www.instagram.com/shakuntalapoddar_ngo/"><i className="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/shakuntalapoddarngo"><i className="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/shakuntalango"> <i className="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/shakuntala-poddar-welfare-foundation/"><i className="fa-brands fa-linkedin"></i></a> 
             </div>
             <br/>
             <br/>
@@ -118,13 +118,14 @@ const Header = ()=>{
         <div className="navRight">
         <Link to={'/'}><a>Home</a></Link>
         <Link to={'/aboutUs'}><a>About us</a></Link>
-        <Link to={'/aboutUs'}><a>What We Do</a></Link>
+        <Link to={'/volunteer'}><a>Volunteer</a></Link>
         <div class="dropdown">
         <a class="dropbtn" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Events<i class="fa-solid fa-sort-down"></i></a>
         <div class="dropdown-content" >
-        <Link to={'/aboutUs'}><a href="#">Shiksharth</a></Link>
-        <Link to={'/aboutUs'}><a href="#">Kaushal Uthan</a></Link>
-        <Link to={'/aboutUs'}><a href="#">other</a></Link>
+            <Link to={'/Shiksharth'}><a>Shiksharth</a></Link>
+            <Link to={'/KaushalUthan'}><a>Kaushal Uthan</a></Link>
+            <Link to={'/Chikitsa'}><a>Chikitsa</a></Link>
+            <Link to={"/Aahar"}><a>Aahar</a> </Link>
         </div>
         </div>
         <Link to={'/contactUs'}><a>Contact Us</a></Link>
@@ -142,9 +143,10 @@ const Header = ()=>{
                 <Link to={'/aboutUs'}><a>What We Do</a></Link>
                 <a className='slidemenuevents' onClick={counter}>Events<i class="fa-solid fa-sort-down" id='toggle'></i></a>
                     <div class="slidedowncont" >
-                    <Link to={'/aboutUs'}><a href="#">Shiksharth</a></Link>
-                    <Link to={'/aboutUs'}><a href="#">Kaushal Uthan</a></Link>
-                    <Link to={'/aboutUs'}><a href="#">other</a></Link>
+                    <Link to={'/Shiksharth'}><a>Shiksharth</a></Link>
+                    <Link to={'/KaushalUthan'}><a>Kaushal Uthan</a></Link>
+                    <Link to={'/Chikitsa'}><a>Chikitsa</a></Link>
+                    <Link to={"/Aahar"}><a>Aahar</a> </Link>
                     </div>
                 <Link to={'/contactUs'}><a>Contact Us</a></Link>
                 <button><Link to={'/donation'}>Donate Now</Link></button>

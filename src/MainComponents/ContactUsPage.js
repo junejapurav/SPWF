@@ -7,7 +7,10 @@ const ContactUsPage = ()=>{
     return(
         <div className="ContactUsPage">
             <Header />
+            
             <AboutUsImage heading="CONTACT US"/>
+            <br/>
+            <br/>
             <ContactUsBox/>
             <Footer/>
         </div>

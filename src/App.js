@@ -16,6 +16,9 @@ import ShowVolunteerDataMain from './components/Admin/ShowVolunteerDataMain'
 import VolunteerForm from "./components/VolunteerForm";
 import Shiksharth from "./components/shiksharth";
 import ShowDonationDataMain from './components/Admin/ShowDonationDataMain'
+import Aahar from "./components/Aahar";
+import KaushalUthan from "./components/KaushalUthan";
+import Chikitsa from "./components/Chikitsa"
 
 
 function App() {
@@ -29,7 +32,7 @@ function App() {
           <Route path='/aboutUs' element={<AboutUsPage/>} ></Route>
           <Route path='/contactUs' element={<ContactUsPage/>} ></Route>
 
-          <Route path='/admin' element={<Admin isLo/>} ></Route>
+          <Route path='/admin' element={<Admin/>} ></Route>
 
           <Route path='/donation' element={<Donation/>}></Route>
           <Route path='/login' element={<AdminLogin/>}></Route>
@@ -39,6 +42,9 @@ function App() {
 
           <Route path='/volunteer' element={<VolunteerForm/>}></Route>
           <Route path='/Shiksharth' element={<Shiksharth/>}></Route>
+          <Route path="/Aahar" element={<Aahar/>}></Route>
+          <Route path="/KaushalUthan" element={<KaushalUthan/>}></Route>
+          <Route path="/Chikitsa" element={<Chikitsa/>}></Route>
         </Routes>
        
       </main>

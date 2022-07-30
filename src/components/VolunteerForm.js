@@ -1,6 +1,8 @@
 import './volunteerBox.css'
-import { useState } from "react";
+import React, { useState } from "react";
 import axios from 'axios';
+import Header from './header';
+import Footer from './footer';
 
 const VolunteerForm = ()=>{
     const [Name,nameSetHandler]= useState('');
@@ -38,6 +40,10 @@ const VolunteerForm = ()=>{
     }
 
     return(
+        <React.Fragment>
+            <Header/>
+            <br/>
+            <br/>
         <div className="volunteerBox">
             <div className="volunteerBoxLeft">
                 <h4>JOIN WITH US</h4>
@@ -74,6 +80,8 @@ const VolunteerForm = ()=>{
                     <button type="submit">Submit</button>
             </form>
         </div>
+        <Footer/>
+        </React.Fragment>
     )
 }
 

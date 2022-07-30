@@ -26,10 +26,10 @@ const Footer  = () =>{
                 <div className="social-media-footer">
                     <h2>Social Media</h2>
                     <div className="socialMedia-footer">
-                        <i className="fa-brands fa-instagram"></i>
-                        <i className="fa-brands fa-facebook"></i>
-                        <i className="fa-brands fa-twitter"></i>
-                        <i className="fa-brands fa-google"></i>
+                        <a href="https://www.instagram.com/shakuntalapoddar_ngo/"><i className="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/shakuntalapoddarngo"><i className="fa-brands fa-facebook"></i></a>
+                       <a href="https://twitter.com/shakuntalango"> <i className="fa-brands fa-twitter"></i></a>
+                       <a href="https://www.linkedin.com/company/shakuntala-poddar-welfare-foundation/"><i className="fa-brands fa-linkedin"></i></a> 
                     </div>
                 </div>
                 <div className="tags-footer">
@@ -39,7 +39,7 @@ const Footer  = () =>{
                     {/* <Link to={'/aboutUs'}></Link> */}
                     <Link to={'/aboutUs'}><button className="footerButtons">About Us</button></Link>
                     <Link to={'/contactUs'}><button className="footerButtons">Contact Us</button></Link>
-                    <Link to={'/events'}><button className="footerButtons">Events</button></Link>
+                  
                     <Link to={'/volunteer'}><button className="footerButtons">Volunteer</button></Link>
                     <Link to={'/donation'}><button className="footerButtons">Donation</button></Link>
                     <Link to={'/login'}><button className="footerButtons">Admin Login</button></Link>
