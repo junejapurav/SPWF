@@ -93,7 +93,7 @@ function AdminLogin(){
             <Header/>
             {!isLoggedIn && <form onSubmit={LoginSubmitHandler}>
                 <input type="text" placeholder="Username" onChange={usernameHandler} className={usernameCheck && styles.error} value={username}/>
-                <input type="text" placeholder="password" onChange={passwordHandler} className={passwordCheck && styles.error} value={password}/>
+                <input type="password" placeholder="password" onChange={passwordHandler} className={passwordCheck && styles.error} value={password}/>
                 <button type="submit" >Login</button>
             </form> }
             {isLoading && <LoadingSpinner/>}

@@ -47,7 +47,7 @@ function Goalbox(){
                 </div>
             </div>
             <div className='goalboxright'>
-            <i class="fa-solid fa-circle-play"></i>
+            <a style={{color:"white"}} href="https://youtube.com/watch?v=sWDEMs_vxWI"><i class="fa-solid fa-circle-play"></i></a>
             </div>
         </div>
     )
