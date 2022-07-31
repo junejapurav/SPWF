@@ -24,10 +24,6 @@ const phoneHandler=(event)=>{
 }
 
   function loadRazorpay() {
-    if(Name.trim().length===0 ||!Email.includes('@') || Email.trim().length===0 || Phone.trim().length===0 || orderAmount===0){
-      alert('Enter Valid Values')
-      return;
-    }
     const script = document.createElement('script');
     script.src = 'https://checkout.razorpay.com/v1/checkout.js';
     script.onerror = () => {
@@ -90,9 +86,9 @@ const phoneHandler=(event)=>{
         <br/>
         <br/>
         <h2 style={{textAlign:"center"}}> DONATION</h2>
-    <form>
+    <div className='donation-form'>
         <input type="text" placeholder="Enter Name" onChange={nameHandler} value={Name}/>
-        <input type="email" placeholder="Enter Email" onChange={emailHandler} value={Email}/>
+        <input type="text" placeholder="Enter Email" onChange={emailHandler} value={Email}/>
         <input type="text" placeholder="Enter Mobile Number" onChange={phoneHandler} value={Phone}/>
         
           <input
@@ -103,10 +99,10 @@ const phoneHandler=(event)=>{
           ></input>
        
 
-        <button disabled={loading} onClick={loadRazorpay}>
+        <button style={{borderRadius:"10px"}} disabled={loading} onClick={loadRazorpay}>
           Donate
         </button>
-    </form>
+    </div>
         {loading && <div>Loading...</div>}
         <Footer/>
       </div>

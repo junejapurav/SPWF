@@ -7,8 +7,10 @@
     text-align: center;
     padding: 100px 0 0 0;
 }
-form{
-    border:none
+input{
+  width:40%;
+  border: solid 0.5px black;
+  border-radius: 10px;
 }
 input:focus{
     outline: none;
@@ -19,7 +21,14 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
+
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+.donation-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:2rem;
 }
