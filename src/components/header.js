@@ -105,8 +105,8 @@ const Header = ()=>{
             <br/>
             <div className='categories'>
                 <h4>Categories</h4>
-                <a>Donation</a>
-                <a>Volunteer</a>
+                <Link to={"/donation"} style={{color: "black"}}><a>Donation</a></Link>
+                <Link to={"/volunteer"} style={{color: "black"}}><a>Volunteer</a></Link>
             </div>
         </div>
         </div>

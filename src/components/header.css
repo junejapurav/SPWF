@@ -312,6 +312,9 @@ nav{
         background-color: white;
         border-radius: 10px;
         padding: 10px 0;
+        width: 100%;
+        justify-content: center;
+        gap: 10%;
     }
     .topmenusocialicons i{
         width: 25%;
