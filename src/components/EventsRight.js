@@ -14,7 +14,7 @@ function EventRight(props){
         {
             img:Pic4,
             name:"Chikitsa",
-            description:"good health facilities are necessary for a common man"
+            description:"Good health facilities are necessary for a common man"
         },
         {
             img:Pic2,
@@ -24,7 +24,7 @@ function EventRight(props){
         {
             img:Pic1,
             name:"Shiksharth",
-            description:"The programme aimed at providing maximum health and medical benefits to those residing in the slums."
+            description:"Shiksharth aims at providing health and medical benefits."
         }
     ]
   function eventFilter(){
