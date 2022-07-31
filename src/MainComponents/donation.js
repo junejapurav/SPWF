@@ -4,6 +4,7 @@ import Footer from '../components/footer';
 import Header from '../components/header';
 import './donation.css'
 import AboutUsImage from '../components/AboutUsImage';
+import donationimage from '../img/donate.jpeg'
 
 function Donation() {
   const [loading, setLoading] = useState(false);
@@ -84,7 +85,7 @@ const phoneHandler=(event)=>{
     
       <div>
         <Header/>
-        <AboutUsImage heading="`Giving is not about making a donation, It's about making a difference!`"/>
+        <AboutUsImage heading="`Giving is not about making a donation, It's about making a difference!`" image={donationimage}/>
         <br/>
         <br/>
     <div className='donation-form'>
