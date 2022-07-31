@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Footer from '../components/footer';
 import Header from '../components/header';
 import './donation.css'
+import AboutUsImage from '../components/AboutUsImage';
 
 function Donation() {
   const [loading, setLoading] = useState(false);
@@ -83,10 +84,11 @@ const phoneHandler=(event)=>{
     
       <div>
         <Header/>
+        <AboutUsImage heading="`Giving is not about making a donation, It's about making a difference!`"/>
         <br/>
         <br/>
-        <h2 style={{textAlign:"center"}}> DONATION</h2>
     <div className='donation-form'>
+    <h2 style={{textAlign:"center"}}> DONATION</h2>
         <input type="text" placeholder="Enter Name" onChange={nameHandler} value={Name}/>
         <input type="text" placeholder="Enter Email" onChange={emailHandler} value={Email}/>
         <input type="text" placeholder="Enter Mobile Number" onChange={phoneHandler} value={Phone}/>
