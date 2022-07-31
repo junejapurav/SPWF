@@ -113,7 +113,7 @@ const Header = ()=>{
             </header>
             <nav>
         <div className="navLeft">
-           <img src={logo} className="navbarLogo" alt="no img"/>
+           <Link to="/"><img src={logo} className="navbarLogo" alt="no img"/></Link>
            </div>
         <div className="navRight">
         <Link to={'/'}><a>Home</a></Link>
@@ -140,7 +140,7 @@ const Header = ()=>{
             <div className='slidemenucontent'>
                 <Link to={'/'}><a>Home</a></Link>
                 <Link to={'/aboutUs'}><a>About us</a></Link>
-                <Link to={'/aboutUs'}><a>What We Do</a></Link>
+                <Link to={'/volunteer'}><a>Volunteer</a></Link>
                 <a className='slidemenuevents' onClick={counter}>Events<i class="fa-solid fa-sort-down" id='toggle'></i></a>
                     <div class="slidedowncont" >
                     <Link to={'/Shiksharth'}><a>Shiksharth</a></Link>
