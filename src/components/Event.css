@@ -1,0 +1,23 @@
+.Event{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+@media screen and (max-width: 850px) {
+    .Event{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .shikleft{
+        width: 80%;
+    }
+    .shikright{
+        width: 90%;
+    }
+    .eventJoin button{
+        margin: 0%;
+    }
+}

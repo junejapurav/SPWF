@@ -3,6 +3,7 @@ import EventLeft from "./EventLeft";
 import EventRight from "./EventsRight";
 import Footer from "./footer";
 import Header from "./header";
+import './Event.css'
 function Event(props){
 
     return(
@@ -10,10 +11,7 @@ function Event(props){
         <Header/>
         <br/>
         <br/>
-        <div style={{display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            gap: "50px"}}>
+        <div className="Event">
         <EventLeft current={props.current}/>
         <EventRight current={props.current}/>
         </div>

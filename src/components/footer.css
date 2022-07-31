@@ -8,10 +8,7 @@ footer{
 h1,h2,h3{
     color:black;
 }
-a{
-    color: #656565;
-    text-decoration: none;
-}
+
 .upperFooter{
     display: flex;
     flex-direction: row;
@@ -19,7 +16,6 @@ a{
     gap: 7%;
     padding: 0 5%;
     align-items: stretch;
-
 }
 .about-footer{
     max-width: 25%;
@@ -102,6 +98,7 @@ a{
     }
     .contactinfo-footer{
         margin-bottom: 10px;
+        width: 60%;
     }
     .socialMedia-footer{
         padding-bottom: 10px;
