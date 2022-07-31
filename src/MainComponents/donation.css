@@ -39,8 +39,9 @@ input[type=number] {
   margin: auto;
 }
 .donation-form input{
-  padding: 5px 10px;
+  padding: 6px 10px;
   border: none;
+  width: 60%;
 }
 .donation-form button{
   width: 30%;
@@ -50,4 +51,14 @@ input[type=number] {
 .donationQoute{
   font-size: 250%;
   margin: auto;
+}
+
+@media screen and (max-width: 800px){
+  .donation-form{
+    width: 90%;
+  }
+
+  .donation-form input{
+    width: 80%;
+  }
 }

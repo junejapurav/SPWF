@@ -17,8 +17,8 @@ const Footer  = () =>{
                 </div>
                 <div className="contactinfo-footer">
                     <h2>Contact Us</h2>
-                    <div id="headerPhone hi"><i className="fa-solid fa-phone-flip"></i> +23456789345</div>
-                    <div id="headerMail hi"><i className="fa-solid fa-envelope"></i> erghjlkjghjkn</div>
+                    <div id="headerPhone hi"><i className="fa-solid fa-phone-flip"> <a href="tel:885-175-5256"></a></i> 885-175-5256</div>
+                    <div id="headerMail hi"><i className="fa-solid fa-envelope"></i> <a href="mailto:spwf.ngo@gmail.com">spwf.ngo@gmail.com</a></div>
                     <div id="headerLoc hi"><i className="fa-solid fa-location-dot"></i> Uttam Nagar,New delhi</div>
                     
                 </div>
