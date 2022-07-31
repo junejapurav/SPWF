@@ -2,6 +2,7 @@ import { useEffect, useState,useRef } from 'react';
 import counterPhoto from '../img/Picture2.jpg';
 import './Counter.css';
 import { Waypoint } from 'react-waypoint';
+import { Link } from 'react-router-dom';
 const Counter= ()=>{
 
   let [peopleDisplayed, peopleDisplayedChanger] = useState(0);
@@ -80,7 +81,7 @@ const Counter= ()=>{
         </ul>
         <div className='yearExperience'><h2>4.5</h2>Years Of Experience</div>
       </div>
-      <button>Read More</button>
+      <Link to="/aboutUs"><button>Read More</button></Link>
     </div>
   </div>
   

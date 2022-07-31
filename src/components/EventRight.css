@@ -40,7 +40,9 @@
     border-radius: 10px;
     height: 70%;
 }
-
+b:hover{
+    color:#e18c1c
+}
 .eventJoin{
     display: flex;
     color: white;

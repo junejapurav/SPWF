@@ -21,6 +21,8 @@ function HomePage (){
         <Counter/>
         <Fundraising/>
         <RecentEvents/>
+        <br/>
+        <br/>
         <AboutUsGetInvolved/>
         <Feedback/>
         <Footer/> 

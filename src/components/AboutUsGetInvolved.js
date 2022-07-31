@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import bgImageAboutUs from '../img/IMG_20211129_165917.jpg';
 import Button from '../UI/button';
 import './AboutUsGetInvolved.css'
@@ -13,7 +14,7 @@ function AboutUsGetInvolved(){
             <div className='AboutUsGetInvolvedFact'>
                 <h1>We Fed more than 13000+ People during Covid-19 Pandemic</h1>
             </div>
-            <button >Get Involved Today</button>
+            <Link to="/volunteer"><button >Get Involved Today</button></Link>
 
         </div>
     )

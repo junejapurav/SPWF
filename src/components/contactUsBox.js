@@ -12,21 +12,21 @@ function ContactUsBox(){
                     <i class="fa-solid fa-location-dot"></i>
                     <div className="desc">
                         <h4>Head Office Address:</h4>
-                        <p>4671 Sugar Camp Road, Rock Street, San Francisco, United States America</p>
+                        <p>E-10, Sainik Nagar, Mansaram Park,Near DPS School, Nearest Metro Station- Nawada</p>
                     </div>
                 </div>
                 <div className="contactAdress">
                 <i class="fa-solid fa-phone-volume"></i>
                     <div className='desc'>
-                        <h4>Toll Free Number:</h4>
-                        <p>4671 Sugar Camp Road, Rock Street, San Francisco, United States America</p>
+                        <h4>Contact Number:</h4>
+                        <p>+91-8851755256</p>
                     </div>
                 </div>
                 <div className="contactAdress">
                 <i class="fa-solid fa-envelope-open-text"></i>
                     <div className='desc'>
                         <h4>Email Address:</h4>
-                        <p>4671 Sugar Camp Road, Rock Street, San Francisco, United States America</p>
+                        <p>spwf.ngo@gmail.com</p>
                     </div>
                 </div>
             </div>
