@@ -76,6 +76,7 @@ nav{
     font-family: 'Poppins', sans-serif;
     background-color: black;
     border-bottom: solid 3px #e18c1c;
+    width: 100%;
 }
 
 .navRight{
@@ -190,6 +191,9 @@ nav{
 
 
 @media screen and (max-width: 950px){
+    nav{
+        justify-content: center;
+    }
     .header{
         gap: 90%;
     }
