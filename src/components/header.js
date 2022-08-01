@@ -111,7 +111,7 @@ const Header = ()=>{
         </div>
         </div>
             </header>
-            <nav>
+            <nav className='navbar-default'>
         <div className="navLeft">
            <Link to="/"><img src={logo} className="navbarLogo" alt="no img"/></Link>
            </div>
