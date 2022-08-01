@@ -1,7 +1,7 @@
 function ShowVolunteerData(props){
 
     return(
-        <div>
+        <div style={{backgroundColor:"rgb(185, 181, 181)"}}>
             <p>{props.name}</p>
             <p>{props.email}</p>
             <p>{props.phone}</p>

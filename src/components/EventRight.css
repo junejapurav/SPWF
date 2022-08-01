@@ -68,3 +68,14 @@ b:hover{
 .eventJoin h2{
     color: white;
 }
+
+.innereventsdetails a{
+    text-decoration: none;
+    color:black;
+}
+.innereventsdetails a:hover{
+    color:black;
+}
+.innereventsdetails b:hover{
+    color:#e18c1c;
+}

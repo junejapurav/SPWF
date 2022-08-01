@@ -17,7 +17,7 @@ function ShowContactUsDataMain(){
 
     
     try{
-        const response =await fetch("/getContactUs")
+        const response =await fetch("https://spwf.herokuapp.com/getContactUs")
         // const response = await fetch('https://spwf-8a8c4-default-rtdb.firebaseio.com/contact.json');
         if(!response.ok){
             throw new Error('Something Went Wrong!')

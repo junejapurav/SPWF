@@ -37,7 +37,7 @@ const ContactUsRight = ()=>{
                 subject:contactUsSubject,
                 message:contactUsMessage
             }
-            // console.log(obj);
+
     
             addContactUsData(obj);
       
@@ -56,7 +56,7 @@ const ContactUsRight = ()=>{
         // });
         // const data= await response.json();
         // console.log(data);
-        axios.post('http://localhost:4000/createContactUs',obj);
+        axios.post('https://spwf.herokuapp.com/createContactUs',obj);
 
         nameSetHandler('');
         phoneSetHandler('');

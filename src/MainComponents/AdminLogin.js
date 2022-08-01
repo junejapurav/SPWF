@@ -40,7 +40,7 @@ function AdminLogin(){
         setError(null);
 
         try{
-            const response = await fetch("/getUser");
+            const response = await fetch("https://spwf.herokuapp.com/getUser");
             // const response= await fetch('https://spwf-8a8c4-default-rtdb.firebaseio.com/login.json');
             if(!response.ok){
                 throw new Error('Something Went Wrong!');

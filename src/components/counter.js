@@ -14,7 +14,7 @@ const Counter= ()=>{
   const values = [13,300,15,2];
   const min =Math.min.apply(null, values);
 
- const newArr =  values.map((a)=> (a/min));
+//  const newArr =  values.map((a)=> (a/min));
 
   const [didMount,didMountSet] =  useState(false);
   
@@ -40,16 +40,16 @@ const Counter= ()=>{
           return;
         }
         if(students!==values[1])
-          studentsChanger(students+newArr[1]);
+          studentsChanger(students+30);
 
          if(donors!==values[2]) 
-          donorChanger(donors+newArr[2]);
+          donorChanger(donors+3);
 
         if(sponsors!==values[3])
-          sponsorChanger(sponsors+newArr[3]);
+          sponsorChanger(sponsors+1);
 
          if(peopleDisplayed!== values[0]) 
-          peopleDisplayedChanger(peopleDisplayed+newArr[0]);
+          peopleDisplayedChanger(peopleDisplayed+1);
        
      
   }
