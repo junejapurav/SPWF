@@ -13,17 +13,27 @@ function Donation() {
   const [Name,nameSetHandler]= useState('');
   const [Email,emailSetHandler]= useState('');
   const [Phone,phoneSetHandler]= useState();
+  const [isValid,checkValidity] = useState(true);
 
   const nameHandler=(event)=>{
+    checkValidity(true);
     nameSetHandler(event.target.value)
 }
 const emailHandler=(event)=>{
-    
+  checkValidity(true);
     emailSetHandler(event.target.value);
 }
 const phoneHandler=(event)=>{
+  checkValidity(true);
     phoneSetHandler(event.target.value)
 
+}
+const checker = ()=>{
+  if(Name.trim().length===0 || Email.trim().length===0|| !Email.includes('@') ||Phone.trim().length===0||orderAmount<=0){
+    checkValidity(false);
+    return;
+  }
+  loadRazorpay();
 }
 
   function loadRazorpay() {
@@ -90,9 +100,12 @@ const phoneHandler=(event)=>{
         <br/>
         <br/>
     <div className='donation-form'>
+    { !isValid && <div style={{backgroundColor:"rgb(248, 126, 126)",textAlign:"center",width:"35%",marginTop:"5%"}}>
+                Please enter Valid Details
+            </div>} 
     <h2 style={{textAlign:"center"}}> DONATION</h2>
         <input type="text" placeholder="Enter Name" onChange={nameHandler} value={Name}/>
-        <input type="text" placeholder="Enter Email" onChange={emailHandler} value={Email}/>
+        <input type="email" placeholder="Enter Email" onChange={emailHandler} value={Email}/>
         <input type="text" placeholder="Enter Mobile Number" onChange={phoneHandler} value={Phone}/>
         
           <input
@@ -103,7 +116,7 @@ const phoneHandler=(event)=>{
           ></input>
        
 
-        <button style={{borderRadius:"10px"}} disabled={loading} onClick={loadRazorpay}>
+        <button style={{borderRadius:"10px"}} disabled={loading} onClick={checker}>
           Donate
         </button>
         {loading && <LoadingSpinner/>}
