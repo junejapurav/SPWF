@@ -5,6 +5,7 @@ import Header from '../components/header';
 import './donation.css'
 import AboutUsImage from '../components/AboutUsImage';
 import donationimage from '../img/donate.jpeg'
+import LoadingSpinner from '../UI/Loading';
 
 function Donation() {
   const [loading, setLoading] = useState(false);
@@ -34,13 +35,13 @@ const phoneHandler=(event)=>{
     script.onload = async () => {
       try {
         setLoading(true);
-        const result = await axios.post('http://localhost:4000/razorpay/create-order', {
+        const result = await axios.post('/razorpay/create-order', {
           amount: orderAmount + '00',
         });
         const { amount, id: order_id, currency } = result.data;
         const {
           data: { key: razorpayKey },
-        } = await axios.get('http://localhost:4000/razorpay/get-api-key');
+        } = await axios.get('/razorpay/get-api-key');
 
         const options = {
           key: razorpayKey,
@@ -50,7 +51,7 @@ const phoneHandler=(event)=>{
           description: 'FOR CHARITY',
           order_id: order_id,
           handler: async function (response) {
-            const result = await axios.post('http://localhost:4000/razorpay/pay-order', {
+            const result = await axios.post('/razorpay/pay-order', {
               amount: amount,
               razorpayPaymentId: response.razorpay_payment_id,
               razorpayOrderId: response.razorpay_order_id,
@@ -105,8 +106,9 @@ const phoneHandler=(event)=>{
         <button style={{borderRadius:"10px"}} disabled={loading} onClick={loadRazorpay}>
           Donate
         </button>
+        {loading && <LoadingSpinner/>}
     </div>
-        {loading && <div>Loading...</div>}
+        
         <Footer/>
       </div>
       
