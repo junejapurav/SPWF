@@ -43,15 +43,16 @@ h1,h2,h3{
     gap:1rem;
 }
 .tags-footer{
-    text-align: center;
+    text-align:center;
 }
 .tags-footer div{
     display: flex;
     width: 100%;
     flex-direction: row;
     flex-wrap:wrap;
-    gap:0.5rem;
+    gap: 2px;
     justify-content: center;
+    align-items: flex-start;
     
 }
 .tags-footer div a{
@@ -205,15 +206,22 @@ h1,h2,h3{
     .tags-footer div button{
         width: 100%;
     }
+
 }
   
   @media screen and (max-width: 800px){
+    footer{
+        padding: 0;
+    }
     .upperFooter{
         display: flex;
         flex-direction: column;
     }
     .about-footer{
         max-width: 90%;
+    }
+    .tags-footer{
+        text-align:left;
     }
     .contactinfo-footer{
         margin-bottom: 10px;
