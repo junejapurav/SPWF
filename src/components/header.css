@@ -103,7 +103,7 @@ nav{
 }
 .navLeft img{
     height: 100%;
-    width: 70%;
+    width: 100%;
 }
 .navRight a:hover{
     color: #ffa026;
@@ -197,6 +197,9 @@ nav{
     }
     .headerLeft{
         font-size: 50%;
+    }
+    .navLeft img{
+        width: 50%;
     }
     .navRight{
         display: none;
