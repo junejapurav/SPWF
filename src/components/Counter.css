@@ -19,6 +19,7 @@
     color: white;
     width: 80%;
     justify-content: space-evenly;
+    align-items: center;
 }
 .countercolomn{
     display: flex;
