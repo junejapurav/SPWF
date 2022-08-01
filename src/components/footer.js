@@ -1,5 +1,6 @@
 import { Fragment, useEffect } from "react"
 import { Link } from "react-router-dom"
+import logo from '../images/spwf logo2.png'
 
 import axios from 'axios'
 import './footer.css'
@@ -48,6 +49,39 @@ const Footer  = () =>{
                     
                 </div>
                 
+            </div>
+            <div className="lowerFooter">
+            <div className="lfcol1">
+            <div className="lfooterrow1">
+                    <a class="button" href="#popup1">Privacy Policy</a>
+                    <div id="popup1" class="overlay">
+	                <div class="popup">
+		                    <h2>Privacy Policy</h2>
+		                    <a class="close" href="#">&times;</a>
+		                    <div class="content">
+			                <p>We at shakuntala poddar welfare foundation respect the information that is provided to us and ensure that the information does not go in wrong hands. Also, it is necessary for the person to provide correct verification source to be a volunteer or to provide donation</p>
+		                    </div>
+	                    </div>
+                    </div>
+                    <p>|</p>
+                    <a class="button" href="#popup2">Terms & Condition</a>
+                    <div id="popup2" class="overlay">
+	                <div class="popup">
+		                    <h2>Terms & Condition</h2>
+		                    <a class="close" href="#">&times;</a>
+		                    <div class="content">
+			                <p>We at shakuntala poddar welfare foundation work for the welfare of underprivileged people and children. We make sure that they a a proper meal and ensure there skill development.<br/> How do we collect information-Basically we have three mediums of collecting information Donation form :<br/> People donating any amount need to fill like their names, address, phone number, Pan number Contact form : People can leave their message through this portal Volunteer form : People wishing to volunteer for our NGO can fill this form  including details like name, qualification, area of interest, address, Phone number</p>
+		                    </div>
+	                    </div>
+                    </div>
+                </div>
+                <div className="lfooterrow2">
+                    <p>Copyright © 2022 Shakuntala poddar welfare foundation.</p>
+            </div>
+            </div>
+            <div className="lfcol2">
+                <Link to='/'><img className="footerlogo" src={logo}/></Link>
+            </div>
             </div>
         </footer>
     )
