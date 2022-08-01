@@ -66,6 +66,7 @@
     .contactAdress{
         gap: 5%;
         max-width: 560px;
+        width: 100%;
         align-self: center;
     }
     .contactAdress i{

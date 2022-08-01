@@ -96,12 +96,13 @@ nav{
     transition: 0.1s;
 
 }
+.navLeft{
+    display: flex;
+    flex-direction: row;
+}
 .navLeft img{
-
-    z-index: 2;
-    float: left;
-    height: 125%;
-    width: 120%;
+    height: 100%;
+    width: 130%;
 }
 .navRight a:hover{
     color: #ffa026;
