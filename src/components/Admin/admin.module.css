@@ -15,5 +15,6 @@
 
 .main p{
     text-decoration: underline;
-    color: orange
+    color: orange;
+    cursor: pointer;
 }

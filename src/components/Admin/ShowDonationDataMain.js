@@ -8,7 +8,7 @@ function ShowDonationDataMain(){
 
         
 
-        const { data } = await axios.get('http://localhost:4000/razorpay/list-orders');
+        const { data } = await axios.get('/razorpay/list-orders');
         setOrders(data);
       }
       useEffect(() => {

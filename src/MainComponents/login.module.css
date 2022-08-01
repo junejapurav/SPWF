@@ -2,7 +2,6 @@
 form{
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
     margin-left: 30%;
     gap:2rem;
     
@@ -13,7 +12,7 @@ form input{
     border-radius: 15px;
 }
 .error{
-    border:solid 2px red;
+    border:solid 2px rgb(241, 0, 0);
 
 }
 form button{
