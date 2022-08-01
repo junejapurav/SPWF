@@ -11,8 +11,11 @@
         align-items: center;
         width: 100%;
     }
-    .shikleft{
-        width: 80%;
+    .shikleft {
+        width: 90%;
+    }
+    .shikleft img{
+        height: 20%;
     }
     .shikright{
         width: 90%;

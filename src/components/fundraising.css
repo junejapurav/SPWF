@@ -78,9 +78,16 @@
         width: 100%;
     }
     .fundLeft{
-        width: 80%;
+        width: 90%;
     }
     .fundLeft h1{
-        font-size: 250%;
+        font-size: 150%;
     }
+}
+@media screen and (max-width: 450px){
+    .fundRight{
+        width: 80%;
+        margin: 2% 0;
+    }
+
 }

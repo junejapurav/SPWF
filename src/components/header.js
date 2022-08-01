@@ -1,6 +1,6 @@
 import  './header.css';
 import { useState } from "react";
-import logo from '../img/spwflogo2.png';
+import logo from '../images/spwf logo2.png';
 import { Fragment } from 'react';
 import {Link} from 'react-router-dom'
 
