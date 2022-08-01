@@ -81,7 +81,7 @@ const Header = ()=>{
         <div className='slidemenu2'>
             <i class="fa-solid fa-xmark" onClick={slideright}></i>
             <br/>
-            <button>Donate Now</button>
+            <Link to="/donation"><button>Donate Now</button></Link>
             <br/>
             <br/>
             <br/>
