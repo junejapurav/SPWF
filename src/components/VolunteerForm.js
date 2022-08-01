@@ -36,7 +36,7 @@ const VolunteerForm = ()=>{
     }
     function addVolunteerData(obj){
         
-        axios.post("/createVolunteer",obj)
+        axios.post("https://spwf.herokuapp.com/createVolunteer",obj)
     }
 
     return(

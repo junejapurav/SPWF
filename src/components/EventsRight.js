@@ -44,7 +44,7 @@ function EventRight(props){
                 <div className="eventDetails">
                     <div className='innereventsdetails'>
                         <h3>More Events</h3>
-                        {eventFilter().map((event)=><a style={{textDecoration:"none",color:"black"}} href={event.link}><div><img src={event.img}/><div><b>{event.name}</b><p>{event.description}</p></div></div></a>)}
+                        {eventFilter().map((event)=><Link to={event.link}><div><img src={event.img}/><div><b>{event.name}</b><p>{event.description}</p></div></div></Link>)}
 
                     </div>
                    

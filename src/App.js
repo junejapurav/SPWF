@@ -1,7 +1,10 @@
 import {
   Routes,
   Route,
+ 
+ 
 } from "react-router-dom";
+
 import './App.css';
 import HomePage from "./MainComponents/HomePage";
 import AboutUsPage from './MainComponents/AboutUsPage'
@@ -21,6 +24,7 @@ import KaushalUthan from "./components/KaushalUthan";
 import Chikitsa from "./components/Chikitsa"
 
 
+
 function App() {
   
   return (
@@ -28,6 +32,8 @@ function App() {
       <main>
     
         <Routes>
+         
+         
           <Route path = '/' element={<HomePage/>}></Route>
           <Route path='/aboutUs' element={<AboutUsPage/>} ></Route>
           <Route path='/contactUs' element={<ContactUsPage/>} ></Route>
@@ -40,11 +46,14 @@ function App() {
           <Route path='/login/volunteer-data' element={<ShowVolunteerDataMain />}></Route>
           <Route path='/login/donation-data' element={<ShowDonationDataMain />}></Route>
 
+    
           <Route path='/volunteer' element={<VolunteerForm/>}></Route>
           <Route path='/Shiksharth' element={<Shiksharth/>}></Route>
           <Route path="/Aahar" element={<Aahar/>}></Route>
           <Route path="/KaushalUthan" element={<KaushalUthan/>}></Route>
           <Route path="/Chikitsa" element={<Chikitsa/>}></Route>
+
+       
         </Routes>
        
       </main>

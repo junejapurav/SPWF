@@ -1,7 +1,6 @@
 {
   "name": "ngo",
   "version": "0.1.0",
-  "proxy": "https://spwf.herokuapp.com/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -10,11 +9,12 @@
     "axios": "^0.27.2",
     "axos": "0.0.1",
     "bootstrap": "^5.1.3",
-    "querystring-es3": "^0.2.1",
     "google-map-react": "^2.2.0",
+    "querystring-es3": "^0.2.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.2.0",
+    "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-simple-image-slider": "^2.4.1",

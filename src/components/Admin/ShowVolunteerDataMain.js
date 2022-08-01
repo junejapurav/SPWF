@@ -18,8 +18,8 @@ function ShowVolunteerDataMain(){
         setError(null);
         
     try{
-        // const response= await fetch('https://spwf-8a8c4-default-rtdb.firebaseio.com/Volunteer.json')
-        const response = await fetch("/getVolunteer");
+        
+        const response = await fetch("https://spwf.herokuapp.com/getVolunteer");
         if (!response.ok) {
             throw new Error('Something went wrong!');
           }
