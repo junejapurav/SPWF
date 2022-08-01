@@ -103,6 +103,7 @@ nav{
 }
 .navLeft img{
     height: 100%;
+    width: 100%;
 }
 .navRight a:hover{
     color: #ffa026;
@@ -191,9 +192,6 @@ nav{
 
 
 @media screen and (max-width: 950px){
-    nav{
-        justify-content: center;
-    }
     .header{
         gap: 90%;
     }
