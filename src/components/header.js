@@ -86,7 +86,7 @@ const Header = ()=>{
             <br/>
             <br/>
             <div className='topmenucontact'>
-            <div id="headerPhone"><i className="fa-solid fa-phone-flip"></i> <a href="tel:885-175-5256">123-456-7890</a></div>
+            <div id="headerPhone"><i className="fa-solid fa-phone-flip"></i> <a href="tel:885-175-5256">885-175-5256</a></div>
             <br/>
             <div id="headerMail"><i className="fa-solid fa-envelope"></i> <a href="mailto:spwf.ngo@gmail.com">spwf.ngo@gmail.com</a></div>
             <br/>
