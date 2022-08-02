@@ -349,3 +349,17 @@ nav{
         padding: 10px 0;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .navLeft img {
+        width: 40%;
+    }
+
+    .navLeft {
+        width: 20%;
+    }
+
+    .navRight{
+        min-width: 60%;
+    }
+}
