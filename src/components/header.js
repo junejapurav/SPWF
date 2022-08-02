@@ -105,8 +105,8 @@ const Header = ()=>{
             <br/>
             <div className='categories'>
                 <h4>Categories</h4>
-                <Link to={"/donation"} style={{color: "black"}}><p>Donation</p></Link>
-                <Link to={"/volunteer"} style={{color: "black"}}><p>Volunteer</p></Link>
+                <Link to={"/donation"} style={{color: "black"}}><a>Donation</a></Link>
+                <Link to={"/volunteer"} style={{color: "black"}}><a>Volunteer</a></Link>
             </div>
         </div>
         </div>
@@ -116,19 +116,19 @@ const Header = ()=>{
            <Link to="/"><img src={logo} className="navbarLogo" alt="no img"/></Link>
            </div>
         <div className="navRight">
-        <Link to={'/'}><p>Home</p></Link>
-        <Link to={'/aboutUs'}><p>About us</p></Link>
-        <Link to={'/volunteer'}><p>Volunteer</p></Link>
+        <Link to={'/'}><a>Home</a></Link>
+        <Link to={'/aboutUs'}><a>About us</a></Link>
+        <Link to={'/volunteer'}><a>Volunteer</a></Link>
         <div class="dropdown">
         <a class="dropbtn" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Events<i class="fa-solid fa-sort-down"></i></a>
         <div class="dropdown-content" >
-            <Link to={'/Shiksharth'}><p>Shiksharth</p></Link>
-            <Link to={'/KaushalUthan'}><p>Kaushal Uthan</p></Link>
-            <Link to={'/Chikitsa'}><p>Chikitsa</p></Link>
-            <Link to={"/Aahar"}><p>Aahar</p> </Link>
+            <Link to={'/Shiksharth'}><a>Shiksharth</a></Link>
+            <Link to={'/KaushalUthan'}><a>Kaushal Uthan</a></Link>
+            <Link to={'/Chikitsa'}><a>Chikitsa</a></Link>
+            <Link to={"/Aahar"}><a>Aahar</a> </Link>
         </div>
         </div>
-        <Link to={'/contactUs'}><p>Contact Us</p></Link>
+        <Link to={'/contactUs'}><a>Contact Us</a></Link>
         <button><Link to={'/donation'}>Donate Now</Link></button>
         </div>
         <div className="mainmenu">
@@ -138,17 +138,17 @@ const Header = ()=>{
         <div className='slidemenu'>
             <i class="fa-solid fa-xmark" onClick={slideup}></i>
             <div className='slidemenucontent'>
-                <Link to={'/'}><p>Home</p></Link>
-                <Link to={'/aboutUs'}><p>About us</p></Link>
-                <Link to={'/volunteer'}><p>Volunteer</p></Link>
+                <Link to={'/'}><a>Home</a></Link>
+                <Link to={'/aboutUs'}><a>About us</a></Link>
+                <Link to={'/volunteer'}><a>Volunteer</a></Link>
                 <a className='slidemenuevents' onClick={counter}>Events<i class="fa-solid fa-sort-down" id='toggle'></i></a>
                     <div class="slidedowncont" >
-                    <Link to={'/Shiksharth'}><p>Shiksharth</p></Link>
-                    <Link to={'/KaushalUthan'}><p>Kaushal Uthan</p></Link>
-                    <Link to={'/Chikitsa'}><p>Chikitsa</p></Link>
-                    <Link to={"/Aahar"}><p>Aahar</p> </Link>
+                    <Link to={'/Shiksharth'}><a>Shiksharth</a></Link>
+                    <Link to={'/KaushalUthan'}><a>Kaushal Uthan</a></Link>
+                    <Link to={'/Chikitsa'}><a>Chikitsa</a></Link>
+                    <Link to={"/Aahar"}><a>Aahar</a> </Link>
                     </div>
-                <Link to={'/contactUs'}><p>Contact Us</p></Link>
+                <Link to={'/contactUs'}><a>Contact Us</a></Link>
                 <button><Link to={'/donation'}>Donate Now</Link></button>
             </div> 
         </div>

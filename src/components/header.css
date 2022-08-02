@@ -350,9 +350,11 @@ nav{
         padding: 10px 0;
     }
 }
-
 @media screen and (min-width: 768px) {
     .navLeft img {
+        width: 100%;
+    }
+    .navLeft a{
         width: 40%;
     }
 

@@ -1,7 +1,8 @@
 footer{
     border-top: solid 1px #656565;
     margin-top: 5rem;;
-    padding: 0 3%;
+    /* padding: 0 3%; */
+    padding: 1rem ;
     background-color: white;
     color: #656565;
 }
@@ -215,9 +216,7 @@ h1,h2,h3{
 }
   
   @media screen and (max-width: 800px){
-    footer{
-        padding: 0;
-    }
+  
     .upperFooter{
         display: flex;
         flex-direction: column;
