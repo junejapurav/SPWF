@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import style from './ContactUsForm.module.css'
 import axios from 'axios';
 
@@ -9,8 +9,15 @@ const ContactUsRight = ()=>{
     const [contactUsSubject,subjectSetHandler]= useState('');
     const [contactUsMessage,messageSetHandler]= useState('');
     const [isValid,formValidator] =useState(true);
-   
+   const [sent,setValueSent] =useState(true);
 
+   useEffect(()=>{
+
+        setTimeout(()=>{
+            setValueSent(true);
+        },3000)
+
+   },[sent])
     const nameHandler=(event)=>{
         formValidator(true);
         nameSetHandler(event.target.value)
@@ -31,7 +38,10 @@ const ContactUsRight = ()=>{
         formValidator(true);
         messageSetHandler(event.target.value)
     }
-
+    function sentRemover(){
+        setValueSent(true);
+        
+    }
     function onContactUsSubmitHandler(event){
         event.preventDefault();
         
@@ -56,16 +66,9 @@ const ContactUsRight = ()=>{
         
     }
      function addContactUsData(obj){
-        // const response= await fetch('https://spwf-8a8c4-default-rtdb.firebaseio.com/contact.json',{
-        //     method: 'POST',
-        //     body:JSON.stringify(obj),
-        //     headers:{
-        //         'Content-Type': 'application/json'
-        //     }
-        // });
-        // const data= await response.json();
-        // console.log(data);
+   
         axios.post('https://spwf.herokuapp.com/createContactUs',obj);
+        setValueSent(false);
 
         nameSetHandler('');
         phoneSetHandler('');
@@ -73,6 +76,7 @@ const ContactUsRight = ()=>{
         subjectSetHandler('');
         messageSetHandler('');
 
+        return;
     }
     return(
         <form onSubmit={onContactUsSubmitHandler} style={{marginLeft:"0px"}}>
@@ -88,7 +92,15 @@ const ContactUsRight = ()=>{
                     <input type="text" placeholder="Enter Phone" onChange={phoneHandler} value={contactUsPhone}/>
                     <input type="text" placeholder="Enter Subject" onChange={subjectHandler} value={contactUsSubject}/>
                 </div>
+                
                 <textarea name="contactUsMessage" cols={40} rows={10} placeholder="Enter Message" onChange={messageHandler} value={contactUsMessage} />
+                {!sent && <div style={{backgroundColor:"rgb(162, 242, 162)",textAlign:"center",display:"flex",flexDirection:"row",justifyContent:"space-around",borderRadius:"20px"}}>
+                    <p style={{padding:"0.5rem"}}>Your Data has been successfully recorded.</p>
+                    {/* <div onclick={sentRemover}>
+                        <p style={{padding:"0.5rem",fontSize:"larger",cursor:"pointer"}} >X</p>
+                    </div> */}
+                    
+                </div>}
                 <button type="submit" style={{borderRadius:"20px",width:"30%",fontSize:"130%"}}>Submit</button>
             </div>
 

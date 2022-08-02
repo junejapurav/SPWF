@@ -1,5 +1,5 @@
 import './volunteerBox.css'
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import axios from 'axios';
 import Header from './header';
 import Footer from './footer';
@@ -10,6 +10,15 @@ const VolunteerForm = ()=>{
     const [Phone,phoneSetHandler]= useState('');
     const [ZipCode,zipSetHandler] =useState('');
     const [isVald,formValidator] = useState(true);
+    const [sent,setValueSent] =useState(true);
+
+    useEffect(()=>{
+ 
+         setTimeout(()=>{
+             setValueSent(true);
+         },3000)
+ 
+    },[sent])
 
     const nameHandler=(event)=>{
         formValidator(true);
@@ -30,8 +39,17 @@ const VolunteerForm = ()=>{
 
     function volunteerFormSubmitHandler(event){
         event.preventDefault();
+        console.log()
 
-        if(Name.trim().length==0 || Email.trim().length==0|| !Email.includes('@') ||Phone.trim().length==0  || ZipCode.trim().length==0){
+        let volunteerType= [];
+
+        for(let i in document.getElementsByName("volunteerType")){
+            if(document.getElementsByName("volunteerType")[i].checked === true){
+                volunteerType.push(document.getElementsByName("volunteerType")[i].value);
+            }
+        }
+        console.log(volunteerType);
+        if(Name.trim().length==0 || Email.trim().length==0|| !Email.includes('@') ||Phone.trim().length==0  || ZipCode.trim().length==0 ||volunteerType.length===0){
             formValidator(false);
             return;
         }
@@ -39,7 +57,8 @@ const VolunteerForm = ()=>{
             name:Name,
             email:Email,
             phone:Phone,
-            Zip:ZipCode
+            Zip:ZipCode,
+            volunteerType:volunteerType
         }
         addVolunteerData(obj);
 
@@ -47,6 +66,8 @@ const VolunteerForm = ()=>{
     function addVolunteerData(obj){
         
         axios.post("https://spwf.herokuapp.com/createVolunteer",obj)
+        setValueSent(false);
+
         nameSetHandler('');
         phoneSetHandler('');
         emailSetHandler('');
@@ -93,7 +114,12 @@ const VolunteerForm = ()=>{
                         <input type="checkbox" id="ContentWriting" name="volunteerType" value="Content Writing" />
                         <label for="ContentWriting">Content Writing</label>
                     </div>    
+                    
                     </div>
+                    {!sent && <div style={{backgroundColor:"rgb(162, 242, 162)",textAlign:"center",display:"flex",flexDirection:"row",justifyContent:"space-around",borderRadius:"20px"}}>
+                    <p style={{padding:"0.5rem"}}>Your Data has been successfully recorded.</p>
+                       
+                    </div>}
                     </div>
                     <button type="submit">Submit</button>
             </form>
