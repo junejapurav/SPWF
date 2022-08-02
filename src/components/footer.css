@@ -62,6 +62,10 @@ h1,h2,h3{
     text-decoration: none;
     color: black;
     
+    
+}
+.tags-footer p{
+    margin: 0;
 }
 .tags-footer p:hover{
     
@@ -234,7 +238,7 @@ h1,h2,h3{
     .tags-footer div a{
         width: 50%;
 
-        height: 50px;
+        height: 30px;
     }
     .tags-footer div{
         justify-content: flex-start;
