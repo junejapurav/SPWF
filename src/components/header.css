@@ -350,3 +350,10 @@ nav{
         padding: 10px 0;
     }
 }
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+    /**/
+    ::iblock-chrome, .navLeft img{
+        width: 80%;
+    }
+}
