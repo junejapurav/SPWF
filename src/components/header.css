@@ -102,7 +102,7 @@ nav{
 }
 .navLeft img{
     height: 100%;
-    width: 80%;
+    width: 100%;
 }
 .navRight a:hover{
     color: #ffa026;
@@ -348,5 +348,12 @@ nav{
         border-radius: 10px;
         gap: 10px;
         padding: 10px 0;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+    /**/
+    ::iblock-chrome, .navLeft img{
+        width: 80%;
     }
 }
