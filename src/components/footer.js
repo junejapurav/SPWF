@@ -38,12 +38,12 @@ const Footer  = () =>{
                     <div>
 
                     {/* <Link to={'/aboutUs'}></Link> */}
-                    <Link to={'/aboutUs'}><button className="footerButtons">About Us</button></Link>
-                    <Link to={'/contactUs'}><button className="footerButtons">Contact Us</button></Link>
+                    <Link to={'/aboutUs'}><p className="footerp">About Us</p></Link>
+                    <Link to={'/contactUs'}><p className="footerp">Contact Us</p></Link>
                   
-                    <Link to={'/volunteer'}><button className="footerButtons">Volunteer</button></Link>
-                    <Link to={'/donation'}><button className="footerButtons">Donation</button></Link>
-                    <Link to={'/login'}><button className="footerButtons">Admin Login</button></Link>
+                    <Link to={'/volunteer'}><p className="footerp">Volunteer</p></Link>
+                    <Link to={'/donation'}><p className="footerp">Donation</p></Link>
+                    <Link to={'/login'}><p className="footerp">Admin Login</p></Link>
 
                     </div>
                     
@@ -53,7 +53,7 @@ const Footer  = () =>{
             <div className="lowerFooter">
             <div className="lfcol1">
             <div className="lfooterrow1">
-                    <a class="button" href="#popup1">Privacy Policy</a>
+                    <a class="p" className="footerp" href="#popup1">Privacy Policy</a>
                     <div id="popup1" class="overlay">
 	                <div class="popup">
 		                    <h2>Privacy Policy</h2>
@@ -64,7 +64,7 @@ const Footer  = () =>{
 	                    </div>
                     </div>
                     <p>|</p>
-                    <a class="button" href="#popup2">Terms & Condition</a>
+                    <a class="p" className="footerp" href="#popup2">Terms & Condition</a>
                     <div id="popup2" class="overlay">
 	                <div class="popup">
 		                    <h2>Terms & Condition</h2>
