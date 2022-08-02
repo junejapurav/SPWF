@@ -4,7 +4,6 @@ body{
     margin: 0;
     background-color: white;
     width: 100%;
-    
 }
 header{
     display: flex;
@@ -327,7 +326,8 @@ nav{
     }
     .topmenucontact{
         background-color: white;
-        padding: 10px 0;
+        padding: 10px 3px;
+        border-radius: 10px;
     }
     #headerPhone,#headerLoc,#headerMail{
         display: flex;
