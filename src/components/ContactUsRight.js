@@ -8,28 +8,37 @@ const ContactUsRight = ()=>{
     const [contactUsPhone,phoneSetHandler]= useState('');
     const [contactUsSubject,subjectSetHandler]= useState('');
     const [contactUsMessage,messageSetHandler]= useState('');
+    const [isValid,formValidator] =useState(true);
    
 
     const nameHandler=(event)=>{
+        formValidator(true);
         nameSetHandler(event.target.value)
     }
     const emailHandler=(event)=>{
-        
+        formValidator(true);
         emailSetHandler(event.target.value);
     }
     const phoneHandler=(event)=>{
+        formValidator(true);
         phoneSetHandler(event.target.value)
     }
     const subjectHandler=(event)=>{
+        formValidator(true);
         subjectSetHandler(event.target.value)
     }
     const messageHandler=(event)=>{
+        formValidator(true);
         messageSetHandler(event.target.value)
     }
 
     function onContactUsSubmitHandler(event){
         event.preventDefault();
         
+        if(contactUsName.trim().length==0 || contactUsEmail.trim().length==0 || contactUsPhone.trim().length==0 || contactUsSubject.trim().length==0 ||contactUsMessage.trim().length==0){
+            formValidator(false);
+            return;
+        }
             const obj={
                 name:contactUsName,
                 email:contactUsEmail,
@@ -68,6 +77,9 @@ const ContactUsRight = ()=>{
     return(
         <form onSubmit={onContactUsSubmitHandler} style={{marginLeft:"0px"}}>
             <div className={style.ContactUsForm}>
+            { !isValid && <div style={{backgroundColor:"rgb(248, 126, 126)",textAlign:"center",width:"35%",marginTop:"5%",marginLeft:"30%"}}>
+                Please enter Valid Details
+            </div>} 
                 <div className={style.row1}>
                     <input type="text" placeholder="Enter Name" onChange={nameHandler} value={contactUsName} />
                     <input type="email" placeholder="Enter Email" onChange={emailHandler} value={contactUsEmail}/>
