@@ -156,9 +156,10 @@ h1,h2,h3{
   }
   
   .popup {
-    margin: 70px auto;
+    margin: auto;
     padding: 20px;
     background: #fff;
+    z-index: 1000;
     border-radius: 5px;
     width: 30%;
     position: relative;
@@ -261,7 +262,7 @@ h1,h2,h3{
       width: 70%;
     }
     .popup{
-      width: 70%;
+      width: 90%;
     }
     .lfcol2{
         width: 50%;
