@@ -17,6 +17,9 @@
     margin-bottom: 2%;
     
 }
+.involvedDonate p{
+    height: 60%;
+}
 .involved{
     display: flex;
     flex-direction: row;
@@ -78,7 +81,7 @@ box-shadow: -1px 1px 11px -2px rgba(0,0,0,0.75)
 .involved button:hover{
     background-color: #e18c1c;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .involved{
         display: flex;
         flex-direction: column;
