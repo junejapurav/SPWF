@@ -1,4 +1,4 @@
-import Footer from "./footer";
+
 import Header from "./header";
 import error404 from "../images/404error.jpg";
 import styles from './PageNotFOund.module.css'
@@ -15,8 +15,6 @@ function PageNotFound() {
           <p>Sorry, we can't find the page you are looking for...</p>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }
