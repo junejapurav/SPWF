@@ -44,6 +44,16 @@ const Footer  = () =>{
                     <Link to={'/volunteer'}><p className="footerp">Volunteer</p></Link>
                     <Link to={'/donation'}><p className="footerp">Donation</p></Link>
                     <Link to={'/login'}><p className="footerp">Admin Login</p></Link>
+                    <a class="p" className="footerp" href="#popup3">Privacy Policy</a>
+                    <div id="popup3" class="overlay">
+	                <div class="popup">
+		                    <h2>Privacy Policy</h2>
+		                    <a class="close" href="#">&times;</a>
+		                    <div class="content">
+			                <p>We at shakuntala poddar welfare foundation respect the information that is provided to us and ensure that the information does not go in wrong hands. Also, it is necessary for the person to provide correct verification source to be a volunteer or to provide donation</p>
+		                    </div>
+	                    </div>
+                    </div>
 
                     </div>
                     
@@ -53,18 +63,18 @@ const Footer  = () =>{
             <div className="lowerFooter">
             <div className="lfcol1">
             <div className="lfooterrow1">
-                    <a class="p" className="footerp" href="#popup1">Privacy Policy</a>
+                    <a class="p" className="footerp" href="#popup1">Refund Policy</a>
                     <div id="popup1" class="overlay">
 	                <div class="popup">
-		                    <h2>Privacy Policy</h2>
+		                    <h2>Refund Policy</h2>
 		                    <a class="close" href="#">&times;</a>
 		                    <div class="content">
-			                <p>We at shakuntala poddar welfare foundation respect the information that is provided to us and ensure that the information does not go in wrong hands. Also, it is necessary for the person to provide correct verification source to be a volunteer or to provide donation</p>
+			                <p>Amount once paid through the payment gateway shall not be refunded other than in the following circumstances: • Multiple times debiting of Customer’s Card/Bank Account due to technical error OR Customer's account being debited with excess amount in a single transaction due to technical error. In such cases, excess amount excluding Payment Gateway charges would be refunded to the Customer. • Due to technical error, payment being charged on the Customer’s Card/Bank Account but the enrolment for the examination is unsuccessful. Customer would be provided with the enrolment by NISM at no extra cost. However, if in such cases, Customer wishes to seek refund of the amount, he/she would be refunded net the amount, after deduction of Payment Gateway charges or any other charges.</p>
 		                    </div>
 	                    </div>
                     </div>
                     <p>|</p>
-                    <a class="p" className="footerp" href="#popup2">Terms & Condition</a>
+                    <a class="p" className="footerp" href="#popup2">Terms & Conditions</a>
                     <div id="popup2" class="overlay">
 	                <div class="popup">
 		                    <h2>Terms & Condition</h2>

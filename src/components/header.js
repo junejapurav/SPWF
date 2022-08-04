@@ -90,7 +90,7 @@ const Header = ()=>{
             <br/>
             <div id="headerMail"><i className="fa-solid fa-envelope"></i> <a href="mailto:spwf.ngo@gmail.com">spwf.ngo@gmail.com</a></div>
             <br/>
-            <div id="headerLoc"><i className="fa-solid fa-location-dot"></i> Uttam Nagar,New delhi</div>
+            <div id="headerLoc"><i className="fa-solid fa-location-dot"></i> Uttam Nagar, New Delhi-110059</div>
             </div>
             <br/>
             <br/>
