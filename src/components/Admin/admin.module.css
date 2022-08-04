@@ -18,3 +18,7 @@
     color: orange;
     cursor: pointer;
 }
+.back{
+    text-decoration: underline;
+    max-width: 10%;
+}
