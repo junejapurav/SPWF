@@ -37,7 +37,7 @@ const Admin = (props)=>{
     return(
        
         <div>
-           {!checkLogin && <div style={{textDecoration:"underline",cursor:"pointer",maxWidth:"10%"} } onClick={backHandler}>
+           {!checkLogin && <div style={{textDecoration:"underline",cursor:"pointer",width:"fit-content"} } onClick={backHandler}>
                 <i className="fa-solid fa-arrow-left" style={{color:"orange"}}></i>
                 Back
            </div>}
