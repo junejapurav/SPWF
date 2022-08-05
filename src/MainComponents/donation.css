@@ -46,8 +46,8 @@ input[type=number] {
 .donation-form p{
   font-size: 80%;
   text-align: left;
-  margin: 0%;
-  padding: 0;
+  margin: 0;
+  padding: 0 10px;
 }
 .donation-form button{
   width: 30%;

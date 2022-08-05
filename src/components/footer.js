@@ -80,7 +80,7 @@ const Footer  = () =>{
 		                    <h2>Terms & Condition</h2>
 		                    <a class="close" href="#">&times;</a>
 		                    <div class="content">
-			                <p>We at shakuntala poddar welfare foundation work for the welfare of underprivileged people and children. We make sure that they a a proper meal and ensure there skill development.<br/> How do we collect information-Basically we have three mediums of collecting information Donation form :<br/> People donating any amount need to fill like their names, address, phone number, Pan number Contact form : People can leave their message through this portal Volunteer form : People wishing to volunteer for our NGO can fill this form  including details like name, qualification, area of interest, address, Phone number</p>
+			                <p>We at Shakuntala Poddar Welfare Foundation work for the welfare of majorly underprivileged children. We make sure that they are provided with meal and also ensure their skill development. How Do We Gather Information: Basically We Have Three Mediums Of Gathering Information <br/> 1.	Donation Form : People donating any amount need to fill like their names, address, phone number, Pan number etc. <br/> 2.	Contact form : People can leave their message through this portal <br/> 3.	Volunteer form : People wishing to volunteer for our NGO can fill this form  including details like name, qualification, area of interest, address, Phone number</p>
 		                    </div>
 	                    </div>
                     </div>
