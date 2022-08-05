@@ -132,7 +132,7 @@ const checker = ()=>{
             value={orderAmount}
             onChange={(e) => setOrderAmount(e.target.value)}
           ></input>
-       
+        <b>*ALL THE DONATIONS ARE TAX EXEMPTED UNDER 80G</b>
 
         <button style={{borderRadius:"10px"}} disabled={loading} onClick={checker}>
           Donate
