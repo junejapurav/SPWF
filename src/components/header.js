@@ -141,7 +141,7 @@ const Header = ()=>{
                 <Link to={'/'}><a>Home</a></Link>
                 <Link to={'/aboutUs'}><a>About us</a></Link>
                 <Link to={'/volunteer'}><a>Volunteer</a></Link>
-                <a className='slidemenuevents' onClick={counter}>Events<i class="fa-solid fa-sort-down" id='toggle'></i></a>
+                <a className='slidemenuevents' onClick={counter}>Programs<i class="fa-solid fa-sort-down" id='toggle'></i></a>
                     <div class="slidedowncont" >
                     <Link to={'/Shiksharth'}><a>Shiksharth</a></Link>
                     <Link to={'/KaushalUthan'}><a>Kaushal Uthan</a></Link>

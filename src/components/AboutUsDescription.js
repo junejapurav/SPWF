@@ -3,7 +3,7 @@ function AboutUsDescription(){
     return(
         <div className="AboutUsDescription">
             
-            <h1>We work in the upliftment of more than 300 Children.</h1>
+            <h1>We work for the upliftment of more than 300 Children.</h1>
             
             <div>
             <p>
