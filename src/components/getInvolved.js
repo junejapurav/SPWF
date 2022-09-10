@@ -13,10 +13,10 @@ const GetInvolved = () =>{
 
     return(
         <div className="getInvolved">
-        <div className="involvedDonate notice">
+        {/* <div className="involvedDonate notice">
         <h1>Notice</h1>
         <p>In a step against skill development of under previledged children we are organizing a clay modeling competition under the banner of our programme 'Kaushal Utthan'. The interested ones can turn up for volunteering. <div> Schedule: </div> <div> Time: 9am </div> <div> Place: Address of the ngo </div></p>
-      </div>
+      </div> */}
     <h3>Get Involved</h3>
     <h1>Let's Make A Difference Today</h1>
     <div className="involved">
