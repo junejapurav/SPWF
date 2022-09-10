@@ -28,6 +28,17 @@
     gap: 1rem;
 
 }
+.notice{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px red;
+    padding: 1rem;
+    border-radius: 14px;
+    background-color: #ebbe82;
+    margin-bottom: 20px;
+}
 .involved div{
     position: relative;
     display: flex;
@@ -91,6 +102,9 @@ box-shadow: -1px 1px 11px -2px rgba(0,0,0,0.75)
     }
     .involved div{
         max-width: 80%;
+    }
+    .notice{
+        width: 80%;
     }
     .involved h3{
         color: black;
