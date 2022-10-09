@@ -10,21 +10,22 @@ const Volunteerlist = ()=>{
     const voldesc = [
         {
             imgsrc: pic20,
-            position: "Director",
+            position: "President/Founder",
             name: "Ratna",
             desc: "I am an active Social Worker, a Youtuber/Singer by Profession. "
         },
         {
             imgsrc: pic16,
-            position: "Manager",
+            position: "Trustee",
             name: "Shraddha Suman",
             desc: "Graduated (BBA)"
         },
         {
             imgsrc: pic19,
-            position: "Consultant",
+            position: "Advisory member",
             name: "Anil Verma",
-            desc: "Service: 38 years (IPGCL) Pragati Power Station"
+            desc: `Service: 38 years (IPGCL) Pragati Power Station.
+            Designation: Retired Deputy Manager`
         },
         {
             imgsrc: pic17,
