@@ -1,0 +1,19 @@
+.membershipform{
+    border: solid 2px orange;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.membershipform a{
+    color: orange;
+}
+.membershipform button{
+    border-radius: 10px;
+}
+
+.membershipform button a{
+    color: white;
+    text-decoration: none;
+}
+

@@ -1,8 +1,10 @@
 import './volunteerBox.css'
 import React, { useState,useEffect } from "react";
+import Volunteerlist from './volunteerlist';
 import axios from 'axios';
 import Header from './header';
 import Footer from './footer';
+import Membershipform from './membershipform';
 
 const VolunteerForm = ()=>{
     const [Name,nameSetHandler]= useState('');
@@ -80,12 +82,13 @@ const VolunteerForm = ()=>{
             <Header/>
             <br/>
             <br/>
-            
+        <Volunteerlist/>
         <div className="volunteerBox">
             <div className="volunteerBoxLeft">
                 <h4>JOIN WITH US</h4>
                 <h1>Take One Step Further To Become A Proud Volunteer!</h1>
                 <p>Wherever you turn, you can find someone who needs you. Even if it is a little thing, do something for which there is no selfishness but the privilege of doing it. Remember, you don’t live in the world all of your own.</p>
+                <Membershipform/>
             </div>
             <form className="volunteerBoxRight" onSubmit={volunteerFormSubmitHandler}> 
             { !isVald && <div style={{backgroundColor:"rgb(248, 126, 126)",textAlign:"center",width:"35%",marginTop:"5%",marginLeft:"30%"}}>
