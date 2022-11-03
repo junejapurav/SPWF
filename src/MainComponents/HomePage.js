@@ -8,12 +8,14 @@ import Footer from "../components/footer";
 import { Waypoint } from "react-waypoint";
 import AboutUsGetInvolved from "../components/AboutUsGetInvolved";
 import Feedback from "../components/feedback";
+import Dailyupdate from "../components/dailyupdates";
 function HomePage (){
 
     return(
         <div>
         <Header/>
         <Slider/>
+        <Dailyupdate/>
         <GetInvolved/>
         <br/>
         <br/>

@@ -1,4 +1,6 @@
-
+*{
+  font-family: cursive;
+}
 html{
   width: 100%;
   min-height: auto;
@@ -8,6 +10,7 @@ body {
   margin:0;
   padding:0;
   overflow-x:hidden;
+  background-color: rgb(228, 220, 220) !important;
 }
 .App {
   text-align: center;

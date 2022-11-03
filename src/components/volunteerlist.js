@@ -12,14 +12,17 @@ const Volunteerlist = ()=>{
             imgsrc: pic20,
             position: "President/Founder",
             name: "Ratna",
-            desc: "I am an active Social Worker, a Youtuber/Singer by Profession. "
+            desc: "I am an active Social Worker, Designation: a Youtuber/Singer by Profession. "
         },
         {
             imgsrc: pic16,
             position: "Trustee",
             name: "Shraddha Suman",
-            desc: "Graduated (BBA)"
-        },
+            desc: "Designation: Graduated (BBA)"
+        }
+    ]
+
+    const voldesc2 = [
         {
             imgsrc: pic19,
             position: "Advisory member",
@@ -31,18 +34,23 @@ const Volunteerlist = ()=>{
             imgsrc: pic17,
             position: "Volunteer",
             name: "Rashi",
-            desc: "Bachelor's in Fine arts with Painting from College of Art, Delhi University."
+            desc: "Bachelor's in Fine arts with Painting from College of Art, Delhi University. Designation: Student"
         },
         {
             imgsrc: pic18,
             position: "Volunteer",
             name: "Purav Juneja",
-            desc: "A Software Engineering student at GGSIPU"
+            desc: "A Software Engineering student at GGSIPU. Designation: Student"
         }
     ]
     return (
         <div className="volunteerlist">
-            {voldesc.map((each)=><Volunteershower event={each}/>)}
+            <div className="Directorrow">
+                {voldesc.map((each)=><Volunteershower event={each}/>)}
+            </div>
+            <div className="volrow">
+                {voldesc2.map((each)=><Volunteershower event={each}/>)}
+            </div>
         </div>
     )
 }
