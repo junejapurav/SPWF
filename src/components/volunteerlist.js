@@ -12,35 +12,39 @@ const Volunteerlist = ()=>{
             imgsrc: pic20,
             position: "President/Founder",
             name: "Ratna",
-            desc: "I am an active Social Worker, Designation: a Youtuber/Singer by Profession. "
+            desc: "Active Social Worker/Youtuber/Singer",
+            area: ""
         },
         {
             imgsrc: pic16,
             position: "Trustee",
             name: "Shraddha Suman",
-            desc: "Designation: Graduated (BBA)"
+            desc: "Graduated (BBA)",
+            area: "Area: Teaching/Management"
         }
     ]
 
     const voldesc2 = [
         {
             imgsrc: pic19,
-            position: "Advisory member",
+            position: "Volunteer",
             name: "Anil Verma",
-            desc: `Service: 38 years (IPGCL) Pragati Power Station.
-            Designation: Retired Deputy Manager`
+            desc: `Retired Deputy Manager`,
+            area: "Area: Education/Activity"
         },
         {
             imgsrc: pic17,
             position: "Volunteer",
             name: "Rashi",
-            desc: "Bachelor's in Fine arts with Painting from College of Art, Delhi University. Designation: Student"
+            desc: "Bachelor's in Fine arts",
+            area: "Area: Fine arts/Management"
         },
         {
             imgsrc: pic18,
             position: "Volunteer",
             name: "Purav Juneja",
-            desc: "A Software Engineering student at GGSIPU. Designation: Student"
+            desc: "Software Engineering student",
+            area: "Area: Website Design"
         }
     ]
     return (

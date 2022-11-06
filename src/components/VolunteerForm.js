@@ -112,11 +112,19 @@ const VolunteerForm = ()=>{
                     </div>
                     <div>
                         <input type="checkbox" id="GraphicsDesigning" name="volunteerType" value="Graphics Designing" />
-                        <label for="GraphicsDesigning">Graphics Designing</label>
+                        <label for="GraphicsDesigning">Graphic Designing</label>
                     </div>
                     <div>
                         <input type="checkbox" id="ContentWriting" name="volunteerType" value="Content Writing" />
                         <label for="ContentWriting">Content Writing</label>
+                    </div> 
+                    <div>
+                        <input type="checkbox" id="ContentWriting" name="volunteerType" value="Content Writing" />
+                        <label for="ContentWriting">Public Relations</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="ContentWriting" name="volunteerType" value="Content Writing" />
+                        <label for="ContentWriting">Management</label>
                     </div>    
                     
                     </div>
