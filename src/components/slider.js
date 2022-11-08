@@ -5,13 +5,91 @@ import pic3 from '../img/Picture14.jpg';
 import pic2 from '../img/shiksharth.jpg';
 import pic4 from '../img/Picture13.jpg';
 import pic5 from '../images/Picture12.JPG'
-import pic6 from '../images/Picture13.JPG'
+import pic6 from '../images/Picture21.jpg'
 import pic7 from '../images/Picture14.JPG'
 import pic8 from '../images/Picture15.JPG'
+import pic9 from '../images/Picture24.jpg'
+import pic10 from '../images/Picture27.jpg'
+import pic11 from '../images/Picture29.jpg'
+import pic12 from '../images/Picture28.jpg'
+import pic13 from '../images/Picture30.jpg'
+
 
 function Slider() {
   return (
     <Carousel>
+    <Carousel.Item>
+        <img
+          className="d-block w-100 mypics"
+          src={pic6}
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h1 className='let'>Let's Build A Better World Together</h1>
+          <p>
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 mypics"
+          src={pic9}
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h1 className='let'>Let's Build A Better World Together</h1>
+          <p>
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 mypics"
+          src={pic10}
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h1 className='let'>Let's Build A Better World Together</h1>
+          <p>
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 mypics"
+          src={pic11}
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h1 className='let'>Let's Build A Better World Together</h1>
+          <p>
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 mypics"
+          src={pic12}
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h1 className='let'>Let's Build A Better World Together</h1>
+          <p>
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 mypics"
+          src={pic13}
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h1 className='let'>Let's Build A Better World Together</h1>
+          <p>
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
     <Carousel.Item>
         <img
           className="d-block w-100 mypics"
