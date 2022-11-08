@@ -33,7 +33,7 @@ const Dailyupdate = () =>{
                 </div>
             </div>
             <div className="fundRight2">
-                <h5>Update of the day</h5>
+                <h5></h5>
                 <img src={pic2}></img>
             </div>
         </div>
