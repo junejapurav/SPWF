@@ -12,7 +12,7 @@ const VolunteerForm = ()=>{
     const [Phone,phoneSetHandler]= useState('');
     const [ZipCode,zipSetHandler] =useState('');
     const [isVald,formValidator] = useState(true);
-    const [sent,setValueSent] =useState(true);
+    const [sent,setValueSent] = useState(true);
 
     useEffect(()=>{
  
@@ -46,6 +46,7 @@ const VolunteerForm = ()=>{
         let volunteerType= [];
 
         for(let i in document.getElementsByName("volunteerType")){
+            console.log(document.getElementsByName("volunteerType")[i]);
             if(document.getElementsByName("volunteerType")[i].checked === true){
                 volunteerType.push(document.getElementsByName("volunteerType")[i].value);
             }

@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import './dailyupdates.css';
-import pic from "../images/Picture21.jpg";
+import pic from "../images/Picture31.jpg";
 import pic2 from "../images/Picture22.jpg";
 
 const Dailyupdate = () =>{
