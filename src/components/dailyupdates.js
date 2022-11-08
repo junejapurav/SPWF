@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import './dailyupdates.css';
-import pic from "../images/Picture31.jpg";
-import pic2 from "../images/Picture22.jpg";
+import pic from "../images/Picture30.jpg";
+import pic2 from "../images/Picture31.jpg";
 
 const Dailyupdate = () =>{
 
@@ -10,8 +10,8 @@ const Dailyupdate = () =>{
         <div className = "fundRaising2">
             <div className="fundLeft2">
                 <h5>Daily Updates</h5>
-                <h1>Diwali event</h1>
-                <p>SPWF set up its Diwali Stall in collaboration with Netaji Subhash Apartments, Dwarka RWA. On this occasion we presented & promoted out students handmade crafts, their talents. People out there supported our cause and appreciated our students as well. </p>
+                <h1>Mother Dairy Trip</h1>
+                <p>We always try to teach something new to our children. In this episode, on October 15, the SPWF team took our children to Mother Dairy, where the children learned many things. Our aim was that children should learn how milk and its related substances are made necessary for their nutrition.</p>
                 <div className="playButton">
                 <a  style={{color:"white"}} href="https://youtu.be/dB33mlhTm2s" ><i class="fa-solid fa-circle-play"></i></a>
                     <p>NGO's DOCUMENTRY</p>
