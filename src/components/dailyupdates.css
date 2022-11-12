@@ -88,6 +88,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 20px;
+    }
+    .fundRaising3{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+
     }
     .fundRight2{
         width: 60%;

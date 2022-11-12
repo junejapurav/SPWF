@@ -47,3 +47,19 @@
 .compimpnote p{
     margin: 0;
 }
+
+
+@media screen and (max-width: 800px){
+    .compdesc{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .compdescleft{
+        width: 80%
+    }
+    .compdescright{
+        width: 80%;
+    }
+}
