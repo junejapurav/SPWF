@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import './dailyupdates.css';
 import pic from "../images/Picture30.jpg";
 import pic2 from "../images/Picture31.jpg";
+import { Link } from "react-router-dom";
 
 const Dailyupdate = () =>{
 
@@ -12,10 +13,7 @@ const Dailyupdate = () =>{
                 <h5>Daily Updates</h5>
                 <h1>Mother Dairy Trip</h1>
                 <p>We always try to teach something new to our children. In this episode, on October 15, the SPWF team took our children to Mother Dairy, where the children learned many things. Our aim was that children should learn how milk and its related substances are made necessary for their nutrition.</p>
-                <div className="playButton">
-                <a  style={{color:"white"}} href="https://youtu.be/dB33mlhTm2s" ><i class="fa-solid fa-circle-play"></i></a>
-                    <p>NGO's DOCUMENTRY</p>
-                </div>
+                <Link to='/competition'><button>COMPETITIONS</button></Link>
             </div>
             <div className="fundRight2">
                 <h5>Update of the day</h5>

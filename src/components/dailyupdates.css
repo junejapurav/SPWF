@@ -29,6 +29,11 @@
     color: black;
     width: 50%;
 }
+.fundLeft2 button{
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+}
 .fundRight2{
     margin: 5% 8% 5% 0; 
     padding: 2%;

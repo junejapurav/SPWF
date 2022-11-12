@@ -22,6 +22,7 @@ import Aahar from "./components/Aahar";
 import KaushalUthan from "./components/KaushalUthan";
 import Chikitsa from "./components/Chikitsa"
 import PageNotFound from './components/PageNotFound'
+import Competition from "./MainComponents/Competition";
 
 
 
@@ -43,7 +44,7 @@ function App() {
           <Route exact path='/donation' element={<Donation/>}></Route>
           <Route exact path='/login' element={<AdminLogin/>}></Route>
 
-    
+          <Route exact path="/competition" element={<Competition/>}></Route>
           <Route exact path='/volunteer' element={<VolunteerForm/>}></Route>
           <Route exact path='/Shiksharth' element={<Shiksharth/>}></Route>
           <Route exact path="/Aahar" element={<Aahar/>}></Route>
