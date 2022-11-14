@@ -1,6 +1,8 @@
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Slider from "../components/slider";
+import pic1 from '../images/Picture32.png'
+import pic2 from '../images/Picture33.png'
 import './competition.css'
 
 function Competition(){
@@ -9,9 +11,9 @@ function Competition(){
             <Header/>
             <Slider/>
             <h1 className="competitionheading">JOIN US IN OUR UPCOMING COMPETITIONS</h1>
-            <div>
-                <img></img>
-                <img></img>
+            <div className="compimages">
+                <img src={pic2}></img>
+                <img src={pic1}></img>
             </div>
             <h2 className="competitionheading">Online Painting Competition '22</h2>
             <div className="compdesc">

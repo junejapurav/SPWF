@@ -11,11 +11,11 @@
     flex-direction: row;
     justify-content: center;
     gap: 20px;
-    color: rgb(77, 75, 75);
+    color: black;
 
 }
 .compdesc h3{
-    color: rgb(60, 59, 59);
+    /* color: rgb(60, 59, 59); */
     font-family: unset;
     font-size: 30px;
 }
@@ -38,6 +38,11 @@
     width: 150px;
     
 }
+.compdescright h3{
+    background-color:rgba(253, 212, 162, 0.881);
+    width: fit-content;
+    padding: 0 20px;
+}
 .compimpnote{
     text-align: center;
     background-color: #404040;
@@ -49,6 +54,17 @@
 .compimpnote p{
     margin: 0;
 }
+.compimages{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    margin: 40px 0;
+}
+.compimages img{
+    width: 30%;
+}
+
 
 
 @media screen and (max-width: 800px){
@@ -63,5 +79,12 @@
     }
     .compdescright{
         width: 90%;
+    }
+    .compimages{
+        flex-direction: column;
+        align-items: center;
+    }
+    .compimages img{
+        width: 80%
     }
 }
