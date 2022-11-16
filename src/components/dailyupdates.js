@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import './dailyupdates.css';
-import pic from "../images/Picture30.jpg";
+import pic from "../images/Picture34.jpg";
 import pic2 from "../images/Picture31.jpg";
 import { Link } from "react-router-dom";
 
@@ -11,7 +11,7 @@ const Dailyupdate = () =>{
         <div className = "fundRaising2">
             <div className="fundLeft2">
                 <h5>Daily Updates</h5>
-                <h1>Sweater Distribution</h1>
+                <h1>Sweaters Distribution</h1>
                 <p>Your each and every cooperation is no less than gold for us. In this direction, on November 10, 10 retired engineers from DDA Engineers Club, Dwarka donated sweaters to our children. These sweaters given to children have become a part of our uniform and are a very valuable donation considering the cold weather.</p>
                 <Link to='/competition'><button>COMPETITIONS</button></Link>
             </div>
