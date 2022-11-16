@@ -11,8 +11,8 @@ const Dailyupdate = () =>{
         <div className = "fundRaising2">
             <div className="fundLeft2">
                 <h5>Daily Updates</h5>
-                <h1>Mother Dairy Trip</h1>
-                <p>We always try to teach something new to our children. In this episode, on October 15, the SPWF team took our children to Mother Dairy, where the children learned many things. Our aim was that children should learn how milk and its related substances are made necessary for their nutrition.</p>
+                <h1>Sweater Distribution</h1>
+                <p>Your each and every cooperation is no less than gold for us. In this direction, on November 10, 10 retired engineers from DDA Engineers Club, Dwarka donated sweaters to our children. These sweaters given to children have become a part of our uniform and are a very valuable donation considering the cold weather.</p>
                 <Link to='/competition'><button>COMPETITIONS</button></Link>
             </div>
             <div className="fundRight2">
