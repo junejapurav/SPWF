@@ -4,6 +4,7 @@ import pic17 from "../images/Picture17.jpeg"
 import pic18 from "../images/Picture18 (2).jpeg"
 import pic19 from "../images/Picture19.jpeg"
 import pic20 from "../images/Picture20.jpeg"
+import pic21 from "../images/Picture35.jpeg"
 
 
 const Volunteerlist = ()=>{
@@ -28,14 +29,14 @@ const Volunteerlist = ()=>{
         {
             imgsrc: pic19,
             position: "Volunteer",
-            name: "Anil Verma",
+            name: "Er. Anil Verma",
             desc: `Profession: Retired Deputy Manager`,
             area: "Area: Education/Activity"
         },
         {
             imgsrc: pic17,
             position: "Volunteer",
-            name: "Rashi",
+            name: "Rashi Verma",
             desc: "Qualification: Bachelor's in Fine arts",
             area: "Area: Fine arts/Management"
         },
@@ -45,6 +46,13 @@ const Volunteerlist = ()=>{
             name: "Purav Juneja",
             desc: "Qualification: BTECH student",
             area: "Area: Website Design"
+        },
+        {
+            imgsrc: pic21,
+            position: "Volunteer",
+            name: "Saksham Nagar",
+            desc: "Qualification: BA Political Science Hons",
+            area: "Area: Content Writing"
         }
     ]
     return (

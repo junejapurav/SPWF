@@ -24,7 +24,7 @@ const Dailyupdate = () =>{
             <div className="fundLeft2">
                 <h5>Upcoming Event</h5>
                 <h1>Children's Day Event</h1>
-                <p>Shakuntala Poddar Welfare Foundation is making various efforts for the upliftment of the children living in slums. In this episode, on the coming 20th of November, we are organizing a Camel ride on the occasion of Children's Day program to increase the enthusiasm of the children.</p>
+                <p>Shakuntala Poddar Welfare Foundation is making various efforts for the upliftment of the children living in slums. In this episode, on the coming 20th of November, 10 a.m. onwards we are organizing a Camel ride on the occasion of Children's Day program to increase the enthusiasm of the children.</p>
                 <div className="playButton">
                 <a  style={{color:"white"}} href="https://youtu.be/dB33mlhTm2s" ><i class="fa-solid fa-circle-play"></i></a>
                     <p>NGO's DOCUMENTRY</p>
