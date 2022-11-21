@@ -13,11 +13,63 @@ import pic10 from '../images/Picture27.jpg'
 import pic11 from '../images/Picture29.jpg'
 import pic12 from '../images/Picture28.jpg'
 import pic13 from '../images/Picture30.jpg'
+import pic14 from "../images/Picture36.JPG"
+import pic15 from "../images/Picture37.JPG"
+import pic16 from "../images/Picture38.JPG"
+import pic17 from "../images/Picture39.JPG"
 
 
 function Slider() {
   return (
     <Carousel>
+    <Carousel.Item>
+        <img
+          className="d-block w-100 mypics"
+          src={pic15}
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h1 className='let'>Let's Build A Better World Together</h1>
+          <p>
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 mypics"
+          src={pic17}
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h1 className='let'>Let's Build A Better World Together</h1>
+          <p>
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 mypics"
+          src={pic14}
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h1 className='let'>Let's Build A Better World Together</h1>
+          <p>
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 mypics"
+          src={pic16}
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h1 className='let'>Let's Build A Better World Together</h1>
+          <p>
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
     <Carousel.Item>
         <img
           className="d-block w-100 mypics"
