@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import './dailyupdates.css';
-import pic from "../images/Picture34.jpg";
-import pic2 from "../images/Picture31.jpg";
+import pic from "../images/Picture36.JPG";
+import pic2 from "../images/Picture40.jpg";
 import { Link } from "react-router-dom";
 
 const Dailyupdate = () =>{
@@ -11,9 +11,12 @@ const Dailyupdate = () =>{
         <div className = "fundRaising2">
             <div className="fundLeft2">
                 <h5>Daily Updates</h5>
-                <h1>Sweaters Distribution</h1>
-                <p>Your each and every cooperation is no less than gold for us. In this direction, on November 10, 10 retired engineers from DDA Engineers Club, Dwarka donated sweaters to our children. These sweaters given to children have become a part of our uniform and are a very valuable donation considering the cold weather.</p>
-                <Link to='/competition'><button>COMPETITIONS</button></Link>
+                <h1>Children's Day Event</h1>
+                <p>On last 20 November 2022, we organized a Children's Day program for the children of our organization. The main point of this program is camel ride to bacchon and honoring them according to their achievements. Our NGO is always doing something new for the slum dwellers and this was also one of them.</p>
+                <div className="playButton">
+                <a  style={{color:"white"}} href="https://youtu.be/dB33mlhTm2s" ><i class="fa-solid fa-circle-play"></i></a>
+                    <p>NGO's DOCUMENTRY</p>
+                </div>
             </div>
             <div className="fundRight2">
                 <h5>Update of the day</h5>
@@ -23,12 +26,9 @@ const Dailyupdate = () =>{
         <div className = "fundRaising3">
             <div className="fundLeft2">
                 <h5>Upcoming Event</h5>
-                <h1>Children's Day Event</h1>
-                <p>Shakuntala Poddar Welfare Foundation is making various efforts for the upliftment of the children living in slums. In this episode, on the coming 20th of November, 10 a.m. onwards we are organizing a Camel ride on the occasion of Children's Day program to increase the enthusiasm of the children.</p>
-                <div className="playButton">
-                <a  style={{color:"white"}} href="https://youtu.be/dB33mlhTm2s" ><i class="fa-solid fa-circle-play"></i></a>
-                    <p>NGO's DOCUMENTRY</p>
-                </div>
+                <h1>Painting Competition</h1>
+                <p>Shakuntala Poddar Welfare Foundation is making various efforts for the upliftment of the children living in slums. In this episode, we are organizing an Online Painting Competition on the occasion of Christmas to increase the enthusiasm of the children. The last day of submission is 25th of December.</p>
+                <Link to='/competition'><button>COMPETITIONS</button></Link>
             </div>
             <div className="fundRight2">
                 <h5></h5>
