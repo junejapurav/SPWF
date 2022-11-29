@@ -15,7 +15,7 @@ function Competition(){
                 <img src={pic2}></img>
                 <img src={pic1}></img>
             </div>
-            <h2 className="competitionheading">Online Painting Competition '22</h2>
+            <h2 className="competitionheading">Online Painting Competition</h2>
             <div className="compdesc">
                 <div className="compdescleft">
                     <div>
