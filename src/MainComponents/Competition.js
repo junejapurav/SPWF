@@ -21,10 +21,11 @@ function Competition(){
                     <div>
                         <h3>Categories</h3>
                         <ul>
-                            <li>Group A Painting Theme: MY FAVORITE CHRISTMAS GIFT (Kindergarten - Below 1st Grade/Class)</li>
-                            <li>Group B Theme: YOUR SANTA CLAUS (Grade/Class 1st & 2nd )</li>
-                            <li>Group C Theme: CHRISTMAS DECORATION AT YOUR PLACE (Grade/Class 3rd, 4th & 5th)</li>
-                            <li>Group D Theme: CHRISTMAS THEME (Grade/Class 6th to 8th)</li>
+                            <li>Group A Painting Theme: MY DREAM INDIA (Kindergarten - Below 1st Grade/Class)</li>
+                            <li>Group B Theme: CLEAN INDIA GREEN INDIA (Grade/Class 1st & 2nd )</li>
+                            <li>Group C Theme: SWACHH BHARAT (Grade/Class 3rd, 4th & 5th)</li>
+                            <li>Group D Theme: MAKE IN INDIA (Grade/Class 6th to 8th)</li>
+                            <li>Group E Theme: EK BHARAT SHRESHTHA BHARAT (Grade/Class 9th - 10th)</li>
                         </ul>
                         <br></br>
                         <h3>Guidelines</h3>
@@ -45,18 +46,18 @@ function Competition(){
                             <li>Step 3: Register on the link given below to pay the Fee and Upload your photographs.</li>
                         </ul>
                         <h3>FEE- Rs. 100</h3>
-                        <p>To Register for the competition click Below</p>
+                        <p>Registrations are open till 26th January, 2023. To register for the competition click Below</p>
                         <a href="https://forms.gle/TnUGfRs6rzoV37PF8"><button>Register</button></a>
                     </div>
                 </div>
             </div>
             <div className="compimpnote">
                 <p>Dear Students,</p>
-                <p>the results of Online Painting Competition '22 will be announced on 31 December,2022.</p>
+                <p>the results of Online Painting Competition will be announced on 10 February, 2023.</p>
                 <p>If you don't see your name in the list, don't be disappointed, work harder next time, and To us all of you are Winners! </p>
                 <br></br>
                 <p>We Thank all Students, Parents, Teachers and School Authorities for Extending their Unconditional Support to the</p>
-                <p>Online Painting Competition '22 making it a Success!</p>
+                <p>Online Painting Competition making it a Success!</p>
             </div>
             <Footer></Footer>
         </div>
