@@ -5,6 +5,8 @@ import axios from 'axios';
 import Header from './header';
 import Footer from './footer';
 import Membershipform from './membershipform';
+import Whatsapp from "../components/Whatsapp";
+
 
 const VolunteerForm = ()=>{
     const [Name,nameSetHandler]= useState('');
@@ -137,6 +139,7 @@ const VolunteerForm = ()=>{
                     <button type="submit">Submit</button>
             </form>
         </div>
+        <Whatsapp/>
         <Footer/>
         </React.Fragment>
     )

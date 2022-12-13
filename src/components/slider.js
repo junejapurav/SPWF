@@ -85,31 +85,7 @@ function Slider() {
       <Carousel.Item>
         <img
           className="d-block w-100 mypics"
-          src={pic9}
-          alt="Third slide"
-        />
-        <Carousel.Caption>
-          <h1 className='let'>Let's Build A Better World Together</h1>
-          <p>
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100 mypics"
           src={pic10}
-          alt="Third slide"
-        />
-        <Carousel.Caption>
-          <h1 className='let'>Let's Build A Better World Together</h1>
-          <p>
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100 mypics"
-          src={pic11}
           alt="Third slide"
         />
         <Carousel.Caption>
@@ -154,52 +130,6 @@ function Slider() {
           </p>
         </Carousel.Caption>
       </Carousel.Item>
-    <Carousel.Item>
-        <img
-          className="d-block w-100 mypics"
-          src={pic7}
-          alt="Third slide"
-        />
-        <Carousel.Caption>
-          <h1 className='let'>Let's Build A Better World Together</h1>
-          <p>
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={1000}>
-        <img
-          className="d-block w-100 mypics"
-          src={pic2}
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h1 className='let'>Let's Build A Better World Together</h1>
-          <p></p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={500}>
-        <img
-          className="d-block w-100 mypics"
-          src={pic1}
-          alt="Second slide"
-        />
-        <Carousel.Caption>
-          <h1 className='let'>Let's Build A Better World Together</h1>
-          <p></p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100 mypics"
-          src={pic4}
-          alt="Third slide"
-        />
-        <Carousel.Caption>
-          <h1 className='let'>Let's Build A Better World Together</h1>
-          <p>
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100 mypics"
@@ -212,19 +142,6 @@ function Slider() {
           </p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100 mypics"
-          src={pic8}
-          alt="Third slide"
-        />
-        <Carousel.Caption>
-          <h1 className='let'>Let's Build A Better World Together</h1>
-          <p>
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      
     </Carousel>
   );
 }

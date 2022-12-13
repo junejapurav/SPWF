@@ -12,16 +12,18 @@ const Volunteerlist = ()=>{
         {
             imgsrc: pic20,
             position: "President/Founder",
-            name: "Ratna",
-            desc: "Profession: Active Social Worker, Youtuber and Singer",
-            area: ""
+            name: "Mrs. Ratna",
+            desc: "Profession: Social Worker, Youtuber and Singer",
+            area: "Area: Principal",
+            location: "Location: Delhi"
         },
         {
             imgsrc: pic16,
             position: "Trustee",
-            name: "Shraddha Suman",
+            name: "Ms. Shraddha Suman",
             desc: "Qualification: Graduated (BBA)",
-            area: "Area: Teaching/Management"
+            area: "Area: Teaching/Management",
+            location: "Location: Delhi"
         }
     ]
 
@@ -31,28 +33,32 @@ const Volunteerlist = ()=>{
             position: "Volunteer",
             name: "Er. Anil Verma",
             desc: `Profession: Retired Deputy Manager`,
-            area: "Area: Education/Activity"
+            area: "Area: Education/Activity",
+            location: "Location: Delhi"
         },
         {
             imgsrc: pic17,
             position: "Volunteer",
-            name: "Rashi Verma",
+            name: "Ms. Rashi Verma",
             desc: "Qualification: Bachelor's in Fine arts",
-            area: "Area: Fine arts/Management"
+            area: "Area: Fine arts/Management",
+            location: "Location: Delhi"
         },
         {
             imgsrc: pic18,
             position: "Volunteer",
-            name: "Purav Juneja",
+            name: "Mr. Purav Juneja",
             desc: "Qualification: BTECH student",
-            area: "Area: Website Design"
+            area: "Area: Website Design",
+            location: "Location: Delhi"
         },
         {
             imgsrc: pic21,
             position: "Volunteer",
-            name: "Saksham Nagar",
+            name: "Mr. Saksham Nagar",
             desc: "Qualification: BA Political Science Hons",
-            area: "Area: Content Writing"
+            area: "Area: Content Writing",
+            location: "Location: Varanasi"
         }
     ]
     return (

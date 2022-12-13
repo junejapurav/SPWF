@@ -42,9 +42,9 @@ function counter(){
 const Header = ()=>{
     function run(){
         if(isHovering){
-            document.getElementsByClassName('dropbtn')[0].innerHTML = 'Events<i class="fa-solid fa-sort-down"></i>';
+            document.getElementsByClassName('dropbtn')[0].innerHTML = 'Schemes<i class="fa-solid fa-sort-down"></i>';
         }else{
-            document.getElementsByClassName('dropbtn')[0].innerHTML = 'Events<i class="fa-solid fa-caret-up"></i>';
+            document.getElementsByClassName('dropbtn')[0].innerHTML = 'Schemes<i class="fa-solid fa-caret-up"></i>';
         }
     }
 
@@ -120,7 +120,7 @@ const Header = ()=>{
         <Link to={'/aboutUs'}><a>About us</a></Link>
         <Link to={'/volunteer'}><a>Volunteer</a></Link>
         <div class="dropdown">
-        <a class="dropbtn" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Events<i class="fa-solid fa-sort-down"></i></a>
+        <a class="dropbtn" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Schemes<i class="fa-solid fa-sort-down"></i></a>
         <div class="dropdown-content" >
             <Link to={'/Shiksharth'}><a>Shiksharth</a></Link>
             <Link to={'/KaushalUthan'}><a>Kaushal Uthan</a></Link>

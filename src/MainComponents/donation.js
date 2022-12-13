@@ -6,6 +6,8 @@ import './donation.css'
 import AboutUsImage from '../components/AboutUsImage';
 import donationimage from '../img/donate.jpeg'
 import LoadingSpinner from '../UI/Loading';
+import Whatsapp from "../components/Whatsapp";
+
 
 function Donation() {
   const [loading, setLoading] = useState(false);
@@ -139,7 +141,7 @@ const checker = ()=>{
         </button>
         {loading && <LoadingSpinner/>}
     </div>
-        
+        <Whatsapp/>
         <Footer/>
       </div>
       

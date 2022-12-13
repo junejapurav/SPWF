@@ -16,17 +16,17 @@ function ContactUsBox(){
                     </div>
                 </div>
                 <div className="contactAdress">
+                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    <div className='desc'>
+                        <h4>Work Address:</h4>
+                        <p>spwf.ngo@gmail.com</p>
+                    </div>
+                </div>
+                <div className="contactAdress">
                 <i class="fa-solid fa-phone-volume"></i>
                     <div className='desc'>
                         <h4>Contact Number:</h4>
                         <p>+91-8851755256</p>
-                    </div>
-                </div>
-                <div className="contactAdress">
-                <i class="fa-solid fa-envelope-open-text"></i>
-                    <div className='desc'>
-                        <h4>Email Address:</h4>
-                        <p>spwf.ngo@gmail.com</p>
                     </div>
                 </div>
             </div>

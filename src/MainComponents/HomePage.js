@@ -9,6 +9,8 @@ import { Waypoint } from "react-waypoint";
 import AboutUsGetInvolved from "../components/AboutUsGetInvolved";
 import Feedback from "../components/feedback";
 import Dailyupdate from "../components/dailyupdates";
+import Whatsapp from "../components/Whatsapp";
+
 function HomePage (){
 
     return(
@@ -27,6 +29,7 @@ function HomePage (){
         <br/>
         <AboutUsGetInvolved/>
         <Feedback/>
+        <Whatsapp/>
         <Footer/> 
         </div>
     )

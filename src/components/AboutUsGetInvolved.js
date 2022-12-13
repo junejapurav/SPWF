@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
 import bgImageAboutUs from '../img/IMG_20211129_165917.jpg';
+import pic from '../images/Picture41.jpg'
 import Button from '../UI/button';
 import './AboutUsGetInvolved.css'
 function AboutUsGetInvolved(){
 
 
     return(
-        <div className="AboutUsGetInvolved" style={{backgroundImage: `url(${bgImageAboutUs})`,backgroundSize: 'cover',backgroundRepeat:'no-repeat',
+        <div className="AboutUsGetInvolved" style={{backgroundImage: `url(${pic})`,backgroundSize: 'cover',backgroundRepeat:'no-repeat'
          }}>
             <div className='AboutUsGetInvolvedTitle'>
                 Get Involved

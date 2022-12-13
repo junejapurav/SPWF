@@ -4,6 +4,8 @@ import EventRight from "./EventsRight";
 import Footer from "./footer";
 import Header from "./header";
 import './Event.css'
+import Whatsapp from "../components/Whatsapp";
+
 function Event(props){
 
     return(
@@ -15,6 +17,7 @@ function Event(props){
         <EventLeft current={props.current}/>
         <EventRight current={props.current}/>
         </div>
+        <Whatsapp/>
         <Footer/>
         </React.Fragment>
     )

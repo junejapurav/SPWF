@@ -6,6 +6,7 @@ import AboutUsImage from '../components/AboutUsImage'
 import Aimbox from "../components/Aimbox";
 import Goalbox from "../components/Goalbox";
 import aboutUsImage from '../img/IMG-20200118-WA0022.jpg'
+import Whatsapp from "../components/Whatsapp";
 
 
 function AboutUsPage(){
@@ -27,6 +28,7 @@ function AboutUsPage(){
             <br/>
             <br/>
             <AboutUsGetInvloved />
+            <Whatsapp/>
             <Footer/>
         </div>
     )

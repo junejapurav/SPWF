@@ -19,7 +19,7 @@
   }
   .eachvol{
     width: 320px;
-    height: 450px;
+    height: 510px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

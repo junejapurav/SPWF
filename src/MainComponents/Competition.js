@@ -4,6 +4,8 @@ import Slider from "../components/slider";
 import pic1 from '../images/Picture32.png'
 import pic2 from '../images/Picture33.png'
 import './competition.css'
+import Whatsapp from "../components/Whatsapp";
+
 
 function Competition(){
     return(
@@ -59,6 +61,7 @@ function Competition(){
                 <p>We Thank all Students, Parents, Teachers and School Authorities for Extending their Unconditional Support to the</p>
                 <p>Online Painting Competition making it a Success!</p>
             </div>
+            <Whatsapp/>
             <Footer></Footer>
         </div>
     )

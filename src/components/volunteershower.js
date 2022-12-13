@@ -9,6 +9,7 @@ const Volunteershower = (props)=>{
                 <ul>
                     <li>{props.event.desc}</li>
                     <li>{props.event.area}</li>
+                    <li>{props.event.location}</li>
                 </ul>
             </div>
         </div>
