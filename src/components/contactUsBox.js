@@ -12,14 +12,14 @@ function ContactUsBox(){
                     <i class="fa-solid fa-location-dot"></i>
                     <div className="desc">
                         <h4>Head Office Address:</h4>
-                        <p>E-10, Sainik Nagar, Mansaram Park,Near DPS School, Nearest Metro Station- Nawada</p>
+                        <p>Gangotri Apartments, Sector-12 , Dwarka, New Delhi 110078</p>
                     </div>
                 </div>
                 <div className="contactAdress">
                 <i class="fa fa-briefcase" aria-hidden="true"></i>
                     <div className='desc'>
-                        <h4>Work Address:</h4>
-                        <p>spwf.ngo@gmail.com</p>
+                        <h4>Work Office Address:</h4>
+                        <p>E-10, Sainik Nagar, Mansaram Park,Near DPS School</p>
                     </div>
                 </div>
                 <div className="contactAdress">
