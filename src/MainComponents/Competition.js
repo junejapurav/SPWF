@@ -18,6 +18,9 @@ function Competition(){
                 <img src={pic1}></img>
             </div>
             <h2 className="competitionheading">Online Painting Competition</h2>
+            <div className="compregister">
+            <a href="https://forms.gle/TnUGfRs6rzoV37PF8"><button>Register</button></a>
+            </div>
             <div className="compdesc">
                 <div className="compdescleft">
                     <div>
@@ -39,7 +42,6 @@ function Competition(){
                     </div>
                 </div>
                 <div className="compdescright">
-                    <img></img>
                     <div>
                         <h3>How to Participate:</h3>
                         <ul>
@@ -49,7 +51,6 @@ function Competition(){
                         </ul>
                         <h3>FEE- Rs. 100</h3>
                         <p>Registrations are open till 26th January, 2023. To register for the competition click Below</p>
-                        <a href="https://forms.gle/TnUGfRs6rzoV37PF8"><button>Register</button></a>
                     </div>
                 </div>
             </div>

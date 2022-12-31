@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import './dailyupdates.css';
-import pic from "../images/Picture42.jpeg";
+import pic from "../images/Picture43.jpg";
 import pic2 from "../images/Picture40.jpg";
 import { Link } from "react-router-dom";
 
@@ -11,8 +11,8 @@ const Dailyupdate = () =>{
         <div className = "fundRaising2">
             <div className="fundLeft2">
                 <h5>Daily Updates</h5>
-                <h1>Shoes Distribution</h1>
-                <p>On 16th December 2022, DDA ENGINEERS CLUB distributed snacks, eatables, school shoes and socks to the students of our organization. They've not only helped students of our NGO with this generous act but also put a smile on the faces of more than hundreds of students that were part of this distribution event. We're utterly grateful to DDA ENGINEERS CLUB for their constant humble support to our organization. Our NGO will always be grateful for their generosity towards our children.</p>
+                <h1>Christmas Event</h1>
+                <p>Another day of bringing joy to the 110 different students of our organization. It wasn't just Santa who visited this Christmas, he rekindled everyone's hopes for the approaching new year. The snacks and chocolates represented a joyous occasion celebrated with festive fervour.</p>
                 <div className="playButton">
                 <a  style={{color:"white"}} href="https://youtu.be/dB33mlhTm2s" ><i class="fa-solid fa-circle-play"></i></a>
                     <p>NGO's DOCUMENTRY</p>
