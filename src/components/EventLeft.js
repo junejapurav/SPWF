@@ -2,6 +2,7 @@ import Pic1 from '../img/shiksharth.jpg';
 import Pic5 from '../images/Picture5.jpg';
 import Pic4 from '../images/Picture4.png';
 import Pic2 from '../images/Picture2.jpg';
+import Pic3 from '../images/Picture47.jpeg';
 import './EventLeft.css';
 function EventLeft(props){
     const Events= [
@@ -42,12 +43,18 @@ function EventLeft(props){
             }
         }
     }
+    function shikgraph(){
+        if(props.current=="Shiksharth"){
+            return <img src={Pic3} className='shikgraph'></img>
+        }
+    }
     return(       
             <div className="shikleft">
                 <h1>{fetchEvent().name}</h1>
                 <img src={fetchEvent().img}></img>
                 <br/>
                 <p>{fetchEvent().description}</p>
+                {shikgraph()}
             </div>
 
     )
