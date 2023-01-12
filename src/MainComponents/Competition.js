@@ -3,8 +3,12 @@ import Header from "../components/header";
 import Slider from "../components/slider";
 import pic1 from '../images/Picture32.png'
 import pic2 from '../images/Picture33.png'
+import pic3 from '../images/Picture44.jpeg'
+import pic4 from '../images/Picture45.jpeg'
+import pic5 from '../images/Picture46.jpeg'
 import './competition.css'
 import Whatsapp from "../components/Whatsapp";
+import vid1 from '../images/Video1.mp4'
 
 
 function Competition(){
@@ -16,6 +20,8 @@ function Competition(){
             <div className="compimages">
                 <img src={pic2}></img>
                 <img src={pic1}></img>
+                <img src={pic3}></img>
+                <video width="320" height="430" controls><source src={vid1}></source></video>
             </div>
             <h2 className="competitionheading">Online Painting Competition</h2>
             <div className="compregister">
@@ -53,6 +59,11 @@ function Competition(){
                         <p>Registrations are open till 26th January, 2023. To register for the competition click Below</p>
                     </div>
                 </div>
+            </div>
+            <h2 className="judgeheading">Judges</h2>
+            <div className="judgeposters">
+            <img src={pic4}></img>
+            <img src={pic5}></img>
             </div>
             <div className="compimpnote">
                 <p>Dear Students,</p>

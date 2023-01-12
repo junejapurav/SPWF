@@ -60,6 +60,9 @@
     color: black;
     font-weight: bolder;
 }
+.red{
+    color: red;
+}
 .goalboxright i{
     position: relative;
     top: 80%;

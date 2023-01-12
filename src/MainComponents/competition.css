@@ -63,11 +63,29 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
     margin: 40px 0;
 }
 .compimages img{
-    width: 30%;
+    width: 20%;
+}
+.judgeposters{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    margin: 50px 0;
+}
+.judgeposters img{
+    width: 22%;
+}
+.judgeheading{
+    text-align: center;
+    background-color:rgba(253, 212, 162, 0.881);
+    margin: auto;
+    width: fit-content;
+    padding: 10px;
+
 }
 
 
@@ -91,5 +109,12 @@
     }
     .compimages img{
         width: 80%
+    }
+    .judgeposters{
+        flex-direction: column;
+        align-items: center;
+    }
+    .judgeposters img{
+        width: 80%;
     }
 }

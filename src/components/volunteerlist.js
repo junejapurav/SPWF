@@ -14,7 +14,7 @@ const Volunteerlist = ()=>{
             position: "President/Founder",
             name: "Mrs. Ratna",
             desc: "Profession: Social Worker, Youtuber and Singer",
-            area: "Area: Principal",
+            area: "Qualification: M.A. (Psycology)",
             location: "Location: Delhi"
         },
         {

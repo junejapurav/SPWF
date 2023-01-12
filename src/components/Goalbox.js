@@ -34,12 +34,13 @@ function Goalbox(){
                     <div className='changinggoals'>
                     <h4 onClick={counterlow}>&lt;</h4>
                     <span id='changegoal'>
-                    	<p>1)  Enabling at least 500 children of West Delhi Slums with</p>
+                    	<p>1) Enabling at least 500 children of West Delhi Slums with</p>
                         <ul>
                             <li>Academic qualification through classroom education</li>
                             <li>Extra-curricular activities including sports</li>
                             <li>Nourishment with foods</li>
                             <li>Keeping them healthy with medical support, as required</li>
+                            <li className='red'>This is ... paused due to lack of funding and other resources</li>
                         </ul>   
                     </span>
                     <h4 onClick={counterUp}>&gt;</h4>
