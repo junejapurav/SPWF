@@ -7,11 +7,14 @@
 
 }
 .shikleft h1{
-    font-family: 'Lobster', cursive;
+    /* font-family: 'Lobster', cursive; */
 }
 .shikleft img{
     border-radius: 10px;
 }
 .shikgraph{
     width: 50%;
+}
+.shikleft b:hover{
+    color: black;
 }

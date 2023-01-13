@@ -33,7 +33,7 @@ function EventLeft(props){
         {
             img:Pic1,
             name:"Shiksharth",
-            description:"The Shakuntala Poddar Welfare Foundation's Shiksharth programme aims to teach underprivileged children who have been denied access to education or have missed school due to unforeseen circumstances. Shiksharth's main goal is to provide students with high-quality education by using approaches that are tailored to each child's needs. Students who are already enrolled in higher secondary schools but lacked a solid foundation from the start are provided suitable resources and tuition. We strive to reintegrate children who have had to leave school for a variety of reasons by offering instructional facilities and aid with school enrollment. Apart from child-centered interventions, we also hope to raise awareness among parents about the value of education and to persuade them to pay attention to their children's growth and good schooling so that they can realise their dreams.  Our project's core concept is education. Our main goal is to provide high-quality education to children who are disadvantaged.This includes putting in place a solid infrastructure to assure their overall development, which is critical to their health, character, and abilities.",
+            description:"The Shakuntala Poddar Welfare Foundation's Shiksharth programme aims to teach underprivileged children who have been denied access to education or have missed school due to unforeseen circumstances.<b> Shiksharth's main goal is to provide students with high-quality education by using approaches that are tailored to each child's needs</b>. Students who are already enrolled in higher secondary schools but lacked a solid foundation from the start are provided suitable resources and tuition. We strive to reintegrate children who have had to leave school for a variety of reasons by offering instructional facilities and aid with school enrollment. Apart from child-centered interventions, we also hope to raise awareness among parents about the value of education and to persuade them to pay attention to their children's growth and good schooling so that they can realise their dreams. <i> Our project's core concept is education </i>. Our main goal is to provide high-quality education to children who are disadvantaged.This includes putting in place a solid infrastructure to assure their overall development, which is critical to their health, character, and abilities.",
         }
     ]
     function fetchEvent(){
@@ -42,6 +42,9 @@ function EventLeft(props){
                 return Events[i];
             }
         }
+    }
+    function fetchdesc(){
+        return <p dangerouslySetInnerHTML={{ __html: fetchEvent().description }}/> 
     }
     function shikgraph(){
         if(props.current=="Shiksharth"){
@@ -53,7 +56,7 @@ function EventLeft(props){
                 <h1>{fetchEvent().name}</h1>
                 <img src={fetchEvent().img}></img>
                 <br/>
-                <p>{fetchEvent().description}</p>
+                {fetchdesc()}
                 {shikgraph()}
             </div>
 
