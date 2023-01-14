@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import './dailyupdates.css';
-import pic from "../images/Picture43.jpg";
+import pic from "../images/Picture48.jpg";
 import pic2 from "../images/Picture40.jpg";
 import { Link } from "react-router-dom";
 
@@ -12,7 +12,7 @@ const Dailyupdate = () =>{
             <div className="fundLeft2">
                 <h5>Daily Updates</h5>
                 <h1>Christmas Event</h1>
-                <p>Another day of bringing joy to the 110 different students of our organization. It wasn't just Santa who visited this Christmas, he rekindled everyone's hopes for the approaching new year. The snacks and chocolates represented a joyous occasion celebrated with festive fervour.</p>
+                <p>Hobbies are the creative relief of our souls. Self-expression through a creative medium is something we teach the children at SPWF. In order to do just that, we recently organized an activity called Linocut Printing. Linocut, also known as linoleum art, is a printmaking technique, in which a sheet of linoleum is used as a relief surface. This activity was conducted to help the children learn important skills like teamwork, planning and time management. It also taught them the traditional newspaper printing techniques and how to make multiple prints of a single carved design. The activity inculcated a valuable art skill in our students.</p>
                 <div className="playButton">
                 <a  style={{color:"white"}} href="https://youtu.be/dB33mlhTm2s" ><i class="fa-solid fa-circle-play"></i></a>
                     <p>NGO's DOCUMENTRY</p>
