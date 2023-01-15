@@ -11,7 +11,7 @@ const Dailyupdate = () =>{
         <div className = "fundRaising2">
             <div className="fundLeft2">
                 <h5>Daily Updates</h5>
-                <h1>Christmas Event</h1>
+                <h1>Linocut Printing Workshop</h1>
                 <p>Hobbies are the creative relief of our souls. Self-expression through a creative medium is something we teach the children at SPWF. In order to do just that, we recently organized an activity called Linocut Printing. Linocut, also known as linoleum art, is a printmaking technique, in which a sheet of linoleum is used as a relief surface. This activity was conducted to help the children learn important skills like teamwork, planning and time management. It also taught them the traditional newspaper printing techniques and how to make multiple prints of a single carved design. The activity inculcated a valuable art skill in our students.</p>
                 <div className="playButton">
                 <a  style={{color:"white"}} href="https://youtu.be/dB33mlhTm2s" ><i class="fa-solid fa-circle-play"></i></a>

@@ -60,7 +60,7 @@ function Competition(){
                     </div>
                 </div>
             </div>
-            <h2 className="judgeheading">Judges</h2>
+            <h2 className="judgeheading">Judges Panel</h2>
             <div className="judgeposters">
             <img src={pic4}></img>
             <img src={pic5}></img>
