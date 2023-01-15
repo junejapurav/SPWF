@@ -141,7 +141,7 @@ nav{
     color: white;
     padding: 16px;
     border: none;
-    width: 100px;
+    width: 130px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -177,16 +177,16 @@ nav{
   }
   
   .dropdown-content a:hover {background-color: #ddd;}
-  .dropdown-content a:hover .dropbtn{align-items: center;}
+  .dropdown-content a:hover .dropbtn{align-items: center; width: 130px;}
   .dropdown:hover .dropdown-content {
     display: block;
-    width: 150px;
+    width: 180px;
     position: relative;
     top: 0px;
     left: -20px;
 }
 .dropdown:hover{
-    width: 100px;
+    width: 130px;
 }
 
 

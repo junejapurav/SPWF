@@ -13,7 +13,8 @@
     border-radius: 10px;
 }
 .shikgraph{
-    width: 50%;
+    width: 70%;
+    margin: auto;
 }
 .shikleft b:hover{
     color: black;

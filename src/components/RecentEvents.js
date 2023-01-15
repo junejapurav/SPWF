@@ -33,7 +33,7 @@ function RecentEvents(){
         <div className='RecentEvents'>
             <div className='RecentEventsHeading'>
                 <div>
-                    <h3>PROGRAMMES</h3>
+                    <h3>CAMPAIGNS</h3>
                     <h1>Donate To Charity Campaign Around The World!</h1>
                     </div>
             </div>
