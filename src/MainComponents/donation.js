@@ -59,13 +59,13 @@ const checker = ()=>{
     script.onload = async () => {
       try {
         setLoading(true);
-        const result = await axios.post('https://spwf.herokuapp.com/razorpay/create-order', {
+        const result = await axios.post('https://spwf-backend.onrender.com/razorpay/create-order', {
           amount: orderAmount + '00',
         });
         const { amount, id: order_id, currency } = result.data;
         const {
           data: { key: razorpayKey },
-        } = await axios.get('https://spwf.herokuapp.com/razorpay/get-api-key');
+        } = await axios.get('https://spwf-backend.onrender.com/razorpay/get-api-key');
 
         const options = {
           key: razorpayKey,
@@ -75,7 +75,7 @@ const checker = ()=>{
           description: 'FOR CHARITY',
           order_id: order_id,
           handler: async function (response) {
-            const result = await axios.post('https://spwf.herokuapp.com/razorpay/pay-order', {
+            const result = await axios.post('https://spwf-backend.onrender.com/razorpay/pay-order', {
               name:Name,  
               amount: amount,
               razorpayPaymentId: response.razorpay_payment_id,
