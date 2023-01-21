@@ -1,5 +1,5 @@
 import { useEffect, useState,useRef } from 'react';
-import counterPhoto from '../img/Picture2.jpg';
+import counterPhoto from '../images/Picture52.jpeg';
 import './Counter.css';
 import { Waypoint } from 'react-waypoint';
 import { Link } from 'react-router-dom';

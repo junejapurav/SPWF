@@ -3,7 +3,7 @@
     z-index: -999;
     object-fit: cover;
     color: white;
-    filter: brightness(0.5);
+    /* filter: brightness(0.5); */
 }
 .let{
     font-size: 300%;

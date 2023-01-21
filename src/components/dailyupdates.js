@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import './dailyupdates.css';
 import pic from "../images/Picture48.jpg";
-import pic2 from "../images/Picture40.jpg";
+import pic2 from "../images/Picture54.png";
 import { Link } from "react-router-dom";
 
 const Dailyupdate = () =>{
