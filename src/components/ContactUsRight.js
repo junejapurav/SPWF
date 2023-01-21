@@ -67,7 +67,7 @@ const ContactUsRight = ()=>{
     }
      function addContactUsData(obj){
    
-        axios.post('https://spwf.herokuapp.com/createContactUs',obj);
+        axios.post('https://spwf-backend.onrender.com/createContactUs',obj);
         setValueSent(false);
 
         nameSetHandler('');

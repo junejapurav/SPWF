@@ -19,7 +19,7 @@ function ShowVolunteerDataMain(){
         
     try{
         
-        const response = await fetch("https://spwf.herokuapp.com/getVolunteer");
+        const response = await fetch("https://spwf-backend.onrender.com/getVolunteer");
         if (!response.ok) {
             throw new Error('Something went wrong!');
           }

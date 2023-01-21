@@ -70,7 +70,7 @@ const VolunteerForm = ()=>{
     }
     function addVolunteerData(obj){
         
-        axios.post("https://spwf.herokuapp.com/createVolunteer",obj)
+        axios.post("https://spwf-backend.onrender.com/createVolunteer",obj)
         setValueSent(false);
 
         nameSetHandler('');
