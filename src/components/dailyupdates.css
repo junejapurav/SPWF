@@ -82,6 +82,16 @@
     border: solid 1px #FFA026;
 
 }
+
+.rednote{
+    background-color: red;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+    margin-top: 50px;
+    text-decoration: none;
+}
 @media screen and (max-width: 800px){
     .fundRaising2{
         display: flex;
@@ -111,11 +121,16 @@
     .fundLeft2 h1{
         font-size: 150%;
     }
+    .rednote{
+        font-size: large;
+    }
 }
 @media screen and (max-width: 450px){
     .fundRight2{
         width: 80%;
         margin: 2% 0;
     }
-
+    .rednote{
+        font-size: medium;
+    }
 }
