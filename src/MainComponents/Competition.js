@@ -6,6 +6,8 @@ import pic2 from '../images/Picture33.jpeg'
 import pic3 from '../images/Picture44.jpeg'
 import pic4 from '../images/Picture45.jpeg'
 import pic5 from '../images/Picture46.jpeg'
+import pic6 from '../images/Picture55.jpeg'
+import pic7 from '../images/Picture56.jpeg'
 import './competition.css'
 import Whatsapp from "../components/Whatsapp";
 import vid1 from '../images/Video1.mp4'
@@ -64,6 +66,8 @@ function Competition(){
             <div className="judgeposters">
             <img src={pic4}></img>
             <img src={pic5}></img>
+            <img src={pic6}></img>
+            <img src={pic7}></img>
             </div>
             <div className="compimpnote">
                 <p>Dear Students,</p>

@@ -73,11 +73,12 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 100px;
+    gap: 70px;
     margin: 50px 0;
+    padding: 20px;
 }
 .judgeposters img{
-    width: 22%;
+    width: 19%;
 }
 .judgeheading{
     text-align: center;
@@ -113,6 +114,7 @@
     .judgeposters{
         flex-direction: column;
         align-items: center;
+        padding: 0;
     }
     .judgeposters img{
         width: 80%;
