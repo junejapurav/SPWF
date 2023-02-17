@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import './dailyupdates.css';
-import pic from "../images/Picture48.jpg";
+import pic from "../images/Picture57.jpeg";
 import pic2 from "../images/Picture54.png";
 import { Link } from "react-router-dom";
 
@@ -12,8 +12,8 @@ const Dailyupdate = () =>{
         <div className = "fundRaising2">
             <div className="fundLeft2">
                 <h5>Daily Updates</h5>
-                <h1>Linocut Printing Workshop</h1>
-                <p>Hobbies are the creative relief of our souls. Self-expression through a creative medium is something we teach the children at SPWF. In order to do just that, we recently organized an activity called Linocut Printing. Linocut, also known as linoleum art, is a printmaking technique, in which a sheet of linoleum is used as a relief surface. This activity was conducted to help the children learn important skills like teamwork, planning and time management. It also taught them the traditional newspaper printing techniques and how to make multiple prints of a single carved design. The activity inculcated a valuable art skill in our students.</p>
+                <h1>Republic Day Event</h1>
+                <p>To celebrate the special occasion of 26th Jan SPWF had organized multiple programs. We were joined by around 120 students, our beloved chief guests and Founder Ratna ma'am along with Anil sir and all our staff. The first event was a Saraswati Puja. After prasad distribution, the Tiranga was unfurled by our dear Ratna ma'am. Many students performed onstage. The Sports Day was also conducted. Many exciting games and races were organized for the juniors as well as seniors.</p>
                 <div className="playButton">
                 <a  style={{color:"white"}} href="https://youtu.be/dB33mlhTm2s" ><i class="fa-solid fa-circle-play"></i></a>
                     <p>NGO's DOCUMENTRY</p>
