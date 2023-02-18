@@ -3,12 +3,13 @@ import './dailyupdates.css';
 import pic from "../images/Picture57.jpeg";
 import pic2 from "../images/Picture54.png";
 import { Link } from "react-router-dom";
+import Ticker from "./ticker";
 
 const Dailyupdate = () =>{
 
     return(
         <>
-        <Link to='/competition' className="rednote"><div className='rednote'>Note: Online Painting Competition deadline has been extended till 28th February,2023. Click to know more</div></Link>
+        <Link to='/competition' className="rednote"><Ticker/></Link>
         <div className = "fundRaising2">
             <div className="fundLeft2">
                 <h5>Daily Updates</h5>

@@ -1,40 +1,6 @@
-.Event{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 50px;
-}
-@media screen and (max-width: 1000px) {
-    .shikleft {
-        width: 50%;
-    }
-    .eventDetails{
-        width: 120%;
-    }
-}
-@media screen and (max-width: 900px) {
-    .Event{
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .shikleft {
-        width: 95%;
-    }
-    .shikleft img{
-        object-fit:cover;
-    }
-    .shikright{
-        width: 90%;
-    }
-    .eventDetails{
-        width: 100%;
-    }
-    .eventJoin button{
-        margin: 0%;
-    }
-}
 .news-container {
+    position: relative;
+    
     left: 0;
     right: 0;
     font-family: "Roboto", sans-serif;
@@ -44,8 +10,9 @@
   
   
   .news-container .title {
+    position: absolute;
     background: #df2020;
-   
+    height: 100%;
     display: flex;
     align-items: center;
     padding: 0 24px;
@@ -65,7 +32,7 @@
   }
   
   .news-container ul li {
-    font-size: larger;
+    font-size: large;
     font-weight: bolder;
     white-space: nowrap;
     padding: 10px 24px;
@@ -93,7 +60,7 @@
     }
   
     to {
-        transform: translateX(-900px);
+        transform: translateX(-800px);
   
     }
   }
