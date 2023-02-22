@@ -10,7 +10,7 @@ function Ticker() {
     
             <ul>
                 <li>
-                Online Painting Competition has been extended till 28th February,2023. Click to know more
+                The results of Online Painting Competition will be announced on 15th March,2023. Click to know more
                 </li>
             </ul>
         </div>
