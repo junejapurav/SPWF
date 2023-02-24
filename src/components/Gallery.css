@@ -1,0 +1,22 @@
+h1{
+  text-align: center;
+  padding-top: 50px;
+  color:coral;
+}
+
+.container {
+    width: 95%;
+    margin: 80px auto;
+    display: block;
+  }
+  
+  .gallery-img {
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    vertical-align: middle;
+  }
+  
+  .gallery-img:hover {
+    filter:opacity(60%);
+  }

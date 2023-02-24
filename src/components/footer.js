@@ -39,6 +39,7 @@ const Footer  = () =>{
 
                     {/* <Link to={'/aboutUs'}></Link> */}
                     <Link to={'/aboutUs'}><p className="footerp">About Us</p></Link>
+                    <Link to={'/gallery'}><p className="footerp">Gallery</p></Link>
                     <Link to={'/contactUs'}><p className="footerp">Contact Us</p></Link>
                   
                     <Link to={'/volunteer'}><p className="footerp">Volunteer</p></Link>

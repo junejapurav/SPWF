@@ -6,16 +6,19 @@ import EventShower from './EventShower.js';
 
 const DUMMY = [
     {
+        id: '01',
         image:img3,
         event_name:"Shiksharth",
         eventDetail:"The programme aimed at providing maximum  benefits to those residing in the slums. "
     },
     {
+        id: '02',
         image: img,
         event_name: "Aahar",
         eventDetail:"This programme aims to provide each child with a nutritious and safe diet."
     },
     {
+        id: '03',
         image:img2,
         event_name:"KaushalUthan",
         eventDetail:"The programme aimed at providing maximum health and medical benefits to those residing in the slums. "
@@ -38,7 +41,7 @@ function RecentEvents(){
                     </div>
             </div>
             <div className='RecentEvent'>
-                { DUMMY.map((each)=> <EventShower event={each}/>)}
+                { DUMMY.map((each)=> <EventShower event={each} key={each.id}/>)}
                 
             </div>
             
