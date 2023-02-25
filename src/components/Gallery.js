@@ -5,6 +5,8 @@ import 'react-photo-view/dist/react-photo-view.css';
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import Filter from './Filter';
 import {motion} from 'framer-motion';
+import LazyLoad from 'react-lazy-load';
+
 
 
 
@@ -71,7 +73,7 @@ import img52 from '../galleryImages/2020/Screenshot_2021-05-06-20-58-26-66.png'
 import img53 from '../galleryImages/2020/Screenshot_2021-05-06-20-59-00-60.png'
 
 //2021
-import img54 from '../galleryImages/2021/cover_268228164_2955655934696960_67955810683292339_n.jpg'
+//import img54 from '../galleryImages/2021/cover_268228164_2955655934696960_67955810683292339_n.jpg'
 import img55 from '../galleryImages/2021/IMG-20220311-WA0005.jpg'
 import img56 from '../galleryImages/2021/IMG-20220311-WA0007.jpg'
 import img57 from '../galleryImages/2021/IMG_20211210_151904.jpg'
@@ -361,11 +363,11 @@ const Gallery = () => {
       "url": img53
     },
 
-    {
-      "id": '54',
-      "year": '2021',
-      "url": img54
-    },
+    // {
+    //   "id": '54',
+    //   "year": '2021',
+    //   "url": img54
+    // },
     {
       "id": '55',
       "year": '2021',
@@ -452,7 +454,9 @@ const settingData=async()=>{
                 <div key={galleryData.id}>
                   <PhotoProvider>
                     <PhotoView src={galleryData.url}>
+                      <LazyLoad>
                       <img src={galleryData.url} alt="" className='gallery-img' />
+                      </LazyLoad>
                     </PhotoView>
                   </PhotoProvider>
                 </div>
