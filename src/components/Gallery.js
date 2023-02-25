@@ -419,7 +419,7 @@ const Gallery = () => {
 
   return (
     <>
-      <h1>GALLERY</h1>
+      <h1 id='gallery-heading'>GALLERY</h1>
 
 
       <div className="container">
