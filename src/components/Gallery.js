@@ -2,12 +2,17 @@ import React from 'react';
 import './Gallery.css';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
+
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
+import Filter from './Filter';
+import {motion} from 'framer-motion';
+import LazyLoad from 'react-lazy-load';
+import AOS from'aos';
+import 'aos/dist/aos.css'
 
 
 
-
-//2020
+//2018
 
 
 import img1 from '../galleryImages/2018/28056649_1912120635766863_4146177638419648438_n.jpg'
@@ -70,7 +75,7 @@ import img52 from '../galleryImages/2020/Screenshot_2021-05-06-20-58-26-66.png'
 import img53 from '../galleryImages/2020/Screenshot_2021-05-06-20-59-00-60.png'
 
 //2021
-import img54 from '../galleryImages/2021/cover_268228164_2955655934696960_67955810683292339_n.jpg'
+//import img54 from '../galleryImages/2021/cover_268228164_2955655934696960_67955810683292339_n.jpg'
 import img55 from '../galleryImages/2021/IMG-20220311-WA0005.jpg'
 import img56 from '../galleryImages/2021/IMG-20220311-WA0007.jpg'
 import img57 from '../galleryImages/2021/IMG_20211210_151904.jpg'
@@ -81,12 +86,18 @@ import img61 from '../galleryImages/2021/cover_267267750_335482568052265_2552196
 import img62 from '../galleryImages/2021/IMG-20220311-WA0004.jpg'
 import img63 from '../galleryImages/2021/cover_269622229_665080141172437_4686085817851471232_n.jpg'
 import img64 from '../galleryImages/2021/post_135764515_174385821088047_3922322960967466179_n.jpg'
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 
 
 
 
 const Gallery = () => {
+
+  useEffect(()=>{
+    AOS.init({duration:1500})
+  },[])
 
   const data = [
     {
@@ -358,11 +369,11 @@ const Gallery = () => {
       "url": img53
     },
 
-    {
-      "id": '54',
-      "year": '2021',
-      "url": img54
-    },
+    // {
+    //   "id": '54',
+    //   "year": '2021',
+    //   "url": img54
+    // },
     {
       "id": '55',
       "year": '2021',
@@ -416,24 +427,47 @@ const Gallery = () => {
     }
   ]
 
+const [dataaa,setDataaa]=useState([]);
+const [filtered,setFiltered]=useState([]);
+const [activeYear,setActiveYear]=useState(0);
 
+useEffect(()=>{
+  settingData();
+},[])
+
+const settingData=async()=>{
+  
+  setDataaa(data);
+  setFiltered(data);
+}
+
+
+
+
+// setFiltered(data);
   return (
     <>
       <h1 id='gallery-heading'>GALLERY</h1>
 
 
-      <div className="container">
-
+      <motion.div layout transition={{ duration: 0.5 }} className="container">
+        <Filter dataaa={dataaa} setFiltered={setFiltered} activeYear={activeYear} setActiveYear={setActiveYear}/>
         <ResponsiveMasonry columnsCountBreakPoints={{ 320: 1, 481: 2, 800: 3 }}>
 
           <Masonry gutter='25px'>
             {
-              data.map((galleryData) =>
+              filtered.map((galleryData) =>
                 <div key={galleryData.id}>
                   <PhotoProvider>
+                    <LazyLoad>
                     <PhotoView src={galleryData.url}>
+                      
+                      <div data-aos='zoom-in-up'>
                       <img src={galleryData.url} alt="" className='gallery-img' />
+                      </div>
+                      
                     </PhotoView>
+                    </LazyLoad>
                   </PhotoProvider>
                 </div>
               )
@@ -442,7 +476,7 @@ const Gallery = () => {
 
         </ResponsiveMasonry>
 
-      </div >
+      </motion.div >
     </>
   );
 };
