@@ -2,11 +2,13 @@ import React from 'react';
 import './Gallery.css';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
+
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import Filter from './Filter';
 import {motion} from 'framer-motion';
 import LazyLoad from 'react-lazy-load';
-
+import AOS from'aos';
+import 'aos/dist/aos.css'
 
 
 
@@ -92,6 +94,10 @@ import { useEffect } from 'react';
 
 
 const Gallery = () => {
+
+  useEffect(()=>{
+    AOS.init({duration:1500})
+  },[])
 
   const data = [
     {
@@ -430,7 +436,7 @@ useEffect(()=>{
 },[])
 
 const settingData=async()=>{
-  // console.log(dataaa);
+  
   setDataaa(data);
   setFiltered(data);
 }
@@ -453,11 +459,15 @@ const settingData=async()=>{
               filtered.map((galleryData) =>
                 <div key={galleryData.id}>
                   <PhotoProvider>
+                    <LazyLoad>
                     <PhotoView src={galleryData.url}>
-                      <LazyLoad>
+                      
+                      <div data-aos='zoom-in-up'>
                       <img src={galleryData.url} alt="" className='gallery-img' />
-                      </LazyLoad>
+                      </div>
+                      
                     </PhotoView>
+                    </LazyLoad>
                   </PhotoProvider>
                 </div>
               )
