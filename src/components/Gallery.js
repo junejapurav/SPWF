@@ -8,7 +8,9 @@ import Filter from './Filter';
 import {motion} from 'framer-motion';
 import LazyLoad from 'react-lazy-load';
 import AOS from'aos';
+import Header from './header';
 import 'aos/dist/aos.css'
+
 
 
 
@@ -441,17 +443,36 @@ const settingData=async()=>{
   setFiltered(data);
 }
 
+const [isScrolledAbove, setIsScrolledAbove] = useState(false);
 
+useEffect(() => {
+  function handleScroll() {
+    const scrollY = window.scrollY;
+    if (scrollY > 0) {
+      setIsScrolledAbove(true);
+    } else {
+      setIsScrolledAbove(false);
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll);
+
+  return () => window.removeEventListener('scroll', handleScroll);
+}, []);
 
 
 // setFiltered(data);
   return (
     <>
-      <h1 id='gallery-heading'>GALLERY</h1>
+    <Header/>
+    <div className='gallery-header'>
+    <h1  id='gallery-heading'>GALLERY</h1>
 
+      <Filter dataaa={dataaa} setFiltered={setFiltered} activeYear={activeYear} setActiveYear={setActiveYear}/>
+      </div>
 
-      <motion.div layout transition={{ duration: 0.5 }} className="container">
-        <Filter dataaa={dataaa} setFiltered={setFiltered} activeYear={activeYear} setActiveYear={setActiveYear}/>
+      <motion.div layout transition={{ duration: 0.1 }} className="container">
+        
         <ResponsiveMasonry columnsCountBreakPoints={{ 320: 1, 481: 2, 800: 3 }}>
 
           <Masonry gutter='25px'>

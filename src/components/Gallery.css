@@ -1,13 +1,46 @@
-gallery-heading{
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+#gallery-heading {
   text-align: center;
   padding-top: 50px;
-  color:coral;
+  padding-bottom: 38px;
+  color: rgb(245, 102, 49);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  display: inline;
+  margin: 20px auto;
+  width: fit-content;
+  
 }
 
 .container {
+  width: 100%;
+  background-color: #E8D5C4;
+  border: 1px solid #FCD5CE;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px #FCD5CE;
+}
+
+.gallery-header {
+  background-color: #FFB84C;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -83px;
+  transform-origin:inherit;
+}
+
+
+
+.container {
+  background-color: #E8D5C4;
     width: 95%;
     margin: 80px auto;
     display: block;
+    padding-top: 20px;
+    margin-top: 40px;
   }
   
   .gallery-img {
@@ -24,7 +57,7 @@ gallery-heading{
 
   .filter-container button {
     font-weight: bolder;
-    background-color: #ca3d3d;
+    background-color: rgb(255, 156, 120);
     color: white;
     border: 1px solid orangered;
     padding: 10px 40px;
