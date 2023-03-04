@@ -1,27 +1,44 @@
-import {useEffect} from 'react';
-import {motion} from 'framer-motion';
+import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import "./Filter.css"
 
-function Filter({activeYear,setActiveYear,setFiltered,dataaa}){
+function Filter({ activeYear, setActiveYear, setFiltered, dataaa }) {
+  const [showDropdown, setShowDropdown] = useState(false);
+  const [selectedYear, setSelectedYear] = useState('ALL');
 
-    useEffect(()=>{
-        if(activeYear===0){
-        setFiltered(dataaa);
-        return;
-        }
-        const filtered=dataaa.filter((dataaa)=> 
-        dataaa.year===activeYear
-        );
-        setFiltered(filtered);
-    },[activeYear]);
-    return(
-        <motion.div layout transition={{ duration: 0.5 }} align="center" className='filter-container'>
-            <button onClick={()=>setActiveYear(0)}>ALL</button>
-            <button onClick={()=>setActiveYear('2018')}>2018</button>
-            <button onClick={()=>setActiveYear('2019')}>2019</button>
-            <button onClick={()=>setActiveYear('2020')}>2020</button>
-            <button onClick={()=>setActiveYear('2021')}>2021</button>
-        </motion.div>
-    )
+  const handleYearClick = (year) => {
+    setActiveYear(year);
+    setSelectedYear(year === 0 ? 'ALL' : year);
+    setShowDropdown(false);
+  };
+
+  useEffect(() => {
+    if (activeYear === 0) {
+      setFiltered(dataaa);
+      setSelectedYear('ALL');
+      return;
+    }
+    const filtered = dataaa.filter((dataaa) => dataaa.year === activeYear);
+    setFiltered(filtered);
+    setSelectedYear(activeYear);
+  }, [activeYear]);
+
+  return (
+    <motion.div layout transition={{ duration: 0.5 }} align="center" className="filter-container">
+      <div className="dropdown" onClick={() => setShowDropdown(!showDropdown)} style={{ position: 'relative' }}>
+        <button id="dropbtn1" style={{backgroundColor:"coral"}}>
+          <i className="fa fa-filter"></i> {selectedYear}
+        </button>
+        <div className={`dropdown-content ${showDropdown ? 'show' : ''}`} style={{ position: 'absolute' }}>
+          <button onClick={() => handleYearClick(0)}>ALL</button>
+          <button onClick={() => handleYearClick('2018')} className="year-btn">2018</button>
+          <button onClick={() => handleYearClick('2019')} className="year-btn">2019</button>
+          <button onClick={() => handleYearClick('2020')} className="year-btn">2020</button>
+          <button onClick={() => handleYearClick('2021')} className="year-btn">2021</button>
+        </div>
+      </div>
+    </motion.div>
+  );
 }
 
 export default Filter;

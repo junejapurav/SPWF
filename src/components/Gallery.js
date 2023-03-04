@@ -2,9 +2,15 @@ import React from 'react';
 import './Gallery.css';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
+
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import Filter from './Filter';
 import {motion} from 'framer-motion';
+import LazyLoad from 'react-lazy-load';
+import AOS from'aos';
+import Header from './header';
+import 'aos/dist/aos.css'
+
 
 
 
@@ -71,7 +77,7 @@ import img52 from '../galleryImages/2020/Screenshot_2021-05-06-20-58-26-66.png'
 import img53 from '../galleryImages/2020/Screenshot_2021-05-06-20-59-00-60.png'
 
 //2021
-import img54 from '../galleryImages/2021/cover_268228164_2955655934696960_67955810683292339_n.jpg'
+//import img54 from '../galleryImages/2021/cover_268228164_2955655934696960_67955810683292339_n.jpg'
 import img55 from '../galleryImages/2021/IMG-20220311-WA0005.jpg'
 import img56 from '../galleryImages/2021/IMG-20220311-WA0007.jpg'
 import img57 from '../galleryImages/2021/IMG_20211210_151904.jpg'
@@ -90,6 +96,10 @@ import { useEffect } from 'react';
 
 
 const Gallery = () => {
+
+  useEffect(()=>{
+    AOS.init({duration:1500})
+  },[])
 
   const data = [
     {
@@ -361,11 +371,11 @@ const Gallery = () => {
       "url": img53
     },
 
-    {
-      "id": '54',
-      "year": '2021',
-      "url": img54
-    },
+    // {
+    //   "id": '54',
+    //   "year": '2021',
+    //   "url": img54
+    // },
     {
       "id": '55',
       "year": '2021',
@@ -428,22 +438,41 @@ useEffect(()=>{
 },[])
 
 const settingData=async()=>{
-  // console.log(dataaa);
+  
   setDataaa(data);
   setFiltered(data);
 }
 
+const [isScrolledAbove, setIsScrolledAbove] = useState(false);
 
+useEffect(() => {
+  function handleScroll() {
+    const scrollY = window.scrollY;
+    if (scrollY > 0) {
+      setIsScrolledAbove(true);
+    } else {
+      setIsScrolledAbove(false);
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll);
+
+  return () => window.removeEventListener('scroll', handleScroll);
+}, []);
 
 
 // setFiltered(data);
   return (
     <>
-      <h1>GALLERY</h1>
+    <Header/>
+    <div className='gallery-header'>
+    <h1  id='gallery-heading'>GALLERY</h1>
 
+      <Filter dataaa={dataaa} setFiltered={setFiltered} activeYear={activeYear} setActiveYear={setActiveYear}/>
+      </div>
 
-      <motion.div layout transition={{ duration: 0.5 }} className="container">
-        <Filter dataaa={dataaa} setFiltered={setFiltered} activeYear={activeYear} setActiveYear={setActiveYear}/>
+      <motion.div layout transition={{ duration: 0.1 }} className="container">
+        
         <ResponsiveMasonry columnsCountBreakPoints={{ 320: 1, 481: 2, 800: 3 }}>
 
           <Masonry gutter='25px'>
@@ -451,9 +480,15 @@ const settingData=async()=>{
               filtered.map((galleryData) =>
                 <div key={galleryData.id}>
                   <PhotoProvider>
+                    <LazyLoad>
                     <PhotoView src={galleryData.url}>
+                      
+                      <div data-aos='zoom-in-up'>
                       <img src={galleryData.url} alt="" className='gallery-img' />
+                      </div>
+                      
                     </PhotoView>
+                    </LazyLoad>
                   </PhotoProvider>
                 </div>
               )
