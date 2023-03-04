@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import './dailyupdates.css';
 import pic from "../images/Picture57.jpeg";
-import pic2 from "../images/Picture54.png";
+import pic2 from "../images/Picture58.jpg";
 import { Link } from "react-router-dom";
 import Ticker from "./ticker";
 
@@ -28,8 +28,9 @@ const Dailyupdate = () =>{
         <div className = "fundRaising3">
             <div className="fundLeft2">
                 <h5>Upcoming Event</h5>
-                <h1>Painting Competition</h1>
-                <p>Shakuntala Poddar Welfare Foundation is making various efforts for the upliftment of the children living in slums. In this episode, we are organizing an Online Painting Competition on the occasion of Republic day to increase the enthusiasm of the children. The last day of submission is 28th of February,2023.</p>
+                <h1>Glass Painting</h1>
+                <p>Watch our Saturday activity where children express their creativity through glass painting. This week's theme is fish in a fish tank, and you'll be amazed at how these young artists bring the  underwater world to life with vibrant colors and imaginative designs. Join us in supporting their love for art and imagination.
+This activity provides an opportunity for them to showcase their artistic abilities and learn new skills while having fun. Our NGO is committed to empowering and nurturing these children through various programs and initiatives.</p>
                 <Link to='/competition'><button>COMPETITIONS</button></Link>
             </div>
             <div className="fundRight2">
