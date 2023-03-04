@@ -3,11 +3,12 @@ import './Gallery.css';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
+import Filter from './Filter';
+import {motion} from 'framer-motion';
 
 
 
-
-//2020
+//2018
 
 
 import img1 from '../galleryImages/2018/28056649_1912120635766863_4146177638419648438_n.jpg'
@@ -81,6 +82,8 @@ import img61 from '../galleryImages/2021/cover_267267750_335482568052265_2552196
 import img62 from '../galleryImages/2021/IMG-20220311-WA0004.jpg'
 import img63 from '../galleryImages/2021/cover_269622229_665080141172437_4686085817851471232_n.jpg'
 import img64 from '../galleryImages/2021/post_135764515_174385821088047_3922322960967466179_n.jpg'
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 
 
@@ -416,19 +419,36 @@ const Gallery = () => {
     }
   ]
 
+const [dataaa,setDataaa]=useState([]);
+const [filtered,setFiltered]=useState([]);
+const [activeYear,setActiveYear]=useState(0);
 
+useEffect(()=>{
+  settingData();
+},[])
+
+const settingData=async()=>{
+  // console.log(dataaa);
+  setDataaa(data);
+  setFiltered(data);
+}
+
+
+
+
+// setFiltered(data);
   return (
     <>
       <h1>GALLERY</h1>
 
 
-      <div className="container">
-
+      <motion.div layout transition={{ duration: 0.5 }} className="container">
+        <Filter dataaa={dataaa} setFiltered={setFiltered} activeYear={activeYear} setActiveYear={setActiveYear}/>
         <ResponsiveMasonry columnsCountBreakPoints={{ 320: 1, 481: 2, 800: 3 }}>
 
           <Masonry gutter='25px'>
             {
-              data.map((galleryData) =>
+              filtered.map((galleryData) =>
                 <div key={galleryData.id}>
                   <PhotoProvider>
                     <PhotoView src={galleryData.url}>
@@ -442,7 +462,7 @@ const Gallery = () => {
 
         </ResponsiveMasonry>
 
-      </div >
+      </motion.div >
     </>
   );
 };
