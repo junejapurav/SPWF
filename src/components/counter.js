@@ -11,7 +11,7 @@ const Counter= ()=>{
   let [donors,donorChanger] =useState(0);
 
 
-  const values = [13,300,15,15];
+  const values = [13,750,15,15];
   const min =Math.min.apply(null, values);
 
 //  const newArr =  values.map((a)=> (a/min));
@@ -81,7 +81,7 @@ const Counter= ()=>{
         </ul>
         <div class="elfsight-app-7f097753-c3f7-448c-9f98-c31861841874"></div>
 
-        <div className='yearExperience'><h2>4.5</h2>Years Of Experience</div>
+        <div className='yearExperience'><h2>5</h2>Years Of Experience</div>
       </div>
       <Link to="/aboutUs"><button>Read More</button></Link>
     </div>
