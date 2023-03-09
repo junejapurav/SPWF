@@ -5,13 +5,16 @@ import 'react-photo-view/dist/react-photo-view.css';
 
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import Filter from './Filter';
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 import LazyLoad from 'react-lazy-load';
-import AOS from'aos';
+import AOS from 'aos';
 import Header from './header';
 import 'aos/dist/aos.css'
 
 
+
+//banner
+import banner from '../galleryImages/Banner/galleryBanner.jpg';
 
 
 //2018
@@ -97,9 +100,9 @@ import { useEffect } from 'react';
 
 const Gallery = () => {
 
-  useEffect(()=>{
-    AOS.init({duration:1500})
-  },[])
+  useEffect(() => {
+    AOS.init({ duration: 1500 })
+  }, [])
 
   const data = [
     {
@@ -429,50 +432,50 @@ const Gallery = () => {
     }
   ]
 
-const [dataaa,setDataaa]=useState([]);
-const [filtered,setFiltered]=useState([]);
-const [activeYear,setActiveYear]=useState(0);
+  const [dataaa, setDataaa] = useState([]);
+  const [filtered, setFiltered] = useState([]);
+  const [activeYear, setActiveYear] = useState(0);
 
-useEffect(()=>{
-  settingData();
-},[])
+  useEffect(() => {
+    settingData();
+  }, [])
 
-const settingData=async()=>{
-  
-  setDataaa(data);
-  setFiltered(data);
-}
+  const settingData = async () => {
 
-const [isScrolledAbove, setIsScrolledAbove] = useState(false);
-
-useEffect(() => {
-  function handleScroll() {
-    const scrollY = window.scrollY;
-    if (scrollY > 0) {
-      setIsScrolledAbove(true);
-    } else {
-      setIsScrolledAbove(false);
-    }
+    setDataaa(data);
+    setFiltered(data);
   }
 
-  window.addEventListener('scroll', handleScroll);
+  const [isScrolledAbove, setIsScrolledAbove] = useState(false);
 
-  return () => window.removeEventListener('scroll', handleScroll);
-}, []);
+  useEffect(() => {
+    function handleScroll() {
+      const scrollY = window.scrollY;
+      if (scrollY > 0) {
+        setIsScrolledAbove(true);
+      } else {
+        setIsScrolledAbove(false);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
 
-// setFiltered(data);
+  // setFiltered(data);
   return (
     <>
-    <Header/>
-    <div className='gallery-header'>
-    <h1  id='gallery-heading'>GALLERY</h1>
+      <Header />
+      <div className='gallery-header' style={{ backgroundImage: `url(${banner})` }}>
+        <h1 id='gallery-heading'>GALLERY</h1>
 
-      <Filter dataaa={dataaa} setFiltered={setFiltered} activeYear={activeYear} setActiveYear={setActiveYear}/>
+        <Filter dataaa={dataaa} setFiltered={setFiltered} activeYear={activeYear} setActiveYear={setActiveYear} />
       </div>
 
       <motion.div layout transition={{ duration: 0.1 }} className="container">
-        
+
         <ResponsiveMasonry columnsCountBreakPoints={{ 320: 1, 481: 2, 800: 3 }}>
 
           <Masonry gutter='25px'>
@@ -481,13 +484,13 @@ useEffect(() => {
                 <div key={galleryData.id}>
                   <PhotoProvider>
                     <LazyLoad>
-                    <PhotoView src={galleryData.url}>
-                      
-                      <div data-aos='zoom-in-up'>
-                      <img src={galleryData.url} alt="" className='gallery-img' />
-                      </div>
-                      
-                    </PhotoView>
+                      <PhotoView src={galleryData.url}>
+
+                        <div data-aos='zoom-in-up'>
+                          <img src={galleryData.url} alt="" className='gallery-img' />
+                        </div>
+
+                      </PhotoView>
                     </LazyLoad>
                   </PhotoProvider>
                 </div>
