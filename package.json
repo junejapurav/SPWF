@@ -12,6 +12,7 @@
     "bootstrap": "^5.1.3",
     "framer-motion": "^10.2.3",
     "google-map-react": "^2.2.0",
+    "js-confetti": "^0.11.0",
     "querystring-es3": "^0.2.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.4.0",
