@@ -10,10 +10,20 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   display: inline;
-  margin: 20px auto;
+  margin: 0;
   width: fit-content;
   
 }
+
+.int-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 75px;
+}
+
 
 .container {
   width: 100%;

@@ -469,9 +469,11 @@ const Gallery = () => {
     <>
       <Header />
       <div className='gallery-header' style={{ backgroundImage: `url(${banner})` }}>
+        <div className='int-container'>
         <h1 id='gallery-heading'>GALLERY</h1>
 
         <Filter dataaa={dataaa} setFiltered={setFiltered} activeYear={activeYear} setActiveYear={setActiveYear} />
+        </div>
       </div>
 
       <motion.div layout transition={{ duration: 0.1 }} className="container">
