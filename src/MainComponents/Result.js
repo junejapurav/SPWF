@@ -35,7 +35,7 @@ function Result() {
 
 
                         <p>First Place</p>
-                        {/* <button className="result-poster-button">View Resume</button> */}
+                        
                     </div>
                     <div className="result-poster result-silver">
                         <div className='result-label'>2nd</div>
@@ -43,7 +43,7 @@ function Result() {
 
 
                         <p>Second Place</p>
-                        {/* <button className="result-poster-button">View Resume</button> */}
+                        
                     </div>
                     <div className="result-poster result-bronze">
                         <div className='result-label'>3rd</div>
@@ -51,109 +51,109 @@ function Result() {
 
 
                         <p>Third Place</p>
-                        {/* <button className="result-poster-button">View Resume</button> */}
+                        
                     </div>
                     <div className="result-poster">
                         <img src={img4} alt="Poster 4" />
 
                         <p>Top 15</p>
-                        {/* <button className="result-poster-button">View Resume</button> */}
+                        
                     </div>
                     <div className="result-poster">
                         <img src={img5} alt="Poster 4" />
 
                         <p>Top 15</p>
-                        {/* <button className="result-poster-button">View Resume</button> */}
+                        
                     </div>
                     <div className="result-poster">
                         <img src={img6} alt="Poster 4" />
 
                         <p>Top 15</p>
-                        {/* <button className="result-poster-button">View Resume</button> */}
+                        
                     </div>
                     <div className="result-poster">
                         <img src={img7} alt="Poster 4" />
 
                         <p>Top 15</p>
-                        {/* <button className="result-poster-button">View Resume</button> */}
+                        
                     </div>
                     <div className="result-poster">
                         <img src={img8} alt="Poster 4" />
 
                         <p>Top 15</p>
-                        {/* <button className="result-poster-button">View Resume</button> */}
+                        
                     </div>
                     <div className="result-poster">
                         <img src={img9} alt="Poster 4" />
 
                         <p>Top 15</p>
-                        {/* <button className="result-poster-button">View Resume</button> */}
+                        
                     </div>
                     <div className="result-poster">
                         <img src={img10} alt="Poster 4" />
 
                         <p>Top 15</p>
-                        {/* <button className="result-poster-button">View Resume</button> */}
+                        
                     </div>
                     <div className="result-poster">
                         <img src={img11} alt="Poster 4" />
 
                         <p>Top 15</p>
-                        {/* <button className="result-poster-button">View Resume</button> */}
+                        
                     </div>
                     <div className="result-poster">
                         <img src={img12} alt="Poster 4" />
 
                         <p>Top 15</p>
-                        {/* <button className="result-poster-button">View Resume</button> */}
+                        
                     </div>
                     <div className="result-poster">
                         <img src={img13} alt="Poster 4" />
 
                         <p>Top 15</p>
-                        {/* <button className="result-poster-button">View Resume</button> */}
+                        
                     </div>
                     <div className="result-poster">
                         <img src={img14} alt="Poster 4" />
 
                         <p>Top 15</p>
-                        {/* <button className="result-poster-button">View Resume</button> */}
+                        
                     </div>
                     <div className="result-poster">
                         <img src={img15} alt="Poster 4" />
-                        <h2>Sarah Lee</h2>
+
                         <p>Top 15</p>
-                        {/* <button className="result-poster-button">View Resume</button> */}
+                        
                     </div>
                     <div className="result-poster">
                         <img src={img16} alt="Poster 4" />
-                        <h2>Sarah Lee</h2>
+
                         <p>Top 15</p>
-                        {/* <button className="result-poster-button">View Resume</button> */}
+                        
                     </div>
                     <div className="result-poster">
                         <img src={img17} alt="Poster 4" />
-                        <h2>Sarah Lee</h2>
+
                         <p>Top 15</p>
-                        {/* <button className="result-poster-button">View Resume</button> */}
+                        
                     </div>
                     <div className="result-poster">
                         <img src={img18} alt="Poster 4" />
-                        <h2>Sarah Lee</h2>
+
                         <p>Top 15</p>
-                        {/* <button className="result-poster-button">View Resume</button> */}
+                        
                     </div>
                     <div className="result-poster">
                         <img src={img19} alt="Poster 4" />
-                        <h2>Sarah Lee</h2>
+
                         <p>Top 15</p>
-                        {/* <button className="result-poster-button">View Resume</button> */}
+                        
                     </div>
                     <div className="result-poster">
                         <img src={img20} alt="Poster 4" />
-                        <h2>Sarah Lee</h2>
+
                         <p>Top 15</p>
-                        {/* <button className="result-poster-button">View Resume</button> */}
+                        
                     </div>
 
                 </div>
