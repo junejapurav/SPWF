@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
+
 #gallery-heading {
   text-align: center;
   padding-top: 50px;
@@ -9,10 +10,20 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   display: inline;
-  margin: 20px auto;
+  margin: 0;
   width: fit-content;
   
 }
+
+.int-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 75px;
+}
+
 
 .container {
   width: 100%;
@@ -30,6 +41,9 @@
   align-items: center;
   margin-bottom: -83px;
   transform-origin:inherit;
+  height: 470px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -40,6 +54,7 @@
     margin: 80px auto;
     display: block;
     padding-top: 20px;
+    padding-bottom: 20px;
     margin-top: 40px;
   }
   

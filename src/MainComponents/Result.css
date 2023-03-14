@@ -1,0 +1,122 @@
+.result {
+    background-size: inherit;
+    background-position: center;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+
+
+.result-h1 {
+    text-align: center;
+    margin: 100px 0;
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFB84C;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#result-poster-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.result-poster {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    max-width: 300px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+
+
+
+.result-poster img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.result-poster-heading {
+    margin: 50px auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
+    position: relative;
+  }
+
+.result-poster p {
+    margin: 10px 0;
+    font-style: italic;
+    color: #666;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+
+
+.result-label {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.result-gold .result-label {
+    border-color: gold;
+    color: gold;
+}
+
+.result-silver .result-label {
+    border-color: silver;
+    color: silver;
+}
+
+.result-bronze .result-label {
+    border-color: #cd7f32;
+    color: #cd7f32;
+}
+
+
+.result-gold {
+    box-shadow: 0px 8px 16px rgba(255, 215, 0, 0.5);
+}
+
+.result-silver {
+    box-shadow: 0px 8px 16px rgba(192, 192, 192, 0.6);
+}
+
+.result-bronze {
+    box-shadow: 0px 8px 16px rgba(205, 127, 50, 0.5);
+}
+
+.separate-by-group{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 800px) {
+    .separate-by-group {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
