@@ -30,7 +30,7 @@ const Dailyupdate = () =>{
                 <h5>Upcoming Event</h5>
                 <h1>Painting Competition</h1>
                 <p>Shakuntala Poddar Welfare Foundation is making various efforts for the upliftment of the children living in slums. In this episode, we are organizing an Online Painting Competition on the occasion of Republic day to increase the enthusiasm of the children. The last day of submission is 28th of February,2023.</p>
-                <Link to='/competition'><button>COMPETITIONS</button></Link>
+                <Link  to=''><button>COMPETITIONS</button></Link>
             </div>
             <div className="fundRight2">
                 <h5></h5>
