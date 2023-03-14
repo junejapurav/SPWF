@@ -120,13 +120,15 @@
 }
 
 .separate-by-group{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
+    /* grid-template-columns: repeat(3, 1fr); */
 }
 
 @media screen and (max-width: 800px) {
     .separate-by-group {
-        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-columns: repeat(1, 1fr); */
+        flex-direction: column;
     }
     #resultinfo{
         width: 100%;
