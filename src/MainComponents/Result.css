@@ -1,4 +1,4 @@
-.result-body {
+.result {
     background-size: inherit;
     background-position: center;
     font-family: 'Montserrat', sans-serif; 
@@ -36,14 +36,11 @@
     border-radius: 4px;
     overflow: hidden;
     transition: all 0.3s ease;
+    position: relative;
 }
 
 
 
-.result-poster:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
 
 .result-poster img {
     width: 100%;
@@ -59,6 +56,7 @@
     font-weight: bold;
     color: #333;
     text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
+    position: relative;
   }
 
 .result-poster p {
@@ -104,7 +102,7 @@
 }
 
 .result-silver {
-    box-shadow: 0px 8px 16px rgba(192, 192, 192, 0.5);
+    box-shadow: 0px 8px 16px rgba(192, 192, 192, 0.6);
 }
 
 .result-bronze {

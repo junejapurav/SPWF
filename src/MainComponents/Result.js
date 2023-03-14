@@ -24,7 +24,7 @@ import img20 from '../competitionImages/20.png';
 
 function Result() {
     return (
-        <div className='result-body'>
+        <div className='result'>
 
             <h1 className='result-h1'>Painting Competition Results</h1>
             <main>

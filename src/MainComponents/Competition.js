@@ -1,5 +1,6 @@
 import Footer from "../components/footer";
-
+import Header from "../components/header";
+import Slider from "../components/slider";
 import pic4 from '../images/Picture45.jpeg'
 import pic5 from '../images/Picture46.jpeg'
 import pic6 from '../images/Picture55.jpeg'
@@ -34,25 +35,30 @@ function Competition() {
 
 
     return (
-        <div className="competition">
+        <>
+            <Header />
+            <Slider />
 
-            <h2 className="judgeheading">Judges Panel</h2>
-            <div className="judgeposters">
-                <img src={pic4} alt=''></img>
-                <img src={pic5} alt=''></img>
-                <img src={pic6} alt=''></img>
-                <img src={pic7} alt=''></img>
+            <div className="competition">
+
+                <h2 className="judgeheading">Judges Panel</h2>
+                <div className="judgeposters">
+                    <img src={pic4} alt=''></img>
+                    <img src={pic5} alt=''></img>
+                    <img src={pic6} alt=''></img>
+                    <img src={pic7} alt=''></img>
+                </div>
+
+
+                <div className="result-div">
+                    {!buttonClicked && <button className="result-button" onClick={showing}>Click To See Result</button>}
+                    {showComponent && <Result />}
+                </div>
+
+                <Whatsapp />
+                <Footer></Footer>
             </div>
-
-
-            <div className="result-div">
-                {!buttonClicked && <button className="result-button" onClick={showing}>Click me</button>}
-                {showComponent && <Result />}
-            </div>
-
-            <Whatsapp />
-            <Footer></Footer>
-        </div>
+        </>
     )
 }
 
