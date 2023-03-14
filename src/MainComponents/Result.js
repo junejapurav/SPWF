@@ -154,8 +154,13 @@ function Result() {
                 </div>
 
 
-            </main >
-        </div >
+            </main>
+            <div id='resultinfo'>
+                <p>Congratulations to all who have participated as well the winners.</p>
+                <p>All of you have performed marvelously well and some of the paintings were truly exceptional.</p>
+                <p>We are incredibly proud of your achievement and accomplishment.</p>
+            </div>
+        </div>
     )
 }
 
