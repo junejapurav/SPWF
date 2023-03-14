@@ -30,96 +30,96 @@ function Result() {
             <main>
                 <div id="result-poster-container">
                     <div>
-                        <h2 className='result-poster-heading'> Group A</h2>
+                        <h2 className='result-poster-heading'> Group A - My Dream India</h2>
                         <div className='separate-by-group'>
                             <div className="result-poster result-gold">
                                 <div className='result-label'>1st</div>
                                 <img src={img1} alt="Poster 1" />
-                                <p>Group A 1</p>
+                                <p>Position 1</p>
                             </div>
 
                             <div className="result-poster result-silver">
                                 <div className='result-label'>2nd</div>
                                 <img src={img2} alt="Poster 2" />
-                                <p>Group A 2</p>
+                                <p>Position 2</p>
                             </div>
 
                             <div className="result-poster result-bronze">
                                 <div className='result-label'>3rd</div>
                                 <img src={img3} alt="Poster 3" />
-                                <p>Group A 3 </p>
+                                <p>Position 3 </p>
                             </div>
                         </div>
                     </div>
 
 
                     <div>
-                        <h2 className='result-poster-heading'> Group B</h2>
+                        <h2 className='result-poster-heading'> Group B - Clean India Green India</h2>
                         <div className='separate-by-group'>
                             <div className="result-poster result-gold">
                                 <div className='result-label'>1st</div>
                                 <img src={img5} alt="Poster 4" />
-                                <p>Group B 1 </p>
+                                <p>Position 1 </p>
                             </div>
 
                             <div className="result-poster result-silver">
                                 <div className='result-label'>2nd</div>
                                 <img src={img6} alt="Poster 4" />
-                                <p>Group B 2</p>
+                                <p>Position 2</p>
                             </div>
 
                             <div className="result-poster result-bronze">
                                 <div className='result-label'>3rd</div>
                                 <img src={img7} alt="Poster 4" />
-                                <p>Group B 3</p>
+                                <p>Position 3</p>
                             </div>
                         </div>
                     </div>
 
 
                     <div>
-                        <h2 className='result-poster-heading'> Group C</h2>
+                        <h2 className='result-poster-heading'> Group C - Swachh Bharat</h2>
                         <div className='separate-by-group'>
                             <div className="result-poster result-gold">
                                 <div className='result-label'>1st</div>
                                 <img src={img9} alt="Poster 4" />
-                                <p>Group C 1</p>
+                                <p>Position 1</p>
                             </div>
 
                             <div className="result-poster result-silver">
                                 <div className='result-label'>2nd</div>
                                 <img src={img10} alt="Poster 4" />
-                                <p>Group C 2</p>
+                                <p>Position 2</p>
                             </div>
 
                             <div className="result-poster result-bronze">
                                 <div className='result-label'>3rd</div>
                                 <img src={img11} alt="Poster 4" />
-                                <p>Group C 3</p>
+                                <p>Position 3</p>
                             </div>
                         </div>
                     </div>
 
 
                     <div>
-                        <h2 className='result-poster-heading'> Group D</h2>
+                        <h2 className='result-poster-heading'> Group D - Make In India</h2>
                         <div className='separate-by-group'>
                             <div className="result-poster result-gold">
                                 <div className='result-label'>1st</div>
                                 <img src={img13} alt="Poster 4" />
-                                <p>Group D 1</p>
+                                <p>Position 1</p>
                             </div>
 
                             <div className="result-poster result-silver">
                                 <div className='result-label'>2nd</div>
                                 <img src={img14} alt="Poster 4" />
-                                <p>Group D 2</p>
+                                <p>Position 2</p>
                             </div>
 
                             <div className="result-poster result-bronze">
                                 <div className='result-label'>3rd</div>
                                 <img src={img15} alt="Poster 4" />
-                                <p>Group D 3</p>
+                                <p>Position 3</p>
                             </div>
                         </div>
                     </div>
@@ -128,24 +128,24 @@ function Result() {
 
 
                     <div>
-                        <h2 className='result-poster-heading'> Group E</h2>
+                        <h2 className='result-poster-heading'> Group E - Ek Bharat Shreshtha Bharat</h2>
                         <div className='separate-by-group'>
                             <div className="result-poster result-gold">
                                 <div className='result-label'>1st</div>
                                 <img src={img17} alt="Poster 4" />
-                                <p>Group E 1</p>
+                                <p>Position 1</p>
                             </div>
 
                             <div className="result-poster result-silver">
                                 <div className='result-label'>2nd</div>
                                 <img src={img18} alt="Poster 4" />
-                                <p>Group E 2</p>
+                                <p>Position 2</p>
                             </div>
 
                             <div className="result-poster result-bronze">
                                 <div className='result-label'>3rd</div>
                                 <img src={img19} alt="Poster 4" />
-                                <p>Group E 3</p>
+                                <p>Position 3</p>
                             </div>
 
                         </div>
