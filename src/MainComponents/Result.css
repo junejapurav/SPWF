@@ -128,5 +128,8 @@
     .separate-by-group {
         grid-template-columns: repeat(1, 1fr);
     }
+    #resultinfo{
+        width: 100%;
+    }
 
 }
