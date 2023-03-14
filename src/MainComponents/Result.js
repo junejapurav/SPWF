@@ -29,138 +29,133 @@ function Result() {
             <h1 className='result-h1'>Painting Competition Results</h1>
             <main>
                 <div id="result-poster-container">
-                    <div className="result-poster result-gold">
-                        <div className='result-label'>1st</div>
-                        <img src={img1} alt="Poster 1" />
+                    <div>
+                        <h2 className='result-poster-heading'> Group A</h2>
+                        <div className='separate-by-group'>
+                            <div className="result-poster result-gold">
+                                <div className='result-label'>1st</div>
+                                <img src={img1} alt="Poster 1" />
+                                <p>Group A 1</p>
+                            </div>
 
+                            <div className="result-poster result-silver">
+                                <div className='result-label'>2nd</div>
+                                <img src={img2} alt="Poster 2" />
+                                <p>Group A 2</p>
+                            </div>
 
-                        <p>First Place</p>
-                        
+                            <div className="result-poster result-bronze">
+                                <div className='result-label'>3rd</div>
+                                <img src={img3} alt="Poster 3" />
+                                <p>Group A 3 </p>
+                            </div>
+                        </div>
                     </div>
-                    <div className="result-poster result-silver">
-                        <div className='result-label'>2nd</div>
-                        <img src={img2} alt="Poster 2" />
 
 
-                        <p>Second Place</p>
-                        
+                    <div>
+                        <h2 className='result-poster-heading'> Group B</h2>
+                        <div className='separate-by-group'>
+                            <div className="result-poster result-gold">
+                                <div className='result-label'>1st</div>
+                                <img src={img5} alt="Poster 4" />
+                                <p>Group B 1 </p>
+                            </div>
+
+                            <div className="result-poster result-silver">
+                                <div className='result-label'>2nd</div>
+                                <img src={img6} alt="Poster 4" />
+                                <p>Group B 2</p>
+                            </div>
+
+                            <div className="result-poster result-bronze">
+                                <div className='result-label'>3rd</div>
+                                <img src={img7} alt="Poster 4" />
+                                <p>Group B 3</p>
+                            </div>
+                        </div>
                     </div>
-                    <div className="result-poster result-bronze">
-                        <div className='result-label'>3rd</div>
-                        <img src={img3} alt="Poster 3" />
 
 
-                        <p>Third Place</p>
-                        
+                    <div>
+                        <h2 className='result-poster-heading'> Group C</h2>
+                        <div className='separate-by-group'>
+                            <div className="result-poster result-gold">
+                                <div className='result-label'>1st</div>
+                                <img src={img9} alt="Poster 4" />
+                                <p>Group C 1</p>
+                            </div>
+
+                            <div className="result-poster result-silver">
+                                <div className='result-label'>2nd</div>
+                                <img src={img10} alt="Poster 4" />
+                                <p>Group C 2</p>
+                            </div>
+
+                            <div className="result-poster result-bronze">
+                                <div className='result-label'>3rd</div>
+                                <img src={img11} alt="Poster 4" />
+                                <p>Group C 3</p>
+                            </div>
+                        </div>
                     </div>
-                    <div className="result-poster">
-                        <img src={img4} alt="Poster 4" />
 
-                        <p>Top 15</p>
-                        
+
+                    <div>
+                        <h2 className='result-poster-heading'> Group D</h2>
+                        <div className='separate-by-group'>
+                            <div className="result-poster result-gold">
+                                <div className='result-label'>1st</div>
+                                <img src={img13} alt="Poster 4" />
+                                <p>Group D 1</p>
+                            </div>
+
+                            <div className="result-poster result-silver">
+                                <div className='result-label'>2nd</div>
+                                <img src={img14} alt="Poster 4" />
+                                <p>Group D 2</p>
+                            </div>
+
+                            <div className="result-poster result-bronze">
+                                <div className='result-label'>3rd</div>
+                                <img src={img15} alt="Poster 4" />
+                                <p>Group D 3</p>
+                            </div>
+                        </div>
                     </div>
-                    <div className="result-poster">
-                        <img src={img5} alt="Poster 4" />
 
-                        <p>Top 15</p>
-                        
-                    </div>
-                    <div className="result-poster">
-                        <img src={img6} alt="Poster 4" />
 
-                        <p>Top 15</p>
-                        
-                    </div>
-                    <div className="result-poster">
-                        <img src={img7} alt="Poster 4" />
 
-                        <p>Top 15</p>
-                        
-                    </div>
-                    <div className="result-poster">
-                        <img src={img8} alt="Poster 4" />
 
-                        <p>Top 15</p>
-                        
-                    </div>
-                    <div className="result-poster">
-                        <img src={img9} alt="Poster 4" />
+                    <div>
+                        <h2 className='result-poster-heading'> Group E</h2>
+                        <div className='separate-by-group'>
+                            <div className="result-poster result-gold">
+                                <div className='result-label'>1st</div>
+                                <img src={img17} alt="Poster 4" />
+                                <p>Group E 1</p>
+                            </div>
 
-                        <p>Top 15</p>
-                        
-                    </div>
-                    <div className="result-poster">
-                        <img src={img10} alt="Poster 4" />
+                            <div className="result-poster result-silver">
+                                <div className='result-label'>2nd</div>
+                                <img src={img18} alt="Poster 4" />
+                                <p>Group E 2</p>
+                            </div>
 
-                        <p>Top 15</p>
-                        
-                    </div>
-                    <div className="result-poster">
-                        <img src={img11} alt="Poster 4" />
+                            <div className="result-poster result-bronze">
+                                <div className='result-label'>3rd</div>
+                                <img src={img19} alt="Poster 4" />
+                                <p>Group E 3</p>
+                            </div>
 
-                        <p>Top 15</p>
-                        
-                    </div>
-                    <div className="result-poster">
-                        <img src={img12} alt="Poster 4" />
-
-                        <p>Top 15</p>
-                        
-                    </div>
-                    <div className="result-poster">
-                        <img src={img13} alt="Poster 4" />
-
-                        <p>Top 15</p>
-                        
-                    </div>
-                    <div className="result-poster">
-                        <img src={img14} alt="Poster 4" />
-
-                        <p>Top 15</p>
-                        
-                    </div>
-                    <div className="result-poster">
-                        <img src={img15} alt="Poster 4" />
-
-                        <p>Top 15</p>
-                        
-                    </div>
-                    <div className="result-poster">
-                        <img src={img16} alt="Poster 4" />
-
-                        <p>Top 15</p>
-                        
-                    </div>
-                    <div className="result-poster">
-                        <img src={img17} alt="Poster 4" />
-
-                        <p>Top 15</p>
-                        
-                    </div>
-                    <div className="result-poster">
-                        <img src={img18} alt="Poster 4" />
-
-                        <p>Top 15</p>
-                        
-                    </div>
-                    <div className="result-poster">
-                        <img src={img19} alt="Poster 4" />
-
-                        <p>Top 15</p>
-                        
-                    </div>
-                    <div className="result-poster">
-                        <img src={img20} alt="Poster 4" />
-
-                        <p>Top 15</p>
-                        
+                        </div>
                     </div>
 
                 </div>
 
 
-            </main>
-        </div>
+            </main >
+        </div >
     )
 }
 

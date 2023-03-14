@@ -38,10 +38,10 @@ function Competition() {
 
             <h2 className="judgeheading">Judges Panel</h2>
             <div className="judgeposters">
-                <img src={pic4}></img>
-                <img src={pic5}></img>
-                <img src={pic6}></img>
-                <img src={pic7}></img>
+                <img src={pic4} alt=''></img>
+                <img src={pic5} alt=''></img>
+                <img src={pic6} alt=''></img>
+                <img src={pic7} alt=''></img>
             </div>
 
 
