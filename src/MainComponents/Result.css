@@ -129,7 +129,7 @@
         flex-direction: column;
         /* grid-template-columns: repeat(1, 1fr); */
     }
-    .resultinfo{
+    #resultinfo{
         width: 100%;
     }
 }
