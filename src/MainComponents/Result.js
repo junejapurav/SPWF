@@ -19,14 +19,20 @@ import img17 from '../competitionImages/17.png';
 import img18 from '../competitionImages/18.png';
 import img19 from '../competitionImages/19.png';
 import img20 from '../competitionImages/20.png';
+import img21 from '../competitionImages/Group A Consolation.png'
+import img22 from '../competitionImages/Group B Consolation.png'
+import img23 from '../competitionImages/Group C Consolation.png'
+import img24 from '../competitionImages/Group D Consolation.png'
+import img25 from '../competitionImages/Group E Consolation.png'
 
-
+import Congratulations from '../components/Congratulations';
 
 function Result() {
     return (
         <div className='result'>
 
             <h1 className='result-h1'>Painting Competition Results</h1>
+            <Congratulations/>
             <main>
                 <div id="result-poster-container">
                     <div>
@@ -48,6 +54,12 @@ function Result() {
                                 <div className='result-label'>3rd</div>
                                 <img src={img3} alt="Poster 3" />
                                 <p>Position 3 </p>
+                            </div>
+
+                            <div className="result-poster result-silver">
+                                <div className='result-label'></div>
+                                <img src={img21} alt="Poster 2" />
+                                <p>Consolation Prize</p>
                             </div>
                         </div>
                     </div>
@@ -73,6 +85,12 @@ function Result() {
                                 <img src={img7} alt="Poster 4" />
                                 <p>Position 3</p>
                             </div>
+
+                            <div className="result-poster result-silver">
+                                <div className='result-label'></div>
+                                <img src={img22} alt="Poster 2" />
+                                <p>Consolation Prize</p>
+                            </div>
                         </div>
                     </div>
 
@@ -97,6 +115,12 @@ function Result() {
                                 <img src={img11} alt="Poster 4" />
                                 <p>Position 3</p>
                             </div>
+
+                            <div className="result-poster result-silver">
+                                <div className='result-label'></div>
+                                <img src={img23} alt="Poster 2" />
+                                <p>Consolation Prize</p>
+                            </div>
                         </div>
                     </div>
 
@@ -120,6 +144,12 @@ function Result() {
                                 <div className='result-label'>3rd</div>
                                 <img src={img15} alt="Poster 4" />
                                 <p>Position 3</p>
+                            </div>
+
+                            <div className="result-poster result-silver">
+                                <div className='result-label'></div>
+                                <img src={img24} alt="Poster 2" />
+                                <p>Consolation Prize</p>
                             </div>
                         </div>
                     </div>
@@ -146,6 +176,12 @@ function Result() {
                                 <div className='result-label'>3rd</div>
                                 <img src={img19} alt="Poster 4" />
                                 <p>Position 3</p>
+                            </div>
+
+                            <div className="result-poster result-silver">
+                                <div className='result-label'></div>
+                                <img src={img25} alt="Poster 2" />
+                                <p>Consolation Prize</p>
                             </div>
 
                         </div>
