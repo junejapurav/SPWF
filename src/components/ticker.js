@@ -10,7 +10,7 @@ function Ticker() {
     
             <ul>
                 <li>
-                The results of Online Painting Competition will be announced on 15th March,2023. Click to know more
+                The results of Online Painting Competition has been announced. Click to know the results.
                 </li>
             </ul>
         </div>
