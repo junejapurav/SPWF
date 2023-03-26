@@ -7,6 +7,7 @@ import RecentEvents from "../components/RecentEvents";
 import Footer from "../components/footer";
 import { Waypoint } from "react-waypoint";
 import AboutUsGetInvolved from "../components/AboutUsGetInvolved";
+import {SliderData} from "../components/SliderData"
 import Feedback from "../components/feedback";
 import Dailyupdate from "../components/dailyupdates";
 import Whatsapp from "../components/Whatsapp";
@@ -28,7 +29,7 @@ function HomePage (){
         <br/>
         <br/>
         <AboutUsGetInvolved/>
-        <Feedback/>
+        <Feedback slides={SliderData}/>
         <Whatsapp/>
         <Footer/> 
         </div>
