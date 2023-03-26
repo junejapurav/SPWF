@@ -3,7 +3,7 @@ import { SliderData } from './SliderData';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import "./feedback.css"
 
-const ImageSlider = ({ slides }) => {
+const Feedback = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -39,4 +39,4 @@ const ImageSlider = ({ slides }) => {
   );
 };
 
-export default ImageSlider;
+export default Feedback;
