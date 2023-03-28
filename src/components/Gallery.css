@@ -1,18 +1,23 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
-
-#gallery-heading {
-  text-align: center;
+#gallery-heading{
   position: absolute;
-  top: 140px;
-  margin-left: 5px;
+  bottom: 90px;
+  left: 7%;
+  background-color: #f4efef;
+  width: 93%;
+  height: 100px;
+  display: flex;
+  padding-left: 30px;
+  align-items: center;
+}
+
+#gallery-heading-text {
+  text-align: center;
+ font-size: 40px;
   color: rgb(245, 102, 49);
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
-  display: inline;
-  width: fit-content;
-  
 }
 
 
@@ -31,7 +36,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 83px;
-  transform-origin:inherit;
+  transform-origin: inherit;
   height: 470px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,37 +46,43 @@
 
 .container {
   background-color: #E8D5C4;
-    width: 95%;
-    margin: 80px auto;
-    display: block;
-    padding: 20px;
-    margin-top: 15px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  width: 95%;
+  margin: 80px auto;
+  display: block;
+  padding: 20px;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 340px;
+  vertical-align: middle;
+}
+
+.gallery-img:hover {
+  filter: opacity(60%);
+}
+
+
+@media screen and (max-width: 850px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .gallery-img {
     width: 100%;
-    height: 330px;
-    vertical-align: middle;
-  }
-  
-  .gallery-img:hover {
-    filter:opacity(60%);
-  }
-
-
-@media screen and (max-width: 850px){
-  .container{
-    grid-template-columns: repeat(2, 1fr);
+    height: 260px;
   }
 }
 
-@media screen and (max-width: 475px){
-  .container{
+@media screen and (max-width: 475px) {
+  .container {
     grid-template-columns: 1fr;
   }
+
   .gallery-img {
     width: 100%;
     height: 280px;
