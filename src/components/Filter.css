@@ -1,69 +1,29 @@
 .year-btn {
   font-family: Poppins, sans-serif;
-  font-weight: 900;
-  font-size: 40px;
-  padding: 1px 100px;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 1px 10px;
+  cursor: pointer;
 }
 
+.year-btn:hover {
+  color: orangered;
+}
 
-.filter-container {
-    position: relative;
-    /* display: inline-block; */
-  }
-  
-/* .dropdown{
-    position: absolute;
-} */
+.active-btn-style {
+  color: orangered;
+}
 
-  .dropdown-content {
-    
-    position: absolute;
-    z-index: 1;
-    min-width: 100px;
-    padding: 5px 10px;
-    overflow-y: scroll;
-  max-height: 200px;
-    background-color: #dbcbcb;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+.filter-btn {
+  display: flex;
+  width: 400px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    animation: dropdownAnim 0.5s forwards;
-
-    /* add these lines */
-    transform-origin: top center;
-    transition: transform 0.5s;
+@media screen and (max-width: 475px) {
+  .filter-btn {
+    width: 300px;
   }
-  
-  .dropdown-content button {
-    display: block;
-    width: 80%;
-    text-align: center;
-    padding: 5px 10px;
-    border: none;
-    background-color: coral;
-    color: white;
-    font-size: 16px;
-   font-family: 'Poppins', sans-serif;;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-  }
-  @keyframes dropdownAnim {
-    from {transform: scale(0);}
-    to {transform: scale(1);}
-  }
-  
-  .dropdown-content button:hover {
-    background-color: red;
-    /* transform: scale(0.9); */
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  #dropbtn1{
-    font-size: 20px;
-  padding: 5px 30px;
-  margin: 10px 10px;
-  }
-  
+}

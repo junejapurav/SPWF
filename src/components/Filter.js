@@ -3,15 +3,19 @@ import { motion } from 'framer-motion';
 import "./Filter.css"
 
 function Filter({ activeYear, setActiveYear, setFiltered, dataaa }) {
-  const [showDropdown, setShowDropdown] = useState(false);
+  const [isActive, setIsActive] = useState({});
   const [selectedYear, setSelectedYear] = useState('ALL');
 
   const handleYearClick = (year) => {
     setActiveYear(year);
     setSelectedYear(year === 0 ? 'ALL' : year);
-    setShowDropdown(false);
+    setIsActive(prevActiveButtons => ({
+      [year]: !prevActiveButtons[year]
+  }));
   };
 
+
+  
   useEffect(() => {
     if (activeYear === 0) {
       setFiltered(dataaa);
@@ -24,19 +28,19 @@ function Filter({ activeYear, setActiveYear, setFiltered, dataaa }) {
   }, [activeYear]);
 
   return (
-    <motion.div layout transition={{ duration: 0.5 }} align="center" className="filter-container">
-      <div className="dropdown" onClick={() => setShowDropdown(!showDropdown)} style={{ position: 'relative' }}>
-        <button id="dropbtn1" style={{backgroundColor:"coral"}}>
-          <i className="fa fa-filter"></i> {selectedYear}
-        </button>
-        <div className={`dropdown-content ${showDropdown ? 'show' : ''}`} style={{ position: 'absolute' }}>
-          <button onClick={() => handleYearClick(0)}>ALL</button>
-          <button onClick={() => handleYearClick('2018')} className="year-btn">2018</button>
-          <button onClick={() => handleYearClick('2019')} className="year-btn">2019</button>
-          <button onClick={() => handleYearClick('2020')} className="year-btn">2020</button>
-          <button onClick={() => handleYearClick('2021')} className="year-btn">2021</button>
-        </div>
-      </div>
+    <motion.div layout transition={{ duration: 0.5 }} align="center" className='filter-btn'>
+     
+          <p onClick={() => handleYearClick(0)} className={`year-btn ${isActive[0] ? 'active-btn-style' : ''}`}>ALL</p>
+          <p>|</p>
+          <p onClick={() => handleYearClick('2018')} className={`year-btn ${isActive['2018'] ? 'active-btn-style' : ''}`}>2018</p>
+          <p>|</p>
+          <p onClick={() => handleYearClick('2019')} className={`year-btn ${isActive['2019'] ? 'active-btn-style' : ''}`}>2019</p>
+          <p>|</p>
+          <p onClick={() => handleYearClick('2020')} className={`year-btn ${isActive['2020'] ? 'active-btn-style' : ''}`}>2020</p>
+          <p>|</p>
+          <p onClick={() => handleYearClick('2021')} className={`year-btn ${isActive['2021'] ? 'active-btn-style' : ''}`}>2021</p>
+   
+      
     </motion.div>
   );
 }

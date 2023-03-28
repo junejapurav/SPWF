@@ -3,7 +3,6 @@ import './Gallery.css';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import Filter from './Filter';
 import { motion } from 'framer-motion';
 import LazyLoad from 'react-lazy-load';
@@ -469,18 +468,14 @@ const Gallery = () => {
     <>
       <Header />
       <div className='gallery-header' style={{ backgroundImage: `url(${banner})` }}>
-        <div className='int-container'>
-        <h1 id='gallery-heading'>GALLERY</h1>
-
-        <Filter dataaa={dataaa} setFiltered={setFiltered} activeYear={activeYear} setActiveYear={setActiveYear} />
-        </div>
+       <h1 id='gallery-heading'>GALLERY</h1>      
       </div>
 
+
+      <Filter dataaa={dataaa} setFiltered={setFiltered} activeYear={activeYear} setActiveYear={setActiveYear} />
       <motion.div layout transition={{ duration: 0.1 }} className="container">
 
-        <ResponsiveMasonry columnsCountBreakPoints={{ 320: 1, 481: 2, 800: 3 }}>
-
-          <Masonry gutter='25px'>
+      
             {
               filtered.map((galleryData) =>
                 <div key={galleryData.id}>
@@ -498,10 +493,8 @@ const Gallery = () => {
                 </div>
               )
             }
-          </Masonry>
-
-        </ResponsiveMasonry>
-
+          
+          
       </motion.div >
     </>
   );
