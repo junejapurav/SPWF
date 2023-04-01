@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
+.gallery-header{
+  height: 500px;
+}
+
 #gallery-heading{
   position: absolute;
-  bottom: 90px;
+  top: 520px;
   left: 7%;
   background-color: #f4efef;
   width: 93%;
