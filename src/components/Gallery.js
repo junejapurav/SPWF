@@ -467,16 +467,19 @@ const Gallery = () => {
   return (
     <>
       <Header />
+      
       <div className='gallery-header' style={{ backgroundImage: `url(${banner})` }}>
       </div>
+      
       <div id='gallery-heading'>
         <h1 id='gallery-heading-text'>Photo Gallery</h1>
       </div>
 
 
       <Filter dataaa={dataaa} setFiltered={setFiltered} activeYear={activeYear} setActiveYear={setActiveYear} />
+      
+      
       <motion.div layout transition={{ duration: 0.1 }} className="container">
-
 
         {
           filtered.map((galleryData) =>
@@ -495,7 +498,6 @@ const Gallery = () => {
             </div>
           )
         }
-
 
       </motion.div >
     </>
