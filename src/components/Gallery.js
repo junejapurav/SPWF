@@ -465,7 +465,7 @@ const Gallery = () => {
 
   // setFiltered(data);
   return (
-    <>
+    <div style={{backgroundColor: 'white'}}>
       <Header />
       
       <div className='gallery-header' style={{ backgroundImage: `url(${banner})` }}>
@@ -500,7 +500,7 @@ const Gallery = () => {
         }
 
       </motion.div >
-    </>
+    </div>
   );
 };
 
