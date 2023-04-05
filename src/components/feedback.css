@@ -38,10 +38,10 @@
     user-select: none;
   }
   
-  .slide {
+  /* .slide {
     opacity: 0;
     transition-duration: 1s ease;
-  }
+  } */
   
   .slide.active {
     opacity: 1;
