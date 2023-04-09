@@ -10,7 +10,7 @@ function Ticker() {
     
             <ul>
                 <li>
-                The results of Online Painting Competition has been announced. Click to know the results.
+                Celebrating Annual program for our underprivileged children.  Click to know more.
                 </li>
             </ul>
         </div>
