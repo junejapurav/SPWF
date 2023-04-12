@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import './dailyupdates.css';
 import pic from "../images/Picture57.jpeg";
-import pic2 from "../images/Picture54.png";
+import pic2 from "../images/Picture59.jpeg";
 import { Link } from "react-router-dom";
 import Ticker from "./ticker";
 
@@ -28,9 +28,15 @@ const Dailyupdate = () =>{
         <div className = "fundRaising3">
             <div className="fundLeft2">
                 <h5>Upcoming Event</h5>
-                <h1>Painting Competition</h1>
-                <p>Shakuntala Poddar Welfare Foundation is making various efforts for the upliftment of the children living in slums. In this episode, we are organizing an Online Painting Competition on the occasion of Republic day to increase the enthusiasm of the children. The last day of submission is 28th of February,2023.</p>
-                <Link  to='/competition'><button>COMPETITIONS</button></Link>
+                <h1>Annual Day Celebration</h1>
+                <p>You all are invited to our Annual Program 2023. Please do come to support underprivileged talents.
+                <ul>
+                    <li>Dated: 16th April, 2023</li>
+                    <li>Timing: 9:30 am Onwards</li>
+                    <li>Venue: Shaheed Bhagat Singh Apartments, Dwarka Sector 14, ND-110078</li>
+                </ul>
+                </p>
+                {/* <Link  to='/competition'><button>COMPETITIONS</button></Link> */}
             </div>
             <div className="fundRight2">
                 <h5></h5>
