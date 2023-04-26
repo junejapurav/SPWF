@@ -9,7 +9,7 @@ const Dailyupdate = () =>{
 
     return(
         <>
-        <a href='https://www.instagram.com/shakuntalapoddar_ngo/' className="rednote"><Ticker/></a>
+        {/* <a href='https://www.instagram.com/shakuntalapoddar_ngo/' className="rednote"><Ticker/></a> */}
         <div className = "fundRaising2">
             <div className="fundLeft2">
                 <h5>Daily Updates</h5>
