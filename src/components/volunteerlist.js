@@ -5,7 +5,7 @@ import pic18 from "../images/Picture18 (2).jpeg"
 import pic19 from "../images/Picture19.jpeg"
 import pic20 from "../images/Picture20.jpeg"
 import pic21 from "../images/Picture35.jpeg"
-
+import pic22 from "../images/Picture61.jpg"
 
 const Volunteerlist = ()=>{
     const voldesc = [
@@ -59,6 +59,14 @@ const Volunteerlist = ()=>{
             desc: "Qualification: BA Political Science Hons",
             area: "Area: Content Writing",
             location: "Location: Varanasi"
+        },
+        {
+            imgsrc: pic22,
+            position: "Volunteer",
+            name: "Ms. Prachi Yadav",
+            desc: "Qualification: BA(Hons) Journalism & Mass Communication",
+            area: "Area: Public Relations",
+            location: "Location: Bilaspur(Chhattisgarh)"
         }
     ]
     return (
