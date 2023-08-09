@@ -1,5 +1,5 @@
 {
-  "name": "ngo",
+  "name": "y",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -61,5 +61,17 @@
     "@iconify/icons-mdi": "^1.2.27",
     "@iconify/react": "^3.2.2",
     "@types/jquery": "^3.5.16"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junejapurav/SPWF.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junejapurav/SPWF/issues"
+  },
+  "homepage": "https://github.com/junejapurav/SPWF#readme"
 }
